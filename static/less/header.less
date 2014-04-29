@@ -1,0 +1,135 @@
+.header {
+	position: relative;
+	width: @wrap-width;
+	height: 140rem / @htmlFontSize;
+
+
+	.logo {
+		width: 20%;
+		height: 100%;
+		background: url(../img/logo.png) no-repeat center bottom;
+		float: left;
+	}
+
+	.header-content {
+		position: relative;
+		width: 80%;
+		height: 100%;
+		float: left;
+
+		li {
+			float: left;
+		}
+	}
+}
+
+.top-menu {
+	position: absolute;
+	line-height: 30rem / @htmlFontSize;
+	top: 35rem / @htmlFontSize;
+	left: 0;
+	right: 0;
+
+	ul {
+		float: right;
+	}
+
+	.intranet {
+		position: relative;
+		.trng-border(transparent);
+
+		&:hover {
+			.trng-border;
+		}
+
+		a {
+			font-size: 12em / @htmlFontSize;
+			font-style: italic;
+			text-decoration: none;
+			color: @header-text-col;
+			padding: 0 25rem / @htmlFontSize 0 15rem / @htmlFontSize;
+
+			&:before {
+				content: "";
+				width: 13rem / @htmlFontSize;
+				height: 13rem / @htmlFontSize;
+				background: url(../img/intranet.png);
+				display: inline-block;
+				margin: 0 5rem / @htmlFontSize 0 0;
+			}
+		}
+	}
+}
+
+.sub-nav {
+	height: 33rem / @htmlFontSize;
+	.trng-line;
+
+	.sub-item {
+		float: left;
+		position: relative;
+		.trng-border;
+
+		a {
+			color: #fff;
+			font-size: 12em / @htmlFontSize;
+			font-style: italic;
+			text-decoration: none;
+			padding: 0 10rem / @htmlFontSize;
+		}
+
+		&:hover {
+			.trng-border(#98c25a);
+		}
+	}
+}
+
+.nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	.contacts {
+		float: right;
+	}
+
+	.nav-item {
+		.transition(border, ease, .25s);
+		margin: 0 35rem / @htmlFontSize 0 0;
+		-moz-box-sizing: border-box;
+    	box-sizing: border-box;
+    	line-height: 35rem / @htmlFontSize;
+    	height: 35rem / @htmlFontSize;
+
+    	&:hover {
+    		border-bottom: 4rem / @htmlFontSize solid @header-text-col;
+    	}
+
+		a {
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 1em;
+			color: @header-text-col;
+		}
+	}
+
+	.languages {
+		float: left;
+
+		.language {
+			a {
+				display: block;
+				padding: 5rem / @htmlFontSize 7rem / @htmlFontSize;
+				background: #b8b7b6;
+				text-decoration: none;
+				font-weight: 100;
+				color: #fff;
+
+				&:hover {
+					background: #13100e;
+				}
+			}
+		}
+	}
+}

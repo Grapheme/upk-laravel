@@ -1,0 +1,93 @@
+@wrap-width: 1280rem / @htmlFontSize;
+@header-text-col: #181818;
+@htmlFontSize: 14;
+
+ul, li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/* Colors */
+@colorGreen: #60b06a;
+@colorGreenDark: #00984b;
+@colorGreenLight: #98c25a;
+@colorGreenUltraLight: #bee39b;
+
+/* Positions */
+.full-abs {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Blocks */
+.inline-block() {
+	display: inline-block;
+}
+
+/* Text transforms */
+.uppercase {
+	text-transform: uppercase;
+}
+.overflow-h {
+    overflow: hidden;
+}
+
+/* Box-sizing: content-box | padding-box | border-box */
+.box-sizing(@type: border-box) {
+ -webkit-box-sizing: @type;
+ -moz-box-sizing: @type;
+ box-sizing: @type;
+}
+
+/* Transition */
+.transition(@elem: all, @eff: ease, @time: .25s) {
+	-webkit-transition: @elem @eff @time;
+	-moz-transition: @elem @eff @time;
+	transition: @elem @eff @time;
+}
+
+.trng-border(@color: @colorGreenDark) {
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: -1px; right: -1px; bottom: -1px; left: -1px;
+		background: @color;
+		-webkit-transform: skew(-15deg);
+		-ms-transform: skew(-15deg);
+		transform: skew(-15deg);
+
+		.transition();
+	}
+}
+
+.trng-right-border(@color: @colorGreenDark) {
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0; right: -20px; bottom: 0; left: 90%;
+		background: @color;
+		-webkit-transform: skew(-15deg);
+		-ms-transform: skew(-15deg);
+		transform: skew(-15deg);
+	}
+}
+
+.trng-line {
+	&:after {
+		content: "";
+		position: absolute;
+		width: 8px;
+		z-index: -1;
+		top: -1px; bottom: 0; right: -8px;
+		background: @colorGreenLight;
+		-webkit-transform: skew(-15deg);
+		-ms-transform: skew(-15deg);
+		transform: skew(-15deg);
+	}
+}
