@@ -1,22 +1,15 @@
-<div class="row">
-	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-	@if(isset($news) && $news->count())
-		@foreach($news as $new)
-		<div class="row">
-			<div class="margin-top-10">
-				<hr>
-				<h3><a href="{{slink::createLink('news/'.$new->seo_url)}}">{{$new->title}}</a></h3>
-				<p><span class="glyphicon glyphicon-time"></span> {{ myDateTime::SwapDotDateWithTime($new->created_at) }}</p>
-				<div>
-					{{$new->preview}}
+@if(isset($news) && $news->count())
+	<ul class="news-list">
+	@foreach($news as $new)
+		<li class="news-item">
+			<div class="news-cont">
+				<h3 data-date="{{ myDateTime::getDayAndMonth($new->created_at) }}">{{$new->title}}</h3>
+				<div class="news-desc">
+					{{$new->content}}
 				</div>
-				<a href="{{slink::createLink('news/'.$new->seo_url)}}" class="btn btn-default no-margin regular-10 uppercase pull-left btn-spinner">
-					<span class="btn-response-text">Просмотр</span><i class="glyphicon glyphicon-chevron-right hidden"></i>
-				</a>
 			</div>
-		</div>
-		@endforeach
-		{{ $news->links() }}
-	@endif
-	</div>
-</div>
+		</li>
+	@endforeach
+	</ul>
+	{{ $news->links() }}
+@endif

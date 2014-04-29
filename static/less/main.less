@@ -115,7 +115,7 @@ h1 {
 main {
     position: relative;
     width: @wrap-width;
-    min-height: 29rem;
+    min-height: 75%;
     margin: 132rem / @htmlFontSize 0 112rem / @htmlFontSize;
 
     background: url(../img/bg.png) no-repeat;
@@ -441,12 +441,11 @@ main {
         margin: 0 0 40rem / @htmlFontSize;
         font-size: 20em / @htmlFontSize;
     }
+}
 
-    .col-50 {
-        .inline-block;
-        width: 49%;
-
-        vertical-align: top;
+.contacts {
+    .more-desc-part {
+        font-size: 1.2em;
     }
 }
 
@@ -479,6 +478,49 @@ main {
     }
 }
 
+address {
+    font-style: normal;
+    text-align: left;
+
+    a {
+        margin: 1.75rem 0;
+        color: #444;
+        text-decoration: none;
+    }
+    .s-phones,
+    .mails {
+        a {
+            display: block;
+
+            &:before {
+            content: "";
+            display: inline-block;
+            width: 10rem / @htmlFontSize;
+            height: 10rem / @htmlFontSize;
+            margin: 0 .5rem 0 0;
+
+            background: url(../img/dot.png) no-repeat center center;
+        }
+        }
+    }
+}
+
+.col-50 {
+    .inline-block;
+    width: 49%;
+
+    vertical-align: top;
+}
+.col-40 {
+    .inline-block;
+    width: 39%;
+
+    vertical-align: top;
+}
+#map_canvas {
+    width: 100%;
+    height: 400px;
+}
 
 
 /* ==========================================================================
