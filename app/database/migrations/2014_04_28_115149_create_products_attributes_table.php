@@ -16,7 +16,7 @@ class CreateProductsAttributesTable extends Migration {
 			$table->string('value')->nullable();
 			$table->boolean('publication')->default(1)->unsigned()->nullable();
 			
-			$table->foreign('product_attribute_group_id')->references('id')->on('Products_attributes_groups')->onDelete('cascade');
+			$table->foreign('product_attribute_group_id')->references('id')->on('products_attributes_groups')->onDelete('cascade');
 		});
 	}
 
