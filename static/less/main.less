@@ -115,6 +115,7 @@ h1 {
 main {
     position: relative;
     width: @wrap-width;
+    min-height: 29rem;
     margin: 132rem / @htmlFontSize 0 112rem / @htmlFontSize;
 
     background: url(../img/bg.png) no-repeat;
@@ -239,6 +240,17 @@ main {
 
         .more-desc-part {
             margin: 0 0 1rem;
+
+            a {
+                .transition;
+                border-bottom: 1px solid;
+                text-decoration: none;
+                color: @colorGreen;
+
+                &:hover {
+                    border-color: transparent;
+                }
+            }
         }
 
         &:after {
@@ -412,8 +424,60 @@ main {
     }
 }
 
+.services {
+    .box-sizing;
+    position: relative;
+    width: @wrap-width;
+    padding: 0 245px;
 
+    .desc {
+        margin: 0 0 48rem / @htmlFontSize;
+        color: @colorGreenDark;
+        font-size: 20em / @htmlFontSize;
+    }
 
+    h2 {
+        .uppercase;
+        margin: 0 0 40rem / @htmlFontSize;
+        font-size: 20em / @htmlFontSize;
+    }
+
+    .col-50 {
+        .inline-block;
+        width: 49%;
+
+        vertical-align: top;
+    }
+}
+
+.typical-list {
+    li {
+        margin: 1.2rem 0;
+        font-weight: 300;
+        font-size: .9em;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 10rem / @htmlFontSize;
+            height: 10rem / @htmlFontSize;
+            margin: 0 .5rem 0 0;
+
+            background: url(../img/dot.png) no-repeat center center;
+        }
+    }
+}
+
+.typical-link {
+    .transition;
+    border-bottom: 1px solid;
+    text-decoration: none;
+    color: @colorGreen;
+
+    &:hover {
+        border-color: transparent;
+    }
+}
 
 
 

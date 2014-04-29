@@ -1,7 +1,7 @@
 .header {
 	position: relative;
 	width: @wrap-width;
-	height: 140rem / @htmlFontSize;
+	height: 120rem / @htmlFontSize;
 
 
 	.logo {
@@ -23,10 +23,88 @@
 	}
 }
 
+.sign-up {
+	position: absolute;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	top: 35px;
+	right: 198px;
+	overflow: hidden;
+	.trng-border;
+	.transition(opacity, ease, .25s);
+	z-index: 15;
+	padding-left: 20px;
+
+	&.active {
+		overflow: visible;
+		height: 85px;
+		width: 150px;
+		opacity: 1;
+	}
+
+	input {
+        .box-sizing;
+        height: 22rem / @htmlFontSize;
+        margin: 0 12rem / @htmlFontSize 0 0;
+        padding: 0 9rem / @htmlFontSize;
+        border: 1px solid #b0d8b5;
+        width: 130px;
+
+        background: @colorGreen;
+
+        color: #b0d8b5;
+        font-size: 12em / @htmlFontSize;
+        vertical-align: middle;
+
+        &:first-child {
+        	margin-top: 15px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-input-placeholder {
+            color: #b0d8b5;
+            font-style: italic;
+        }
+
+        &:-moz-placeholder {
+            color: #b0d8b5;
+            font-style: italic;  
+        }
+
+        &::-moz-placeholder {
+            color: #b0d8b5;
+            font-style: italic;  
+        }
+
+        &:-ms-input-placeholder {
+            color: #b0d8b5; 
+            font-style: italic;  
+        }
+    }
+}
+
+.sign-up-btn {
+	display: block;
+	position: absolute;
+	text-decoration: none;
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+	color: #fff;
+	top: 87px;
+	right: 17px;
+	width: 150px;
+	height: 37px;
+	.trng-border(#52b34f);
+}
+
 .top-menu {
 	position: absolute;
 	line-height: 30rem / @htmlFontSize;
-	top: 35rem / @htmlFontSize;
+	top: 25rem / @htmlFontSize;
 	left: 0;
 	right: 0;
 
@@ -35,11 +113,19 @@
 	}
 
 	.intranet {
+		cursor: pointer;
 		position: relative;
 		.trng-border(transparent);
 
 		&:hover {
 			.trng-border;
+			a { color: #fff; }
+		}
+
+		&.active {
+			height: 35px;
+			.trng-border;
+			a { color: #fff; }
 		}
 
 		a {
@@ -118,6 +204,13 @@
 		float: left;
 
 		.language {
+
+			&.active-lang {
+				a {
+					background: #13100e;
+				}
+			}
+
 			a {
 				display: block;
 				padding: 5rem / @htmlFontSize 7rem / @htmlFontSize;

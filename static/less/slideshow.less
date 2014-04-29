@@ -1,44 +1,64 @@
 .slideshow {
 	position: relative;
-	margin: 50px 0 150px 0;
-	height: 800px;
+	margin: 40rem / @htmlFontSize 0 150rem / @htmlFontSize 0;
+	height: 800rem / @htmlFontSize;
+	min-width: @wrap-width;
 
 	.slide-title {
+		.transition(opacity, ease, 1s);
+		opacity: 0;
 		position: absolute;
-		left: 550px;
-		width: @wrap-width - 550px;
-		top: 135px;
-		color: #60b06a;
-		font-size: 48px;
+		left: 550rem / @htmlFontSize;
+		width: @wrap-width - 550rem / @htmlFontSize;
+		top: 135rem / @htmlFontSize;
+		color: #fff;
+		font-size: 48em / @htmlFontSize;
 		font-weight: 800;
 		text-transform: uppercase;
+		z-index: 10;
+	}
+
+	.slideshow-after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: @wrap-width;
+		width: 100%;
+		height: 100%;
+		background: url(../img/trans.png);
 	}
 }
 
 .fotorama-slide {
 	height: 100%;
 	background-size: cover;
+	background-position: center center;
 }
 
 .index-blocks {
 	position: absolute;
-	left: 300px;
-	top: 550px;
+	left: 290rem / @htmlFontSize;
+	top: 495rem / @htmlFontSize;
 	z-index: 10;
 
 	.index-block {
-		.transition;
+		.transition(all, ease, .25s);
+		opacity: 0;
 		position: relative;
 		top: 0;
-		// height: 280px;
-		width: 200px;
-		height: 60px;
+		// height: 280rem / @htmlFontSize;
+		width: 200rem / @htmlFontSize;
+		height: 60rem / @htmlFontSize;
 		float: left;
-		margin: 65px;
+		margin: 65rem / @htmlFontSize;
 		overflow: hidden;
 		z-index: 15;
 
 		&:hover {
+
+			.block-top {
+				.block-grad;
+			}
 
 			.block-hover {
 				opacity: 1;
@@ -46,24 +66,34 @@
 			}
 
 			.block-title { 
-				padding: 50px 15px 10px 75px !important;
+				padding: 50rem / @htmlFontSize 15rem / @htmlFontSize 10rem / @htmlFontSize 75rem / @htmlFontSize !important;
 				line-height: auto;
 			}
 
-			width: 280px;
-			margin: 25px;
-			top: 1px;
-			height: 340px;
-			-webkit-box-shadow: 7px 7px 0px 0px rgba(50, 50, 50, 0.3);
-			-moz-box-shadow:    7px 7px 0px 0px rgba(50, 50, 50, 0.3);
-			box-shadow:         7px 7px 0px 0px rgba(50, 50, 50, 0.3);
+			.block-text { 
+				opacity: 1;
+			}
+
+			.block-w-logo {
+				opacity: 1;
+			}
+
+			width: 280rem / @htmlFontSize;
+			margin: 25rem / @htmlFontSize;
+			top: 1rem / @htmlFontSize;
+			height: 340rem / @htmlFontSize;
+			-webkit-box-shadow: 7rem / @htmlFontSize 7rem / @htmlFontSize 0rem / @htmlFontSize 0rem / @htmlFontSize rgba(50, 50, 50, 0.3);
+			-moz-box-shadow:    7rem / @htmlFontSize 7rem / @htmlFontSize 0rem / @htmlFontSize 0rem / @htmlFontSize rgba(50, 50, 50, 0.3);
+			box-shadow:         7rem / @htmlFontSize 7rem / @htmlFontSize 0rem / @htmlFontSize 0rem / @htmlFontSize rgba(50, 50, 50, 0.3);
 		}
 
 		.block-top {
+			.transition;
 			position: relative;
 			background: #60b06a;
-			height: 280px;
+			height: 280rem / @htmlFontSize;
 			z-index: 20;
+			cursor: default;
 		}
 
 		.block-hover {
@@ -71,18 +101,30 @@
 			display: block;
 			position: relative;
 			background: #98c25a;
-			height: 60px;
+			height: 60rem / @htmlFontSize;
 			opacity: 0;
 			z-index: 19;
-			top: -60px;
+			top: -60rem / @htmlFontSize;
 			text-decoration: none;
 		}
 
 		.block-hv-text {
+			position: relative;
 			color: #fff;
-			font-size: 20px;
-			padding: 0 15px 0 75px;
-			line-height: 60px;
+			font-size: 18em / @htmlFontSize;
+			padding: 0 15rem / @htmlFontSize 0 75rem / @htmlFontSize;
+			line-height: 60rem / @htmlFontSize;
+
+			&:before {
+				content: "";
+				width: 13rem / @htmlFontSize;
+				height: 9rem / @htmlFontSize;
+				position: absolute;
+				top: 50%;
+				left: 50rem / @htmlFontSize;
+				margin-top: -5rem / @htmlFontSize;
+				background: url(../img/index_arrows.png);
+			}
 		}
 
 		.block-title {
@@ -90,17 +132,62 @@
 			display: inline-block;
 			color: #fff;
 			text-transform: uppercase;
-			font-size: 25px;
-			font-weight: 300;
+			font-size: 21em / @htmlFontSize;
+			font-weight: 400;
 			padding: 0 0 0 0;
-			line-height: 60px;
+			line-height: 60rem / @htmlFontSize;
 		}
 
 		.block-text {
+			.transition;
 			color: #fff;
-			font-size: 12px;
-			padding: 0 15px 0 75px;
+			width: 190rem / @htmlFontSize;
+			font-size: 12em / @htmlFontSize;
+			padding: 0 15rem / @htmlFontSize 0 75rem / @htmlFontSize;
 			opacity: 0;
 		}
+
+		.block-w-logo {
+			.transition;
+			width: 75rem / @htmlFontSize;
+			height: 70rem / @htmlFontSize;
+			background: url(../img/logo_white.png) no-repeat center top;
+			position: absolute;
+			top: 65rem / @htmlFontSize;
+			opacity: 0;
+
+			&:after {
+				content: attr(data-date);
+				position: absolute;
+				top: 55rem / @htmlFontSize;
+				color: #fff;
+				width: 100%;
+				text-align: center;
+			}
+
+			&.invest {
+				background: url(../img/invest.png) no-repeat center top;
+			}
+
+			&.contacts {
+				background: url(../img/map.png) no-repeat center top;
+			}
+		}
 	}
+}
+
+.slideshow-over {
+	.full-abs;
+	z-index: 10;
+	background: url(../img/index_over.png) no-repeat 0 0 e('/') auto 100%;
+
+	/*&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 100%;
+		width: 100%;
+		height: 100%;
+		background: url(../img/trans.png);
+	}*/
 }

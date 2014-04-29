@@ -24,16 +24,20 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
         <header class="header">
             <a href="#" class="logo"></a>
             <div class="header-content">
                 <div class="top-menu">
                     <ul>
                         <li class="intranet"><a href="#">Интранет</a></li>
+                        <div class="sign-up">
+                            <input type="text" placeholder="логин">
+                            <input type="text" placeholder="пароль">
+                            <a href="#" class="sign-up-btn">Войти</a>
+                        </div>
                         <ul class="sub-nav">
-                            <li class="sub-item"><a href="#">Карьера</a>
-                            <li class="sub-item"><a href="#">Тендеры</a>
+                            <li class="sub-item"><a href="career.html">Карьера</a>
+                            <li class="sub-item"><a href="tenders.html">Тендеры</a>
                             <li class="sub-item"><a href="#">Карта сайта</a>
                         </ul>
                     </ul>
@@ -43,13 +47,13 @@
                         <li class="nav-item"><a href="index.html">Главная</a>
                         <li class="nav-item"><a href="about.html">О компании</a>
                         <li class="nav-item"><a href="news.html">Пресс-центр</a>
-                        <li class="nav-item"><a href="#">Услуги</a>
+                        <li class="nav-item"><a href="services.html">Услуги</a>
                         <li class="nav-item"><a href="investors.html">Инвесторам</a></li>
                         <ul class="contacts">
                             <li class="nav-item"><a href="#">Контакты</a></li>
                             <ul class="languages">
-                                <li class="language"><a href="#">RUS</a>
-                                <li class="language"><a href="#">ENG</a>
+                                <li class="language active-lang"><a href="#">RU</a>
+                                <li class="language"><a href="#">EN</a>
                                 <li class="language"><a href="#">DE</a>
                             </ul>
                         </ul>
@@ -58,28 +62,29 @@
             </div>
         </header>
         <section class="slideshow">
+            <div class="slideshow-after"></div>
+            <div class="wrapper-abs"><div class="slideshow-over"></div></div>
             <div class="fotorama"   
                 data-width="100%"
                 data-height="800px" 
                 data-navposition="top" 
                 data-transition="crossfade" 
                 data-arrows="false"
-                data-loop="true">
+                data-loop="true"
+                data-nav="false">
 
-                <div class="fotorama-slide" style="background-image: url(img/index_back_filter.jpg)">
-                    <div class="slide-title">Новейшие технологии и безнес-подходы</div>
-                </div>
-                <div class="fotorama-slide" style="background-image: url(img/index_back.jpg)">
-                    <div class="slide-title">Новейшие технологии number 2</div>
-                </div>
+                <div class="fotorama-slide" style="background-image: url(img/index_back.jpg)"> </div>
+                <div class="fotorama-slide" style="background-image: url(img/index_back.jpg)"> </div>
 
             </div>
+            <div class="slide-title">Инвестиции в уникальные технологии</div>
             <div class="index-blocks">
                 <div class="index-block">
                     <div class="block-top">
+                        <div class="block-w-logo" data-date="27.03"></div>
                         <div class="block-title">Новости</div>
                         <div class="block-text">
-                            Веб-интегратор DEFA представляет новый сайт для международного аэропорта Внуково. Столь сложный проект для нас - лучший показатель профессионализма и слаженной работы команды!
+                            Руководство компании приняло участие в программе повышения квалификации  руководителей  mini MBA
                         </div>
                     </div>
                     <a href="#" class="block-hover">
@@ -88,24 +93,29 @@
                 </div>
                 <div class="index-block">
                     <div class="block-top">
+                        <div class="block-w-logo invest"></div>
                         <div class="block-title">Инвесторам</div>
                         <div class="block-text">
-                            Веб-интегратор DEFA представляет новый сайт для международного аэропорта Внуково. Столь сложный проект для нас - лучший показатель профессионализма и слаженной работы команды!
+                            Предлагаем Вам принять участие в реализации инвестиционного проекта «Успенский перерабатывающий комплекс».
                         </div>
                     </div>
                     <a href="#" class="block-hover">
-                        <div class="block-hv-text">Все новости УПК</div>
+                        <div class="block-hv-text">Подробнее</div>
                     </a>
                 </div>
                 <div class="index-block">
                     <div class="block-top">
+                        <div class="block-w-logo contacts"></div>
                         <div class="block-title">Контакты</div>
                         <div class="block-text">
-                            Веб-интегратор DEFA представляет новый сайт для международного аэропорта Внуково. Столь сложный проект для нас - лучший показатель профессионализма и слаженной работы команды!
+                            г. Ростов-на-Дону,<br>
+ул. Текучева, 162, офис 302<br>
+тел. +7 (863) 280-66-56, <br>
+E-mail: rdo2009@mail.ru
                         </div>
                     </div>
                     <a href="#" class="block-hover">
-                        <div class="block-hv-text">Все новости УПК</div>
+                        <div class="block-hv-text">На карте</div>
                     </a>
                 </div>
                 <!-- <div class="index-block" style="visibility: hidden;"></div> -->
@@ -116,8 +126,8 @@
             <div class="footer-logo"></div>
             <div class="footer-copy">ООО «Успенский перерабатывающий комплекс»</div>
             <ul class="sub-nav">
-                <li class="sub-item"><a href="#">Карьера</a>
-                <li class="sub-item"><a href="#">Тендеры</a>
+                <li class="sub-item"><a href="career.html">Карьера</a>
+                <li class="sub-item"><a href="tenders.html">Тендеры</a>
                 <li class="sub-item"><a href="#">Карта сайта</a>
             </ul>
             <a href="#" class="grphm-copy">Сделано в ГРАФЕМА</a>
