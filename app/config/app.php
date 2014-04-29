@@ -9,10 +9,10 @@ return array(
 	'use_css_local' => TRUE,
 	'use_scripts_local' => TRUE,
 	
-	'default_page_title' => 'Monety PRO',
+	'default_page_title' => 'УПК',
 	
 	'debug' => TRUE,
-	'url' => 'http://monety.pro/',
+	'url' => 'http://upk.ru/',
 	'timezone' => 'UTC',
 	'locale' => 'ru',
 	'key' => 'TSHZVixcD1cLGLSTObouk6Tmo3ChmyxD',

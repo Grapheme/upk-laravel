@@ -8,7 +8,7 @@ class UserTableSeeder extends Seeder{
 		User::create(array(
 			'name'=>'Администратор',
 			'surname'=>'',
-			'email'=>'admin@monety.pro',
+			'email'=>'admin@upk.ru',
 			'active'=>1,
 			'password'=>Hash::make('123456'),
 			'photo'=>'img/avatars/male.png',

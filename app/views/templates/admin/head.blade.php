@@ -1,4 +1,5 @@
-<meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>{{{(isset($page_title))?$page_title:'Панель администрирования'}}}</title>
 	<meta name="description" content="{{{(isset($page_description))?$page_description:''}}}">
 	<meta name="keywords" content="{{{(isset($page_keywords))?$page_keywords:''}}}">
