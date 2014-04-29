@@ -8,10 +8,10 @@ class DatabaseSeeder extends Seeder {
 		$this->call('UserTableSeeder');
 		$this->call('GroupsTableSeeder');
 		$this->call('RolesTableSeeder');
+		$this->call('TablesSeeder');
 		$this->call('ModulesTableSeeder');
 		$this->call('PermissionsTableSeeder');
 		$this->call('TemplatesSeeder');
-		$this->call('TablesSeeder');
 		$this->call('ProductsAttributesTableSeeder');
 	}
 
