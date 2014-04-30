@@ -13,7 +13,7 @@
 	<![endif]-->
 	@include('templates.default.header')
 	<main class="container investors">
-		<h1>Заявка на доступ к документам</h1>
+		<h1>{{ trans('interface.PAGES_FOR_REQUEST_ACCESS') }}</h1>
 		<div class="content">
 			@if(isset($content))
 				{{ $content }}
@@ -22,23 +22,23 @@
 			{{ Form::open(array('route'=>'request-to-access','role'=>'form','id'=>'request-to-access-form')) }}
 				<table class="apply-table">
 					<tr class="apply-row">
-						<td><label for="name">ФИО контактного лица</label></td>
+						<td><label for="name">{{ trans('interface.FORM_REQUEST_FOR_ACCESS_LABEL_FIO') }}</label></td>
 						<td><input type="text" name="name" id="name"></input></td>
 					</tr>
 						<tr class="apply-row">
-						<td><label for="organisation">Название организации</label></td>
+						<td><label for="organisation">{{ trans('interface.FORM_REQUEST_FOR_ACCESS_LABEL_ORGANISATION') }}</label></td>
 						<td><input type="text" name="organisation" id="organisation"></input></td>
 					</tr>
 					<tr class="apply-row">
-						<td><label for="email">Адрес@электронной.почты</label></td>
+						<td><label for="email">{{ trans('interface.FORM_REQUEST_FOR_ACCESS_LABEL_EMAIL') }}</label></td>
 						<td><input type="text" name="email" id="email"></input></td>
 					</tr>
 					<tr class="apply-row">
-						<td><label for="phone">Контактный телефон</label></td>
+						<td><label for="phone">{{ trans('interface.FORM_REQUEST_FOR_ACCESS_LABEL_PHONE') }}</label></td>
 						<td><input type="text" name="phone" id="phone"></input></td>
 					</tr>
 				</table>
-			<button class="apply-btn">Отправить заявку</button>
+			<button class="apply-btn">{{ trans('interface.FORM_REQUEST_FOR_ACCESS_SUBMIT') }}</button>
 			{{ Form::close() }}
 			</div>
 		</div>
