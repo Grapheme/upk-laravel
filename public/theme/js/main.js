@@ -48,7 +48,34 @@ $(document).click(function(){
 
 function runFormValidation(){
 	
-	var SecureSignUp = $("#signin-secure-page-form").validate({
+	var SecureSignUp1 = $("#signin-secure-page-form-1").validate({
+		rules:{
+			login: {required : true},
+			password : {required : true, minlength : 6},
+		},
+		messages : {
+			login : {required : 'Введите Ваше логин'},
+			password : {required : 'Введите пароль',minlength : 'Минимальная длина пароля 6 символа'},
+		},
+		errorPlacement : function(error, element) {
+			error.insertAfter(element);
+		},
+		submitHandler: function(form) {
+			var options = {target: null,dataType:'json',type:'post'};
+			options.success = function(response,status,xhr,jqForm){
+				if(response.status){
+					$(form).replaceWith(response.responseText);
+					if(response.redirect !== false){
+						BASIC.RedirectTO(response.redirect);
+					}
+				}else{
+					$(form).find('input').removeClass('valid').addClass('invalid');
+				}
+			}
+			$(form).ajaxSubmit(options);
+		}
+	});
+	var SecureSignUp2 = $("#signin-secure-page-form-2").validate({
 		rules:{
 			login: {required : true},
 			password : {required : true, minlength : 6},
