@@ -34,8 +34,8 @@
 				<ul class="contacts">
 					<li class="nav-item"><a href="{{ url('contacts') }}">{{ trans('interface.MENU_CONTACTS') }}</a></li>
 					<ul class="languages">
-						 <li class="language"><a href="#">RUS</a>
-						<li class="language"><a href="#">ENG</a>
+						 <li class="language"><a href="#">RU</a>
+						<li class="language"><a href="#">EN</a>
 						<li class="language"><a href="#">DE</a>
 					</ul>
 				</ul>
