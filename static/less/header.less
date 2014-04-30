@@ -136,10 +136,10 @@
 			padding: 0 25rem / @htmlFontSize 0 15rem / @htmlFontSize;
 
 			&:before {
-				content: "";
+				content: "";
+				font: normal 1.2em "fontawesome";
 				width: 13rem / @htmlFontSize;
 				height: 13rem / @htmlFontSize;
-				background: url(../img/intranet.png);
 				display: inline-block;
 				margin: 0 5rem / @htmlFontSize 0 0;
 			}
@@ -206,10 +206,15 @@
 		.language {
 
 			&.active-lang {
-				a {
-					background: #13100e;
-				}
-			}
+		        &:hover,
+		        a {
+		        	background: #555;
+		            &:hover {
+		                background: #555;
+		            }
+		            cursor: default;
+		        }  
+		    }
 
 			a {
 				display: block;

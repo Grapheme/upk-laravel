@@ -112,5 +112,31 @@ class GlobalController extends \BaseController {
 		endif;
 		return FALSE;
 	}
-
+	
+	/*
+	* Функция принимает данные формы заявки на доступ и высылает письмо по указанному адересу
+	*/
+	
+	public function postRequestToAccess(){
+		
+		$json_request = array('status'=>FALSE,'responseText'=>'','responseErrorText'=>'');
+		if(Request::ajax()):
+			$rules = array('name'=>'required','organisation'=>'required','email'=>'required|email','phone'=>'required');
+			$validator = Validator::make(Input::all(),$rules);
+			if($validator->passes()):
+				Mail::send('emails.request-to-access',array('post'=>Input::all()),function($message){
+					$message->from('noreply@uspensky-pk.ru','УПК');
+					$message->to('vkharseev@gmail.com')->subject('УПК - Заявка на доступ к документам');
+				});
+				$json_request['responseText'] = 'Заявка успешно отправлена.';
+				$json_request['status'] = TRUE;
+			else:
+				$json_request['responseText'] = 'Неверно заполнены поля';
+				$json_request['responseErrorText'] = $validator->messages()->all();
+			endif;
+		else:
+			return App::abort(404);
+		endif;
+		return Response::json($json_request,200);
+	}
 }

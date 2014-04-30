@@ -119,6 +119,8 @@ Route::group(array('before'=>'auth','prefix'=>Config::get('app.local')),function
 	/*
 	| Роутеры доступные для гостей и авторизованных пользователей
 	*/
+Route::post('request-to-access',array('as'=>'request-to-access','uses'=>'GlobalController@postRequestToAccess'));
+	
 Route::get('login',array('before'=>'login','as'=>'login','uses'=>'GlobalController@loginPage'));
 Route::get('logout',array('before'=>'auth','as'=>'logout','uses'=>'GlobalController@logout'));
 
