@@ -1,10 +1,12 @@
 <footer class="footer">
 	<div class="footer-logo"></div>
-	<div class="footer-copy">ООО «Успенский перерабатывающий комплекс»</div>
+	<div class="footer-copy">{{ trans('interface.FOOTER_COPYRIGHT') }}</div>
 	<ul class="sub-nav">
-		<li class="sub-item"><a href="{{ url('career') }}">Карьера</a>
-		<li class="sub-item"><a href="{{ url('tenders') }}">Тендеры</a>
-		<li class="sub-item"><a href="{{ url('map') }}">Карта сайта</a>
+		<li class="sub-item"><a href="{{ url('career') }}">{{ trans('interface.MENU_CAREER') }}</a>
+		<li class="sub-item"><a href="{{ url('tenders') }}">{{ trans('interface.MENU_TENDERS') }}</a>
+		<li class="sub-item"><a href="{{ url('sitemap') }}">{{ trans('interface.MENU_SITEMAP') }}</a>
 	</ul>
-	<a href="http://grapheme.ru/" class="grphm-copy">Сделано в ГРАФЕМА</a>
+	<div class="dev">
+		{{ trans('interface.FOOTER_MAKEIN') }}
+	</div>
 </footer>

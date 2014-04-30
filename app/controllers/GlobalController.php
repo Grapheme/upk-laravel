@@ -50,7 +50,7 @@ class GlobalController extends \BaseController {
 							endif;
 						endif;
 						Mail::send('emails.auth.signup',array('account'=>$account),function($message){
-							$message->from('noreply@monety.pro','Monety.pro');
+							$message->from('uspensky.pk@gmail.com','Monety.pro');
 							$message->to(Input::get('email'))->subject('Monety.pro - регистрация');
 						});
 						$json_request['responseText'] = 'Вы зарегистрированы. Мы отправили на email cсылку для активации аккаунта.';
@@ -125,8 +125,8 @@ class GlobalController extends \BaseController {
 			$validator = Validator::make(Input::all(),$rules);
 			if($validator->passes()):
 				Mail::send('emails.request-to-access',array('post'=>Input::all()),function($message){
-					$message->from('noreply@uspensky-pk.ru','УПК');
-					$message->to('vkharseev@gmail.com')->subject('УПК - Заявка на доступ к документам');
+					$message->from('uspensky.pk@gmail.com','УПК');
+					$message->to('support@grapheme.ru')->subject('УПК - Заявка на доступ к документам');
 				});
 				$json_request['responseText'] = 'Заявка успешно отправлена.';
 				$json_request['status'] = TRUE;

@@ -115,7 +115,7 @@ h1 {
 main {
     position: relative;
     width: @wrap-width;
-    min-height: 75%;
+    min-height: 29rem;
     margin: 132rem / @htmlFontSize 0 112rem / @htmlFontSize;
 
     background: url(../img/bg.png) no-repeat;
@@ -629,6 +629,27 @@ address {
 .intranet-desc {
     padding-top: 25px;
 }
+.sitemap {
+    li { 
+        ul {
+            padding: 0 0 0 2rem;
+        }       
+        a {
+            display: block;
+            padding: .3rem 0 .3rem .5rem;
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+                opacity: .75;
+            }
+        }
+        &:nth-child(even) {
+            background: lighten(@colorGreen, 30%)
+        }
+    }
+}
+
 
 /* ==========================================================================
    Helper classes

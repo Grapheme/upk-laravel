@@ -7,7 +7,7 @@ return array(
 	'port' => 587,
 	'from' => array('address' => null, 'name' => null),
 	'encryption' => 'tls',
-	'username' => 'konferum.ru@gmail.com',
+	'username' => 'uspensky.pk@gmail.com',
 	'password' => 'hf5msdfl34',
 	'sendmail' => '/usr/sbin/sendmail -bs',
 	'pretend' => false,
