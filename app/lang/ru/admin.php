@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 return array(
 
@@ -20,4 +20,7 @@ return array(
 	'categories' => 'Категории продукции',
 	'products' => 'Продукция',
 	'manufacturers' => 'Производители',
+
+	'i18n_news' => 'Новости (мультияз.)',
+	'i18n_pages' => 'Страницы (мультияз.)',
 );

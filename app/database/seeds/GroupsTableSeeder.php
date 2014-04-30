@@ -4,7 +4,7 @@ class GroupsTableSeeder extends Seeder{
 
 	public function run(){
 		
-		DB::table('groups')->truncate();
+		#DB::table('groups')->truncate();
 		Group::create(array(
 			'name' => 'admin',
 			'desc' => 'Администраторы',

@@ -1,10 +1,15 @@
 <?php
 
 class HomeController extends BaseController {
-	
-	public function showPage($url = ''){
-		
+
+    public function showPage($url = ''){
+
 		return sPage::show($url);
+	}
+
+	public function showI18nPage($url = ''){
+
+		return sI18nPage::show($url);
 	}
 
 	/*
@@ -13,7 +18,7 @@ class HomeController extends BaseController {
 	|--------------------------------------------------------------------------
 	*/
 	public function showNews($url){
-		
+
 		if(!Allow::enabled_module('news')):
 			return App::abort(404);
 		endif;
@@ -27,14 +32,14 @@ class HomeController extends BaseController {
 			return App::abort(404,'Отсутсвует шаблон: templates/'.$news->template);
 		endif;
 	}  // Функция для просмата одной новости
-	
+
 	/*
 	|--------------------------------------------------------------------------
 	| Раздел "Статьи"
 	|--------------------------------------------------------------------------
 	*/
 	public function showArticle($url){
-		
+
 		if(!Allow::enabled_module('articles')):
 			return App::abort(404);
 		endif;
@@ -48,14 +53,14 @@ class HomeController extends BaseController {
 			return App::abort(404,'Отсутсвует шаблон: templates/'.$article->template);
 		endif;
 	}  // Функция для просмата одной новости
-	
+
 	/*
 	|--------------------------------------------------------------------------
 	| Раздел "Каталог"
 	|--------------------------------------------------------------------------
 	*/
 	public function showProduct($product_url){
-		
+
 		$url = explode('-',$product_url);
 		$product_id = array_pop($url);
 		if(!is_numeric($product_id)):
@@ -81,7 +86,7 @@ class HomeController extends BaseController {
 			endforeach;
 			$product->attributes = $productAttributes;
 			$product->categories = $product->categories()->get()->toArray();
-			
+
 			$module = Modules::where('url','catalogs')->first();
 			$product->images = Image::where('module_id',$module->id)->where('item_id',$product->id)->get();
 			return View::make('templates.'.$product->template,array('product'=>$product,'page_title'=>$product->seo_title,'page_description'=>$product->seo_description,

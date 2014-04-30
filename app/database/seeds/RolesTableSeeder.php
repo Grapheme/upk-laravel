@@ -4,7 +4,7 @@ class RolesTableSeeder extends Seeder{
 
 	public function run(){
 		
-		DB::table('roles')->truncate();
+		#DB::table('roles')->truncate();
 		Role::create(array(
 			'name' => 'news',
 			'desc' => 'Управление новостими',

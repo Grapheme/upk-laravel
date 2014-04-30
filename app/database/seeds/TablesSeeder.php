@@ -4,24 +4,24 @@ class TablesSeeder extends Seeder{
 
 	public function run(){
 		
-		DB::table('group_role')->truncate();
-		DB::table('group_user')->truncate();
-		DB::table('modules')->truncate();
-		DB::table('permissions')->truncate();
+		#DB::table('group_role')->truncate();
+		#DB::table('group_user')->truncate();
+		#DB::table('modules')->truncate();
+		#DB::table('permissions')->truncate();
 		
-		DB::table('templates')->truncate();
-		DB::table('languages')->truncate();
-		DB::table('languages')->truncate();
+		#DB::table('templates')->truncate();
+		#DB::table('languages')->truncate();
+		#DB::table('languages')->truncate();
 		
-		DB::table('products_attributes_group')->truncate();
-		DB::table('products_attributes')->truncate();
+		#DB::table('products_attributes_group')->truncate();
+		#DB::table('products_attributes')->truncate();
 		
 		Language::create(array(
 			'code' => 'ru',
 			'name' => 'Русский',
 			'default' => 1,
 		));
-		DB::table('settings')->truncate();
+		#DB::table('settings')->truncate();
 		Settings::create(array(
 			'id' => 1,
 			'name' => 'language',
@@ -59,6 +59,9 @@ class TablesSeeder extends Seeder{
 			$group->roles()->attach($role->id);
 		endif;
 		if($role = Role::where('name','galleries')->first()):
+			$group->roles()->attach($role->id);
+		endif;
+		if($role = Role::where('name','i18n_news')->first()):
 			$group->roles()->attach($role->id);
 		endif;
 	}
