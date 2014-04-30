@@ -32,7 +32,7 @@ class GroupsController extends BaseController {
 		$group_id = Input::get('group_id');
 		$role_id = Input::get('role_id');
 
-		$group = group::find($group_id);
+		$group = Group::find($group_id);
 		$group->roles()->attach($role_id);
 	}
 
@@ -41,7 +41,7 @@ class GroupsController extends BaseController {
 		$group_id = Input::get('group_id');
 		$role_id = Input::get('role_id');
 		
-		$group = group::find($group_id);
+		$group = Group::find($group_id);
 		$group->roles()->detach($role_id);
 	}
 
@@ -49,7 +49,7 @@ class GroupsController extends BaseController {
 		
 		$input = Input::all();
 
-		$v = Validator::make($input, group::$rules);
+		$v = Validator::make($input, Group::$rules);
 		if($v->passes())
 		{
 			$this->group->create($input);
