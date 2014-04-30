@@ -9,10 +9,10 @@
 			<ul>
 			@if(Auth::guest())
 				<li class="intranet"><a href="javascript:void(0);">Интранет</a></li>
-				{{ Form::open(array('route'=>'signin','role'=>'form','class'=>'sign-up','id'=>'signin-secure-page-form')) }}
+				{{ Form::open(array('route'=>'signin','role'=>'form','class'=>'sign-up','id'=>'signin-secure-page-form-1')) }}
 					<input type="text" name="login" placeholder="логин">
 					<input type="password" name="password" placeholder="пароль">
-					<button type="submit" autocomplete="off" class="sign-up-btn">Войти</button>
+					<button type="submit" class="sign-up-btn">Войти</button>
 				{{ Form::close() }}
 			@else
 				<li class="intranet"><a href="{{ url(Config::get('app-default.secure_page_link')) }}">Интранет</a></li>
