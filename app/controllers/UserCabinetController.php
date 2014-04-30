@@ -11,5 +11,11 @@ class UserCabinetController extends BaseController {
 		
 		return View::make('user-cabinet.dashboard');
 	}
-
+	
+	public function getSecurePageIntranet(){
+		
+		$url = Config::get('app-default.secure_page_link');
+		
+		return sPage::show($url);
+	}
 }

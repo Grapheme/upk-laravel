@@ -11,7 +11,7 @@ class GlobalController extends \BaseController {
 		
 		$json_request = array('status'=>FALSE,'responseText'=>'','responseErrorText'=>'','redirect'=>FALSE);
 		if(Request::ajax()):
-			$rules = array('login'=>'required|email','password'=>'required|alpha_num|between:6,50');
+			$rules = array('login'=>'required','password'=>'required|alpha_num|between:6,50');
 			$validator = Validator::make(Input::all(),$rules);
 			if($validator->passes()):
 				if(Auth::attempt(array('email'=>Input::get('login'),'password'=>Input::get('password'),'active'=>1),(bool)Input::get('remember'))):
@@ -112,4 +112,5 @@ class GlobalController extends \BaseController {
 		endif;
 		return FALSE;
 	}
+
 }

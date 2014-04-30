@@ -7,12 +7,16 @@
 	<div class="header-content">
 		<div class="top-menu">
 			<ul>
-				<li class="intranet"><a href="#">Интранет</a></li>
-				<div class="sign-up">
-					<input type="text" placeholder="логин">
-					<input type="text" placeholder="пароль">
-					<a href="#" class="sign-up-btn">Войти</a>
-				</div>
+			@if(Auth::guest())
+				<li class="intranet"><a href="javascript:void(0);">Интранет</a></li>
+				{{ Form::open(array('route'=>'signin','role'=>'form','class'=>'sign-up','id'=>'signin-secure-page-form')) }}
+					<input type="text" name="login" placeholder="логин">
+					<input type="password" name="password" placeholder="пароль">
+					<button type="submit" autocomplete="off" class="sign-up-btn">Войти</button>
+				{{ Form::close() }}
+			@else
+				<li class="intranet"><a href="{{ url(Config::get('app-default.secure_page_link')) }}">Интранет</a></li>
+			@endif
 				<ul class="sub-nav">
 					<li class="sub-item"><a href="{{ url('career') }}">Карьера</a></li>
 					<li class="sub-item"><a href="{{ url('tenders') }}">Тендеры</a></li>

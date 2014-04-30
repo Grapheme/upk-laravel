@@ -22,6 +22,7 @@ App::error(function(Exception $exception, $code){
 });
 
 Route::filter('auth', function(){
+	
 	if(Auth::guest()):
 		return App::abort(404);
 	endif;

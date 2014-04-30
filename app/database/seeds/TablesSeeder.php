@@ -30,6 +30,8 @@ class TablesSeeder extends Seeder{
 		
 		$admin = User::find(1);
 		$admin->groups()->attach(1);
+		$admin = User::find(2);
+		$admin->groups()->attach(2);
 		
 		//Роли для группы Администраторы
 		$group = Group::find(1);

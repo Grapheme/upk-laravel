@@ -44,6 +44,7 @@ Route::post('redactor/upload','DownloadsController@redactorUploadImage');
 	*/
 
 Route::group(array('before'=>'auth','prefix'=>$prefix),function(){
+	
 	Route::controller('pages', 'PagesController');
 	Route::controller('galleries', 'GalleriesController');
 	Route::controller('downloads', 'DownloadsController');
@@ -105,6 +106,14 @@ Route::group(array('before'=>'guest','prefix'=>Config::get('app.local')),functio
 	Route::post('signin',array('as'=>'signin','uses'=>'GlobalController@signin'));
 	Route::post('signup',array('as'=>'signup','uses'=>'GlobalController@signup'));
 	Route::get('activation',array('as'=>'activation','uses'=>'GlobalController@activation'));
+});
+	
+	/*
+	| Роутеры доступные только для авторизованных пользователей "UPK"
+	*/
+	
+Route::group(array('before'=>'auth','prefix'=>Config::get('app.local')),function(){
+	Route::get('intranet','UserCabinetController@getSecurePageIntranet');
 });
 
 	/*
