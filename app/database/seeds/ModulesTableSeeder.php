@@ -63,6 +63,16 @@ class ModulesTableSeeder extends Seeder{
 			'on' => 1,
 			'permissions'=> '[]'
 		));
+		Modules::create(array(
+			'url' => 'i18n_news',
+			'on' => 1,
+			'permissions'=> '[1,2,3,4,5,6]'
+		));
+		Modules::create(array(
+			'url' => 'i18n_pages',
+			'on' => 1,
+			'permissions'=> '[1,2,3,4,5,6]'
+		));
 
 	}
 

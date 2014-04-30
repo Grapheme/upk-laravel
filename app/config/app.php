@@ -8,13 +8,14 @@ return array(
 	'use_googlefonts' => TRUE,
 	'use_css_local' => TRUE,
 	'use_scripts_local' => TRUE,
-	
+
 	'default_page_title' => 'УПК',
-	
+
 	'debug' => TRUE,
 	'url' => 'http://upk.ru/',
 	'timezone' => 'UTC',
 	'locale' => 'ru',
+	'locales' => array('en', 'ru', 'de'),
 	'key' => 'TSHZVixcD1cLGLSTObouk6Tmo3ChmyxD',
 	'providers' => array(
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',

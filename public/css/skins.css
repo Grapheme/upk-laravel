@@ -460,7 +460,7 @@ margin-left: 0;
 .redactor_box.redactor_box_fullscreen {
 	max-width: none;
 }
-#advanced .redactor_redactor{
+#advanced .redactor_redactor, .redactor_redactor_150{
 	
 	height: 150px !important;
 }
