@@ -6,7 +6,7 @@
 <main class="container investors">
 	<h1>{{$news->title}}</h1>
 	<div class="content">
-		<p><span class="glyphicon glyphicon-time"></span> {{ myDateTime::getNewsDate($news->created_at) }}</p>
+		<p><span class="glyphicon glyphicon-time"></span> {{ myDateTime::getDayAndMonth($news->created_at) }}</p>
 			<div>
 				{{ sPage::content_render($news->content) }}
 			</div>

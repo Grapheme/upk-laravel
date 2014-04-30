@@ -46,14 +46,6 @@ class myDateTime {
 		endif;
 	}
 
-	public static function getNewsDate($date_time){
-		
-		$list = preg_split("/-/",$date_time);
-		$pattern = "/(\d+)(-)(\w+)(-)(\d+) (\d+)(:)(\d+)(:)(\d+)/i";
-		$replacement = "\$5/$3/$1";
-		return preg_replace($pattern, $replacement,$date_time);
-	}
-	
 	public static function getDayAndMonth($date_time){
 		
 		$list = preg_split("/-/",$date_time);
