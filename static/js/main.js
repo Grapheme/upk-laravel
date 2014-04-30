@@ -44,3 +44,7 @@ $(document).click(function(){
 	$('.intranet').removeClass('active');
 	$('.sign-up').removeClass('active');
 });
+
+$('.press-btn').click( function(){
+	$(this).parent().find('.articles').toggleClass('active');
+});

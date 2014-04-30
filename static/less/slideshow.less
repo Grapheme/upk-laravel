@@ -12,7 +12,7 @@
 		width: @wrap-width - 550rem / @htmlFontSize;
 		top: 135rem / @htmlFontSize;
 		color: #fff;
-		font-size: 48em / @htmlFontSize;
+		font-size: 42em / @htmlFontSize;
 		font-weight: 800;
 		text-transform: uppercase;
 		z-index: 10;
@@ -174,11 +174,20 @@
 			.transition;
 			width: 75rem / @htmlFontSize;
 			height: 70rem / @htmlFontSize;
-			background: url(../img/logo_white.png) no-repeat center top;
+			//background: url(../img/logo_white.png) no-repeat center top;
 			position: absolute;
 			top: 65rem / @htmlFontSize;
 			opacity: 0;
+			
+			&:before {
+				content: "";
+				position: absolute;
+				left: 1.3rem;
 
+				color: #FFFFFF;    
+			    font-family: "fontawesome";
+			    font-size: 3em;    
+			}
 			&:after {
 				content: attr(data-date);
 				position: absolute;
@@ -188,12 +197,14 @@
 				text-align: center;
 			}
 
-			&.invest {
-				background: url(../img/invest.png) no-repeat center top;
+			&.invest:before {
+				content: "";
+				left: 1.3rem;
 			}
 
-			&.contacts {
-				background: url(../img/map.png) no-repeat center top;
+			&.contacts:before {
+				content: "";
+				left: 2rem;
 			}
 		}
 	}

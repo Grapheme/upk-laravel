@@ -45,6 +45,11 @@ $(document).click(function(){
 	$('.sign-up').removeClass('active');
 });
 
+$('.press-btn').click( function(){
+	$(this).parent().find('.articles').toggleClass('active');
+});
+
+
 
 function runFormValidation(){
 	
@@ -95,6 +100,35 @@ function runFormValidation(){
 					if(response.redirect !== false){
 						BASIC.RedirectTO(response.redirect);
 					}
+				}else{
+					$(form).find('input').removeClass('valid').addClass('invalid');
+				}
+			}
+			$(form).ajaxSubmit(options);
+		}
+	});
+	var RequestToAccess = $("#request-to-access-form").validate({
+		rules:{
+			name: {required : true},
+			organisation: {required : true},
+			email: {required : true,email : true},
+			phone : {required : true},
+		},
+		messages : {
+			name : {required : 'Введите Ваше имя'},
+			organisation : {required : 'Введите название организации'},
+			email : {required : 'Введите Email адрес', email : 'Введите верный Email адрес'},
+			phone : {required : 'Введите контактный телефон'},
+		},
+		errorPlacement : function(error, element) {
+			error.insertAfter(element);
+		},
+		submitHandler: function(form) {
+			var options = {target: null,dataType:'json',type:'post'};
+			options.success = function(response,status,xhr,jqForm){
+				if(response.status){
+					$('.content').find('.desc').html(response.responseText);
+					$(form).remove();
 				}else{
 					$(form).find('input').removeClass('valid').addClass('invalid');
 				}

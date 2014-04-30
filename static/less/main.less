@@ -282,10 +282,13 @@ main {
         color: @colorGreenDark;
         font-size: 20em / @htmlFontSize;
     }
+    .more-desc {
+        font-size: 13em / @htmlFontSize;
+    }
 
     h2 {
         .uppercase;
-        margin: 0 0 20rem / @htmlFontSize;
+        margin: 32rem / @htmlFontSize 0 0;
         font-size: 20em / @htmlFontSize;
     }
     
@@ -293,9 +296,6 @@ main {
         width: 75%;
     }
 
-    .hist-item {
-        margin: 0 0 2rem;
-    }
     .hist-item-cont {
         position: relative;
 
@@ -325,7 +325,7 @@ main {
         }
         h3 {
             margin: 0;
-            padding: 20rem / @htmlFontSize 0 20rem / @htmlFontSize 94rem / @htmlFontSize;
+            padding: 25rem / @htmlFontSize 0 15rem / @htmlFontSize 94rem / @htmlFontSize;
 
             font-size: 14em / @htmlFontSize;
         }
@@ -344,12 +344,67 @@ main {
     width: @wrap-width;
     padding: 0 245px;
 
+    .press-about-us {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 184px;
+        padding: .5rem 0 1rem;
+        background: url(../img/triangle.jpg) repeat-x 0 bottom #00AE61;
+
+        .press-btn {
+            padding: .5rem 0 .5em;
+            text-align: center;
+            font-size: 20em / @htmlFontSize;
+
+            color: #fff;
+            cursor: pointer;
+        }
+        .articles {
+            .transition;
+            height: 0;
+            overflow: hidden;
+
+            &.active {
+                height: auto;
+            }
+        }
+        .art-item {
+            position: relative;
+            font-size: 12em / @htmlFontSize;
+            margin: 0 0 1rem;
+            padding: 0 .5rem 0 2.5rem;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: .7rem;
+                display: inline-block;
+                width: 1.3rem;
+                height: 1.3rem;
+                margin: 0 .5rem 0 0;
+
+                background: url(../img/logo_white.png) 0 0 e('/') 100% 100% no-repeat;
+                //vertical-align: middle;
+            }
+            &:after {
+                content: attr(data-date);
+                display: block;
+                color: #fff;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
     .news-list {
         padding: 0 0 0 94rem / @htmlFontSize;
 
         h3 {
             position: relative;
-            .uppercase;            
+            .uppercase;
+            margin: 32rem / @htmlFontSize 0 8rem / @htmlFontSize;        
             padding: 0 0 0 73rem / @htmlFontSize;
             color: @colorGreen;
             font-size: 26em / @htmlFontSize;        
@@ -522,6 +577,58 @@ address {
     height: 400px;
 }
 
+.apply-form {
+    padding-left: 35px;
+
+    .apply-table {
+         margin: 0 0 35px;
+    }
+
+    .apply-row {
+        height: 40px;
+
+        label {
+            padding: 0 25px 0 0;
+            font-size: 12px;
+            font-style: italic;
+            color: #aaa;
+        }
+
+        input {
+            border: 1px solid #808080;
+        }
+    }
+
+    .apply-btn {
+        .transition;
+        position: relative;
+        background: #00B366;
+        color: #fff;
+        font: 14px 'Open Sans',sans-serif;
+        text-transform: uppercase;
+        border: 0 none;
+        line-height: 55px;
+        padding: 0 15px 0 60px;
+
+        &:hover {
+            background: @colorGreenDark;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(../img/logo_white.png) no-repeat center center;
+            width: 60px;
+            height: 100%;
+        }
+    }
+}
+
+.intranet-desc {
+    padding-top: 25px;
+}
 
 /* ==========================================================================
    Helper classes

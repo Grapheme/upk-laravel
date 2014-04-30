@@ -26,11 +26,20 @@
 		.trng-line(38px);
 	}
 
-	.grphm-copy {
+	.dev {
 		font-size: 12em / @htmlFontSize;
 		float: right;
 		margin-right: 25rem / @htmlFontSize;
-		text-decoration: none;
 		color: #000;
-	}
+
+		.grphm-copy {
+			.transition;
+			text-decoration: none;
+			color: #000;
+
+			&:hover {
+				opacity: .65;
+			}
+		}
+	}	
 }
