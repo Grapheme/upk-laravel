@@ -13,7 +13,7 @@ class GroupsTableSeeder extends Seeder{
 		Group::create(array(
 			'name' => 'user',
 			'desc' => 'Пользователи',
-			'dashboard' => 'dashboard'
+			'dashboard' => Config::get('app-default.secure_page_link')
 		));
 		Group::create(array(
 			'name' => 'moderator',
@@ -21,5 +21,4 @@ class GroupsTableSeeder extends Seeder{
 			'dashboard' => 'moderator'
 		));
 	}
-
 }
