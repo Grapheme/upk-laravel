@@ -13,17 +13,17 @@
 	<![endif]-->
 	@include('templates.default.header')
 	<main class="container investors">
-		<h1>Инвесторам</h1>
+		<h1>{{ trans('interface.PAGES_FOR_INVESTORS') }}</h1>
 		<div class="content">
 			@if(isset($content))
 				{{ $content }}
 			@endif
 			@if(Auth::guest())
 				{{ Form::open(array('route'=>'signin','role'=>'form','class'=>'auth-form','id'=>'signin-secure-page-form-2')) }}
-					<div class="form-header">Авторизация</div>
-					<input type="text" name="login" placeholder="логин">
-					<input type="password" name="password" placeholder="пароль">
-					<button type="submit">Войти</button>
+					<div class="form-header">{{ trans('interface.FORM_SIGNIN_SECURE_2_HEADER') }}</div>
+					<input type="text" name="login" placeholder="{{ trans('interface.FORM_INPUT_PLACEHOLDER_LOGIN') }}">
+					<input type="password" name="password" placeholder="{{ trans('interface.FORM_INPUT_PLACEHOLDER_PASSWORD') }}">
+					<button type="submit">{{ trans('interface.FORM_SIGNIN_SUBMIT') }}</button>
 				{{ Form::close() }}
 			@endif
 		</div>
