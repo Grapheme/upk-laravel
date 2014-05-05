@@ -3,7 +3,7 @@
 	@foreach($news as $new)
 		<li class="news-item">
 			<div class="news-cont">
-				<h3 data-date="{{ myDateTime::getDayAndMonth($new->created_at) }}">{{$new->title}}</h3>
+				<h3 data-date="{{ myDateTime::getNewsDate($new->created_at) }}">{{$new->title}}</h3>
 				<div class="news-desc">
 					{{$new->content}}
 				</div>

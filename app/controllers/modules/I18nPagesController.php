@@ -31,7 +31,7 @@ class I18nPagesController extends BaseController {
 		$this->moduleActionPermission('pages','create');
 		$json_request = array('status'=>FALSE,'responseText'=>'','responseErrorText'=>'','redirect'=>FALSE);
 		if(Request::ajax()):
-			$validator = Validator::make(Input::all(),I18nPage::$rules);
+			$validator = Validator::make(Input::all(), I18nPage::$rules);
 
             #$json_request['responseText'] = "<pre>" . print_r($_POST, 1) . "</pre>";
             #$json_request['responseText'] = self::savePageModel();
@@ -77,7 +77,7 @@ class I18nPagesController extends BaseController {
 		$this->moduleActionPermission('pages','edit');
 		$json_request = array('status'=>FALSE,'responseText'=>'','responseErrorText'=>'','redirect'=>FALSE);
 		if(Request::ajax()):
-			$validator = Validator::make(Input::all(),Page::$rules);
+			$validator = Validator::make(Input::all(), I18nPage::$rules);
 			if($validator->passes()):
 				$page = $this->page->find($id);
 				self::savePageModel($page);
@@ -208,6 +208,7 @@ class I18nPagesController extends BaseController {
     			else:
     				$page_meta->seo_url = $this->stringTranslite(Input::get('seo_url.' . $locale));
     			endif;
+    			$page_meta->seo_url = (string)$page_meta->seo_url;
     			if(Input::get('seo_title.' . $locale) == ''):
     				$page_meta->seo_title = $page_meta->name;
     			else:
