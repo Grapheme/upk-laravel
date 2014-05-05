@@ -11,6 +11,25 @@ class slink {
 			$link = '/'.$link;
 		endif;
 		$locale = slang::get();
+		#$locale = Config::get("app.locale");
+		if(!is_null($locale)):
+			$string = $locale.(mb_substr($link,0,1)!="/"?"/":"").$link;
+			if(Request::secure()):
+				return secure_url($string);
+			else:
+				return url($string);
+			endif;
+		else:
+			return url($link);
+		endif;
+	}
+
+	public static function createLink2($link = NULL){
+
+		if(!is_null($link) && $link != "/"):
+			$link = '/'.$link;
+		endif;
+		#$locale = slang::get();
 		$locale = Config::get("app.locale");
 		if(!is_null($locale)):
 			$string = $locale.(mb_substr($link,0,1)!="/"?"/":"").$link;

@@ -12,12 +12,15 @@ function positionitems() {
 function slide_over() {
 	$('.slideshow-after').css('width', $(window).width() - $('.wrapper-abs').width());
 }
-$(function(){
+function text_center() {
 	$('.block-title').each(function(){
 		var pad = ( $('.index-block').width() - $(this).width() ) / 2;
 		$(this).css('padding-left', pad);
 	});
+}
 
+$(function(){
+	text_center();
 	slide_over();
 	positionitems();
 });
@@ -27,6 +30,9 @@ $(window).resize(function(){
 });
 
 $(window).load(function(){
+	setTimeout(function(){
+		text_center();
+	}, 100);
 	$('.fotorama-slide, .slideshow-over, .slideshow-after').addClass('loaded');
 });
 

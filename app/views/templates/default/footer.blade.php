@@ -3,7 +3,7 @@
 	<div class="footer-copy">
 		{{ trans('interface.FOOTER_COPYRIGHT') }}
 		<div class="bot-cont">
-            г. Ростов-на-Дону, ул. Текучева, 162
+			{{ trans('interface.FOOTER_ADDRESS') }}
             <a href="tel:+78632806656">+7 (863) 280-66-56</a>
         </div>
 	</div>

@@ -2,20 +2,20 @@
 
 return array(
 
-	'use_typekit' => FALSE,
-	'use_analyrics' => FALSE,
-	'use_googleapis' => FALSE,
+	'use_typekit' => TRUE,
+	'use_analyrics' => TRUE,
+	'use_googleapis' => TRUE,
 	'use_googlefonts' => TRUE,
-	'use_css_local' => TRUE,
-	'use_scripts_local' => TRUE,
-
-	'default_page_title' => 'УПК',
-
+	'use_css_local' => FALSE,
+	'use_scripts_local' => FALSE,
+	
+	'default_page_title' => 'Успенский ПК',
+	
 	'debug' => TRUE,
-	'url' => 'http://upk.ru/',
+	'url' => 'http://uspensky-pk.ru/',
 	'timezone' => 'UTC',
 	'locale' => 'ru',
-	'locales' => array('en', 'ru', 'de'),
+	'locales' => array('ru', 'en', 'de'),
 	'key' => 'TSHZVixcD1cLGLSTObouk6Tmo3ChmyxD',
 	'providers' => array(
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',

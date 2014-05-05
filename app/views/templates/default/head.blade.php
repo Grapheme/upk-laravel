@@ -2,7 +2,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>{{{(isset($page_title))?$page_title:Config::get('app.default_page_title')}}}</title>
 <meta name="description" content="{{{(isset($page_description))?$page_description:''}}}">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 {{ HTML::style('theme/css/normalize.css') }}
 {{ HTML::style('theme/css/main.css') }}
 {{ HTML::style('css/font-awesome.min.css') }}

@@ -13,9 +13,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'upk',
+			'database'  => 'uspensky-pk',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'perl03',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

@@ -126,7 +126,8 @@ class GlobalController extends \BaseController {
 			if($validator->passes()):
 				Mail::send('emails.request-to-access',array('post'=>Input::all()),function($message){
 					$message->from('uspensky.pk@gmail.com','УПК');
-					$message->to('support@grapheme.ru')->subject('УПК - Заявка на доступ к документам');
+					$message->to('support@grapheme.ru')->cc('rdo2009@mail.ru');
+					$message->subject('УПК - Заявка на доступ к документам');
 				});
 				$json_request['responseText'] = 'Заявка успешно отправлена.';
 				$json_request['status'] = TRUE;
