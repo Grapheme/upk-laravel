@@ -7,7 +7,7 @@ class SystemModules {
 		$start_page = AuthAccount::getStartPage();
 		return array(
 			$start_page =>array(trans('admin.dashboard'),'fa-home',''),
-			$start_page.'/pages' =>array(trans('admin.pages'),'fa-list-alt','pages'),
+			#$start_page.'/pages' =>array(trans('admin.pages'),'fa-list-alt','pages'),
 			$start_page.'/i18n_pages'=>array(trans('admin.i18n_pages'),'fa-list-alt','pages'),
 			$start_page.'/galleries'=>array(trans('admin.galleries'),'fa-picture-o','galleries'),
 			$start_page.'/news'=>array(trans('admin.news'),'fa-calendar','news'),
@@ -43,7 +43,7 @@ class SystemModules {
 			'pages'=>array(trans('modules.pages'),'fa-list-alt','pages',TRUE),
 			'catalogs'=>array(trans('modules.catalogs'),'fa-truck','catalogs',FALSE),
 			'news'=>array(trans('modules.news'),'fa-calendar','news',TRUE),
-			'i18n_news'=>array(trans('modules.i18n_news'),'fa-calendar','i18n_news',FALSE),
+			#'i18n_news'=>array(trans('modules.i18n_news'),'fa-calendar','i18n_news',FALSE),
 			'articles'=>array(trans('modules.articles'),'fa-file-text-o','articles',TRUE),
 			'galleries'=>array(trans('modules.galleries'),'fa-picture-o','galleries',TRUE),
 			'languages'=>array(trans('modules.languages'),'fa-comments-o','languages',TRUE),

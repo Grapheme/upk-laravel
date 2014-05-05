@@ -8,3 +8,4 @@ composer.lock
 .htaccess
 upk.clpprj
 Thumbs.db
+app/config/database.php
