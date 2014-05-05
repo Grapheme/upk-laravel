@@ -219,7 +219,7 @@ class I18nPagesController extends BaseController {
     			$page_meta->seo_h1 = Input::get('seo_h1.' . $locale);
     		else:
     			$page_meta->seo_url = $this->stringTranslite(Input::get('name.' . $locale));
-    			$page_meta->seo_title = Input::get('title.' . $locale);
+    			$page_meta->seo_title = Input::get('name.' . $locale);
     			$page_meta->seo_description = $page->seo_keywords = $page->seo_h1 = '';
     		endif;
 

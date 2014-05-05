@@ -22,7 +22,7 @@ App::error(function(Exception $exception, $code){
 });
 
 Route::filter('auth', function(){
-	
+
 	if(Auth::guest()):
 		return App::abort(404);
 	endif;
@@ -106,15 +106,22 @@ Route::filter('detectLang', function($lang = "auto") {
 
 Route::filter('i18n_url', function(){
 	Config::set('app.default_locale', Config::get('app.locale'));
-    ## Если мы находимся на странице дефолтного языка - редиректим на / (чтобы не было дублей главной страницы)
+	## Если мы на главной странице - просто сохраним текущую локаль в сессию.
+	if (Request::path() == "/") {
+		## Сохраним в сессию дефолтную локаль
+    	Session::put('locale', Config::get('app.locale'));
+    	## Дальше ничего не выполняется
+	}
+    ## Если мы находимся на главной странице дефолтного языка - редиректим на / (чтобы не было дублей главной страницы)
 	if (Request::path() == Config::get('app.locale')) {
+		## Сохраним в сессию дефолтную локаль
+    	Session::put('locale', Config::get('app.locale'));
     	Redirect("/");
 	}
     ## Если первый сегмент URL является одним из определенных в конфиге языков - переопределяем текущую локаль.
     if (in_array(Request::segment(1), Config::get('app.locales')) ) {
-    	#echo Config::get('app.locale');
     	Config::set('app.locale', Request::segment(1));
-    	#echo Config::get('app.locale');
+    	Session::put('locale', Request::segment(1));
     } elseif (
         Request::path() != '/' ## не главная
         #&& Request::segment(1) != 'admin' ## не админка - вот тут могут быть проблемы, если поменяется первый сегмент адреса админки (хоть и маловероятно). С другой стороны, если убрать это условие, то редирект на URL с языковой локалью в первом сегменте будет работать и для админки, что пригодится, когда захотим сделать и ее мультиязычной

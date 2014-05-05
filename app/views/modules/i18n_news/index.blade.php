@@ -18,20 +18,20 @@
 			<table class="table table-striped table-bordered">
 				<thead>
 					<tr>
+						<th class="text-center" style="width:100px">Дата</th>
 						<th class="text-center">Название новости</th>
-						<th class="text-center">URL</th>
-					@if(Allow::valid_action_permission('news','publication'))
+    					@if(Allow::valid_action_permission('news','publication'))
 						<th class="text-center">Публикация</th>
-					@endif
+	    				@endif
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
 				@foreach($news as $new)
 					<tr>
-						<td>{{ $new->title }}</td>
-						<td class="wigth-250 text-center">
-							<a href="{{slink::createLink('i18n_news/'.$new->seo_url)}}" target="_blank">Ссылка на новость</a>
+						<td class="text-center">{{ date("d.m.Y", strtotime($new->published_at)) }}</a></td>
+						<td>
+						    <a href="{{slink::createLink('news/'.$new->slug)}}" target="_blank">{{$new->slug}}</a>
 						</td>
 						@if(Allow::valid_action_permission('news','publication'))
 						<td class="wigth-100">

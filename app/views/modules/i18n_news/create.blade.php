@@ -7,6 +7,7 @@
 @stop
 @section('scripts')
 	{{HTML::script('js/modules/news.js')}}
+	<script src="{{slink::path('js/vendor/jquery.ui.datepicker-ru.js')}}"></script>
 	<script type="text/javascript">
 		if(typeof pageSetUp === 'function'){pageSetUp();}
 		if(typeof runFormValidation === 'function'){

@@ -11,9 +11,8 @@ class CreateI18nNewsTable extends Migration {
             $table->string('slug',64)->nullable();
             $table->string('template',100)->nullable();
             $table->boolean('publication')->default(1)->unsigned()->nullable();
-            $table->boolean('start_page')->default(0)->unsigned()->nullable();
 			$table->timestamps();
-            $table->timestamp('published_at');
+            $table->date('published_at');
        		$table->index('publication');
        		$table->index('published_at');
 		});

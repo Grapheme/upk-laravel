@@ -9,7 +9,7 @@ class I18nNews extends BaseModel {
 	public static $order_by = 'id DESC';
 
 	public static $rules = array(
-		'news_ver_id' => 'required',
+		#'news_ver_id' => 'required',
 		#'seo_url' => 'alpha_dash',
 	);
 

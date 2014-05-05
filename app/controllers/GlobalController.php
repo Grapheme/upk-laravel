@@ -1,14 +1,14 @@
 <?php
 
 class GlobalController extends \BaseController {
-	
+
 	public function loginPage(){
-		
+
 		return View::make('guests.login');
 	} // страница авторизации пользователей
 
 	public function signin(){
-		
+
 		$json_request = array('status'=>FALSE,'responseText'=>'','responseErrorText'=>'','redirect'=>FALSE);
 		if(Request::ajax()):
 			$rules = array('login'=>'required','password'=>'required|alpha_num|between:6,50');
@@ -31,9 +31,9 @@ class GlobalController extends \BaseController {
 		endif;
 		return Response::json($json_request,200);
 	} // функция авторизации пользователя
-	
+
 	public function signup(){
-		
+
 		if(!Allow::enabled_module('users')):
 			return App::abort(404);
 		endif;
@@ -57,7 +57,7 @@ class GlobalController extends \BaseController {
 						$json_request['status'] = TRUE;
 					endif;
 				else:
-					
+
 				endif;
 			else:
 				$json_request['responseText'] = 'Неверно заполнены поля';
@@ -70,13 +70,13 @@ class GlobalController extends \BaseController {
 	} // функция регистрации пользователя
 
 	public function logout(){
-		
+
 		Auth::logout();
 		return Redirect::to('/');
 	} // функция завершения сеанса пользователя
-	
+
 	public function activation(){
-		
+
 		if($account = User::where('id',Input::get('u'))->where('temporary_code',Input::get('c'))->where('code_life','>=',time())->first()):
 			$account->active = 1;
 			$account->temporary_code = '';
@@ -91,9 +91,9 @@ class GlobalController extends \BaseController {
 			return App::abort(404);
 		endif;
 	}
-	
+
 	private function getRegisterAccount($post = NULL){
-		
+
 		if(!is_null($post)):
 			$user = new User;
 			$user->name = $post['name'];
@@ -112,13 +112,13 @@ class GlobalController extends \BaseController {
 		endif;
 		return FALSE;
 	}
-	
+
 	/*
 	* Функция принимает данные формы заявки на доступ и высылает письмо по указанному адересу
 	*/
-	
+
 	public function postRequestToAccess(){
-		
+
 		$json_request = array('status'=>FALSE,'responseText'=>'','responseErrorText'=>'');
 		if(Request::ajax()):
 			$rules = array('name'=>'required','organisation'=>'required','email'=>'required|email','phone'=>'required');

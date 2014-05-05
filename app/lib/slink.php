@@ -41,11 +41,20 @@ class slink {
 
 	public static function createLink2($link = NULL){
 
-		if(!is_null($link) && $link != "/"):
+  		if(!is_null($link) && $link != "/"):
 			$link = '/'.$link;
 		endif;
-		#$locale = slang::get();
+
+        ## Берем локаль из сесссии
+        $locale_session = Session::get('locale');
+        #echo "session locale = " . $locale_session; die;
+        ## Если в сессии пусто - берем локаль из конфига
 		$locale = Config::get("app.locale");
+		if (isset($locale_session) && $locale_session != '' && $locale_session != $locale)
+		    $locale = $locale_session;
+        ## Сохраняем локаль в сессию
+        Session::put('locale', $locale);
+
 		if(!is_null($locale)):
 			$string = $locale.(mb_substr($link,0,1)!="/"?"/":"").$link;
 			if(Request::secure()):
@@ -64,8 +73,15 @@ class slink {
 			$link = '/'.$link;
 		endif;
 
+        $_locale = Session::get('locale');
+        #echo $_locale . " | ";
+		#echo self::createLink2( AuthAccount::getStartPage().$link ); die;
+
 		if(Auth::check()):
-			return self::createLink(AuthAccount::getStartPage().$link);
+		    if (AuthAccount::isAdminLoggined())
+    			return self::createLink(AuthAccount::getStartPage().$link);
+            else
+                return (AuthAccount::getStartPage().$link);
 		else:
 			return url($link);
 		endif;
