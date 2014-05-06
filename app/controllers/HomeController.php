@@ -12,6 +12,43 @@ class HomeController extends BaseController {
 		return sI18nPage::show($url);
 	}
 
+    /*
+    |--------------------------------------------------------------------------
+    | Раздел "Новости" - I18N
+    |--------------------------------------------------------------------------
+    */
+    public function showI18nNews($url){
+
+        if(!Allow::enabled_module('i18n_news'))
+            return App::abort(404);
+
+        $i18n_news = I18nNews::where('slug', $url)->where('publication', 1)->first();
+
+        if (!$i18n_news)
+            return App::abort(404);
+
+        $i18n_news_meta = I18nNewsMeta::where('news_id', $i18n_news->id)->where('language', Config::get('app.locale'))->first();
+
+        if(!$i18n_news_meta || !$i18n_news_meta->title)
+            return App::abort(404);
+
+        if(!empty($i18n_news->template) && View::exists('templates.'.$i18n_news->template)):
+            return View::make('templates.'.$i18n_news->template,
+                array(
+                    'news'=>$i18n_news_meta,
+                    'page_title'=>$i18n_news_meta->seo_title,
+                    'page_description'=>$i18n_news_meta->seo_description,
+                    'page_keywords'=>$i18n_news_meta->seo_keywords,
+                    'page_author'=>'',
+                    'page_h1'=>$i18n_news_meta->seo_h1,
+                    'menu'=> Page::getMenu('news')
+                )
+            );
+		else:
+			return App::abort(404, 'Отсутствует шаблон: templates/'.$i18n_news->template);
+		endif;
+	}  // Функция для просмотра одной мультиязычной новости
+
 	/*
 	|--------------------------------------------------------------------------
 	| Раздел "Новости"

@@ -44,7 +44,7 @@ Route::post('redactor/upload','DownloadsController@redactorUploadImage');
 	*/
 
 Route::group(array('before'=>'auth','prefix'=>$prefix),function(){
-	
+
 	Route::controller('pages', 'PagesController');
 	Route::controller('galleries', 'GalleriesController');
 	Route::controller('downloads', 'DownloadsController');
@@ -107,11 +107,11 @@ Route::group(array('before'=>'guest','prefix'=>Config::get('app.local')),functio
 	Route::post('signup',array('as'=>'signup','uses'=>'GlobalController@signup'));
 	Route::get('activation',array('as'=>'activation','uses'=>'GlobalController@activation'));
 });
-	
+
 	/*
 	| Роутеры доступные только для авторизованных пользователей "UPK"
 	*/
-	
+
 Route::group(array('before'=>'auth','prefix'=>Config::get('app.local')),function(){
 	Route::get('intranet','UserCabinetController@getSecurePageIntranet');
 });
@@ -120,11 +120,11 @@ Route::group(array('before'=>'auth','prefix'=>Config::get('app.local')),function
 	| Роутеры доступные для гостей и авторизованных пользователей
 	*/
 Route::post('request-to-access',array('as'=>'request-to-access','uses'=>'GlobalController@postRequestToAccess'));
-	
+
 Route::get('login',array('before'=>'login','as'=>'login','uses'=>'GlobalController@loginPage'));
 Route::get('logout',array('before'=>'auth','as'=>'logout','uses'=>'GlobalController@logout'));
 
-Route::get('/news/{news_url}','HomeController@showNews');
+#Route::get('/news/{news_url}','HomeController@showNews'); # i18n_news enabled
 Route::get('/articles/{article_url}','HomeController@showArticle');
 
 Route::get('catalog/{url}','HomeController@showProduct');
@@ -138,12 +138,14 @@ foreach(Config::get('app.locales') as $locale) {
     Route::group(array('prefix' => $locale, 'before' => 'i18n_url'), function(){
         Route::get('/{url}','HomeController@showI18nPage'); ## I18n Pages
         Route::get('/', 'HomeController@showI18nPage'); ## I18n Main Page
+        Route::get('/news/{news_url}','HomeController@showI18nNews'); ## I18n News
     });
     ## Генерим те же самые роуты, но уже без префикса, и назначаем before-фильтр i18n_url
     ## Это позволяет нам делать редирект на урл с префиксом только для этих роутов, не затрагивая, например, /admin и /login
     Route::group(array('before' => 'i18n_url'), function(){
         Route::get('/{url}','HomeController@showI18nPage'); ## I18n Pages
         Route::get('/', 'HomeController@showI18nPage'); ## I18n Main Page
+        Route::get('/news/{news_url}','HomeController@showI18nNews'); ## I18n News
     });
 }
 
