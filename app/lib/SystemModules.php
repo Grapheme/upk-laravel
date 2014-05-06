@@ -10,7 +10,7 @@ class SystemModules {
 			#$start_page.'/pages' =>array(trans('admin.pages'),'fa-list-alt','pages'),
 			$start_page.'/i18n_pages'=>array(trans('admin.i18n_pages'),'fa-list-alt','pages'),
 			$start_page.'/galleries'=>array(trans('admin.galleries'),'fa-picture-o','galleries'),
-			$start_page.'/news'=>array(trans('admin.news'),'fa-calendar','news'),
+			#$start_page.'/news'=>array(trans('admin.news'),'fa-calendar','news'),
 			$start_page.'/i18n_news'=>array(trans('admin.i18n_news'),'fa-calendar','news'),
 			$start_page.'/articles' =>array(trans('admin.articles'),'fa-file-text-o','articles'),
 			$start_page.'/catalogs#'=>array(trans('admin.catalogs'),'fa-truck','catalogs',
