@@ -1,9 +1,9 @@
 <?php
 
 class shortcode {
-	
+
 	public static $config = array('path'=>'','name'=>'','limit'=>'','order'=>'');
-	
+
 	public static function view($options, $data = NULL){
 
 		if(isset($options['path'])):
@@ -13,7 +13,7 @@ class shortcode {
 				else:
 					return View::make($options['path']);
 				endif;
-			else: 
+			else:
 				return "Отсутсвует шаблон: ".$options['path'];
 			endif;
 		else:
@@ -22,7 +22,7 @@ class shortcode {
 	}
 
 	public static function news($options = NULL, $data = NULL){
-		
+
 		//Настройки по-умолчанию
 		static::$config['path'] = Config::get('app-default.news_template');
 		static::$config['limit'] = Config::get('app-default.news_count_on_page');
@@ -44,7 +44,7 @@ class shortcode {
 			if($news->count()):
 				if(View::exists('templates.'.static::$config['path'])):
 					return View::make('templates.'.static::$config['path'],compact('news'));
-				else: 
+				else:
 					return "Отсутсвует шаблон: templates.".static::$config['path'];
 				endif;
 			endif;
@@ -52,9 +52,52 @@ class shortcode {
 			return '';
 		endif;
 	}
-	
+
+	public static function i18n_news($options = NULL, $data = NULL){
+
+		//Настройки по-умолчанию
+		static::$config['path'] = Config::get('app-default.news_template');
+		static::$config['limit'] = Config::get('app-default.news_count_on_page');
+		static::$config['order'] = BaseController::stringToArray(I18nNews::$order_by);
+		//Настройки переданные пользователем
+		self::setUserConfig($options);
+		if(Allow::enabled_module('i18n_news')):
+		    ## Получаем новости, делаем LEFT JOIN с news_meta, с проверкой языка и тайтла
+			$selected_news = I18nNews::where('publication', 1)
+			                        ->leftJoin('i18n_news_meta', 'i18n_news_meta.news_id', '=', 'i18n_news.id')
+			                        ->where('i18n_news_meta.language', Config::get('app.locale'))
+			                        ->where('i18n_news_meta.title', '!=', '');
+
+            #/*
+            ## Добавляем сортировку из модели
+            #print_r(static::$config['order']);
+			if(!empty(static::$config['order'])):
+				foreach(static::$config['order'] as $order):
+					if(isset($order[1])):
+						$selected_news = $selected_news->orderBy($order[0],$order[1]);
+					else:
+						$selected_news = $selected_news->orderBy($order[0]);
+					endif;
+				endforeach;
+			endif;
+			#*/
+
+            ## Получаем новости с учетом пагинации
+			$news = $selected_news->paginate(static::$config['limit']);
+			if($news->count()):
+				if(View::exists('templates.'.static::$config['path'])):
+					return View::make('templates.'.static::$config['path'],compact('news'));
+				else:
+					return "Отсутствует шаблон: templates.".static::$config['path'];
+				endif;
+			endif;
+		else:
+			return '';
+		endif;
+	}
+
 	public static function articles($options = NULL, $data = NULL){
-		
+
 		//Настройки по-умолчанию
 		static::$config['path'] = Config::get('app-default.articles_template');
 		static::$config['limit'] = Config::get('app-default.articles_count_on_page');
@@ -76,7 +119,7 @@ class shortcode {
 			if($articles->count()):
 				if(View::exists('templates.'.static::$config['path'])):
 					return View::make('templates.'.static::$config['path'],compact('articles'));
-				else: 
+				else:
 					return "Отсутсвует шаблон: templates.".static::$config['path'];
 				endif;
 			endif;
@@ -84,9 +127,9 @@ class shortcode {
 			return '';
 		endif;
 	}
-	
+
 	public static function catalog($options = NULL, $data = NULL){
-		
+
 		//Настройки по-умолчанию
 		static::$config['path'] = Config::get('app-default.catalog_template');
 		static::$config['limit'] = Config::get('app-default.catalog_count_on_page');
@@ -117,18 +160,18 @@ class shortcode {
 			if($products->count()):
 				if(View::exists('templates.'.static::$config['path'])):
 					return View::make('templates.'.static::$config['path'],compact('products'));
-				else: 
+				else:
 					return "Отсутсвует шаблон: templates.".static::$config['path'];
 				endif;
 			endif;
 		else:
 			return '';
 		endif;
-		
+
 	}
-	
+
 	public static function gallery($options = NULL, $data = NULL){
-		
+
 		if(isset($options['name'])){
 			$name = $options['name'];
 	        if(gallery::where('name', $name)->exists()){
@@ -148,7 +191,7 @@ class shortcode {
 			return "Error: name of gallery is not defined!";
 		}
 	}
-	
+
 	public static function map($options){
 		if(!isset($options['width'])) 	$options['width'] = '500';
 		if(!isset($options['height'])) 	$options['height'] = '500';
@@ -157,7 +200,7 @@ class shortcode {
 
 		if(!isset($options['title'])) 	{ $title = null; } 		else { $title = "hintContent: '{$options['title']}'"; }
 		if(!isset($options['preview']))	{ $preview = null; }	else { $preview = "balloonContent: '{$options['preview']}'"; }
-		
+
 		if( $title == null && $preview == null)
 		{
 			$placemark = null;
@@ -172,14 +215,14 @@ class shortcode {
 		$map = '<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 			    <script type="text/javascript">
 			        ymaps.ready(init);
-			        var myMap, 
+			        var myMap,
 			            myPlacemark;
 
-			        function init(){ 
+			        function init(){
 			            myMap = new ymaps.Map ("map", {
 			                center: ['.$options['position'].'],
 			                zoom: '.$options['zoom'].'
-			            }); 
+			            });
 			            '.$placemark.'
 			        }
 			    </script>';
@@ -188,7 +231,7 @@ class shortcode {
 	}
 
 	private static function setUserConfig($options){
-		
+
 		if(!is_null($options) && !empty($options)):
 			if(isset($options['field']) && !empty($options['field'])):
 				static::$config['order'] = array();
