@@ -14,6 +14,8 @@ return array(
 	'MENU_SERVICES' => 'Услуги',
 	'MENU_INVESTORS' => 'Инвесторам',
 	'MENU_CONTACTS' => 'Контакты',
+
+    'NEWS' => 'Новости',
 	
 	'FOOTER_COPYRIGHT' => 'ООО «Успенский перерабатывающий комплекс»',
 	'FOOTER_ADDRESS' => 'г. Ростов-на-Дону, ул. Текучева, 162',
