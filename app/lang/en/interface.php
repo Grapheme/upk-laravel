@@ -15,6 +15,8 @@ return array(
 	'MENU_INVESTORS' => 'For investors',
 	'MENU_CONTACTS' => 'Contacts',
 	
+    'NEWS' => 'News',
+
 	'FOOTER_COPYRIGHT' => 'LLC Uspenskiy Processing Complex',
 	'FOOTER_ADDRESS' => 'Russia, Rostov-on-Don, Tekucheva st., 162',
 	'FOOTER_MAKEIN' => 'Made by <a href="http://grapheme.ru" target="_blank" class="grphm-copy">GRAPHEME</a>',

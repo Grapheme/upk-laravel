@@ -63,10 +63,11 @@ class shortcode {
 		self::setUserConfig($options);
 		if(Allow::enabled_module('i18n_news')):
 		    ## Получаем новости, делаем LEFT JOIN с news_meta, с проверкой языка и тайтла
-			$selected_news = I18nNews::where('publication', 1)
+			$selected_news = I18nNews::where('i18n_news.publication', 1)
 			                        ->leftJoin('i18n_news_meta', 'i18n_news_meta.news_id', '=', 'i18n_news.id')
 			                        ->where('i18n_news_meta.language', Config::get('app.locale'))
-			                        ->where('i18n_news_meta.title', '!=', '');
+			                        ->where('i18n_news_meta.title', '!=', '')
+			                        ->select('*', 'i18n_news.published_at AS created_at');
 
             #/*
             ## Добавляем сортировку из модели
@@ -81,6 +82,8 @@ class shortcode {
 				endforeach;
 			endif;
 			#*/
+
+            #$selected_news = $selected_news->where('i18n_news_meta.wtitle', '!=', '');
 
             ## Получаем новости с учетом пагинации
 			$news = $selected_news->paginate(static::$config['limit']);

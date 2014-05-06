@@ -81,7 +81,7 @@ class slink {
 		    if (AuthAccount::isAdminLoggined())
     			return self::createLink(AuthAccount::getStartPage().$link);
             else
-                return (AuthAccount::getStartPage().$link);
+                return _url(AuthAccount::getStartPage().$link);
 		else:
 			return url($link);
 		endif;
