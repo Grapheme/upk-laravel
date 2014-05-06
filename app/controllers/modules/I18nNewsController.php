@@ -69,7 +69,7 @@ class I18nNewsController extends BaseController {
         }
         #print_r($news_meta);
 
-		return View::make('modules.i18n_news.edit',array('news'=>$news, 'news_meta'=>$news_meta, 'templates'=>Template::all(),'languages'=>Language::all(), 'locales' => $this->locales));
+		return View::make('modules.i18n_news.edit',array('news'=>$news, 'news_meta'=>@$news_meta, 'templates'=>Template::all(),'languages'=>Language::all(), 'locales' => $this->locales));
 	}
 
 	public function postUpdate($id){
