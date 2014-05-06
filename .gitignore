@@ -9,3 +9,4 @@ composer.lock
 upk.clpprj
 Thumbs.db
 app/config/database.php
+public/uploads/*
