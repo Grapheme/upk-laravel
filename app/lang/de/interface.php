@@ -15,7 +15,7 @@ return array(
 	'MENU_INVESTORS' => 'Investors',
 	'MENU_CONTACTS' => 'Kontakt',
 	
-	'FOOTER_COPYRIGHT' => 'Uspensker Verarbeitungskomplex Gmbh',
+	'FOOTER_COPYRIGHT' => 'Uspensker Verarbeitungs Komplex Gmbh',
 	'FOOTER_ADDRESS' => '162 Tekuchev Straße, Rostov-on-Don, Russia, 344013',
 	'FOOTER_MAKEIN' => 'Made in <a href="http://grapheme.ru" target="_blank" class="grphm-copy">GRAPHEME</a>',
 	
