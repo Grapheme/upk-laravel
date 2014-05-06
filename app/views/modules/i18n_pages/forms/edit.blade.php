@@ -65,13 +65,13 @@
                             <section>
                                 <label class="label">Название</label>
                                 <label class="input"> <i class="icon-append fa fa-list-alt"></i>
-                                    {{ Form::text('name['.$locale.']', $page_meta[$locale]->name) }}
+                                    {{ Form::text('name['.$locale.']', @$page_meta[$locale]->name) }}
                                 </label>
                             </section>
                             <section>
                                 <label class="label">Содержание</label>
                                 <label class="textarea">
-                                    {{ Form::textarea('content['.$locale.']', $page_meta[$locale]->content, array('class'=>'redactor-no-filter redactor_150')) }}
+                                    {{ Form::textarea('content['.$locale.']', @$page_meta[$locale]->content, array('class'=>'redactor-no-filter redactor_150')) }}
                                 </label>
                             </section>
                         </fieldset>
