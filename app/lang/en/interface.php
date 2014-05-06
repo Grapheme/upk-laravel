@@ -32,4 +32,6 @@ return array(
 	'FORM_REQUEST_FOR_ACCESS_LABEL_EMAIL' => 'email@address',
 	'FORM_REQUEST_FOR_ACCESS_LABEL_PHONE' => 'Phone number',
 	'FORM_REQUEST_FOR_ACCESS_SUBMIT' => 'Send request',
+	'not_found' => 'Page not found',
+	'back_main' => 'Back to <a href=":link">home</a> page'
 );
