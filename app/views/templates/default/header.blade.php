@@ -1,8 +1,8 @@
 <header class="header">
 @if(Request::is('/'))
-	<div class="logo"></div>
+	<div class="logo logo-{{Config::get('app.locale')}}"></div>
 @else
-	<a href="{{ slink::createLink2('/') }}" class="logo"></a>
+	<a href="{{ slink::createLink2('/') }}" class="logo logo-{{Config::get('app.locale')}}"></a>
 @endif
 	<div class="header-content">
 		<div class="top-menu">
