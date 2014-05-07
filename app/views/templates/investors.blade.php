@@ -13,7 +13,7 @@
 	<![endif]-->
 	@include('templates.default.header')
 	<main class="container investors">
-		<h1>{{ trans('interface.PAGES_FOR_INVESTORS') }}</h1>
+		<h1>{{ $page_title }}</h1>
 		<div class="content">
 			@if(isset($content))
 				{{ $content }}
