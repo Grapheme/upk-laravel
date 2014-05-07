@@ -80,3 +80,18 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+
+/*
+|--------------------------------------------------------------------------
+| Определяем язык сайта для всего приложения, 
+| a не только для роутов с фильтром i18n_url
+|--------------------------------------------------------------------------
+*/
+
+    if (in_array(Request::segment(1), Config::get('app.locales')) ) {
+    	Config::set('app.locale', Request::segment(1));
+    }
+	Session::put('locale', Config::get('app.locale'));
+
+

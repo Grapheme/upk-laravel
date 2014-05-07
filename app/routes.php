@@ -150,3 +150,8 @@ foreach(Config::get('app.locales') as $locale) {
 }
 
 #Route::get('/','HomeController@showPage');
+
+## На всякий случай объявим шаблон с ошибкой 404
+App::missing(function ($exception) {
+    return Response::view('error404', array(), 404);
+});
