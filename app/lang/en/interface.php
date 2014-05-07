@@ -31,7 +31,7 @@ return array(
 
 	'FORM_REQUEST_FOR_ACCESS_LABEL_FIO' => 'Name of contact person',
 	'FORM_REQUEST_FOR_ACCESS_LABEL_ORGANISATION' => 'Organization',
-	'FORM_REQUEST_FOR_ACCESS_LABEL_EMAIL' => 'email@address',
+	'FORM_REQUEST_FOR_ACCESS_LABEL_EMAIL' => 'Email',
 	'FORM_REQUEST_FOR_ACCESS_LABEL_PHONE' => 'Phone number',
 	'FORM_REQUEST_FOR_ACCESS_SUBMIT' => 'Send request',
 	'not_found' => 'Page not found',
