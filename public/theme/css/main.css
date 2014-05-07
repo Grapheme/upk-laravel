@@ -1062,7 +1062,7 @@ body {
 }
 .about .hist-item-cont .hist-desc {
   padding: 0 0 0 6.71428571rem;
-  background: url(../img/dot.png) repeat-y 1.42857143rem 1rem;
+  background: url(../img/dot.png) repeat-y 1.42857143rem 0.5rem;
   font-size: 0.92857143em;
 }
 .news {
