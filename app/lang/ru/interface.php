@@ -31,7 +31,7 @@ return array(
 
 	'FORM_REQUEST_FOR_ACCESS_LABEL_FIO' => 'ФИО контактного лица',
 	'FORM_REQUEST_FOR_ACCESS_LABEL_ORGANISATION' => 'Название организации',
-	'FORM_REQUEST_FOR_ACCESS_LABEL_EMAIL' => 'Адрес@электронной.почты',
+	'FORM_REQUEST_FOR_ACCESS_LABEL_EMAIL' => 'Email',
 	'FORM_REQUEST_FOR_ACCESS_LABEL_PHONE' => 'Контактный телефон',
 	'FORM_REQUEST_FOR_ACCESS_SUBMIT' => 'Отправить заявку',
 	'not_found' => 'Запрошенная вами страница не найдена',
