@@ -84,11 +84,12 @@ require app_path().'/filters.php';
 
 /*
 |--------------------------------------------------------------------------
-| Определяем язык сайта для всего приложения, 
+| Определяем язык сайта для всего приложения,
 | a не только для роутов с фильтром i18n_url
 |--------------------------------------------------------------------------
 */
 
+	Config::set('app.default_locale', Config::get('app.locale'));
     if (in_array(Request::segment(1), Config::get('app.locales')) ) {
     	Config::set('app.locale', Request::segment(1));
     }

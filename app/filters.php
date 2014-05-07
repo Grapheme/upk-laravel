@@ -105,7 +105,9 @@ Route::filter('detectLang', function($lang = "auto") {
 */
 
 Route::filter('i18n_url', function(){
-	Config::set('app.default_locale', Config::get('app.locale'));
+    ####
+    #### Работает в паре с кодом в app/start/global.php !!!
+    ####
 	## Если мы на главной странице - просто сохраним текущую локаль в сессию.
 	if (Request::path() == "/") {
 		## Сохраним в сессию дефолтную локаль
@@ -113,7 +115,7 @@ Route::filter('i18n_url', function(){
     	## Дальше ничего не выполняется
 	}
     ## Если мы находимся на главной странице дефолтного языка - редиректим на / (чтобы не было дублей главной страницы)
-	if (Request::path() == Config::get('app.locale')) {
+	if (Request::path() == Config::get('app.default_locale')) {
 		## Сохраним в сессию дефолтную локаль
     	Session::put('locale', Config::get('app.locale'));
     	Redirect("/");
