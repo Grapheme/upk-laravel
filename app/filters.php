@@ -135,8 +135,8 @@ Route::filter('i18n_url', function(){
     }
 });
 
-function Redirect($url = '', $code = '301') {
-	header("HTTP/1.1 {$code} Moved Permanently");
+function Redirect($url = '', $code = '301 Moved Permanently') {
+	header("HTTP/1.1 {$code}");
     header("Location: {$url}");
     die;
 }
