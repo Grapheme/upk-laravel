@@ -28,6 +28,9 @@ class sI18nPage {
 		if(!is_object($page_meta) || !$page_meta->id)
 			return App::abort(404);
 
+        #print_r($page_meta);
+        #echo $page->template;
+
 		if(!empty($page->template) && View::exists('templates.'.$page->template)):
 			$content = self::content_render($page_meta->content);
 			return View::make(

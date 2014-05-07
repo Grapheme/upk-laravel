@@ -13,7 +13,7 @@
 	<![endif]-->
 	@include('templates.default.header')
 	<main class="container services contacts">
-		<h1>Контакты</h1>
+		<h1>{{ $page_title }}</h1>
 		<div class="content">
 			@if(isset($content))
 				{{ $content }}
