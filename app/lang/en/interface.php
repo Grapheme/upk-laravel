@@ -8,7 +8,7 @@ return array(
 	'MENU_CAREER' => 'Career',
 	'MENU_TENDERS' => 'Tenders',
 	'MENU_SITEMAP' => 'Sitemap',
-	'MENU_INDEX' => 'Main page',
+	'MENU_INDEX' => 'Home',
 	'MENU_ABOUT' => 'About us',
 	'MENU_NEWS' => 'Press center',
 	'MENU_SERVICES' => 'Services',
