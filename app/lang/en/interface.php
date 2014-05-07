@@ -35,5 +35,6 @@ return array(
 	'FORM_REQUEST_FOR_ACCESS_LABEL_PHONE' => 'Phone number',
 	'FORM_REQUEST_FOR_ACCESS_SUBMIT' => 'Send request',
 	'not_found' => 'Page not found',
-	'back_main' => 'Back to <a href=":link">home</a> page'
+	'back_main' => 'Back to <a href=":link">home</a> page',
+	'map_adress' => 'Tekucheva street 162<br> Rostov-on-Don',
 );

@@ -35,5 +35,6 @@ return array(
 	'FORM_REQUEST_FOR_ACCESS_LABEL_PHONE' => 'Контактный телефон',
 	'FORM_REQUEST_FOR_ACCESS_SUBMIT' => 'Отправить заявку',
 	'not_found' => 'Запрошенная вами страница не найдена',
-	'back_main' => 'Вернуться на <a href=":link">главную</a> страницу сайта'
+	'back_main' => 'Вернуться на <a href=":link">главную</a> страницу сайта',
+	'map_adress' => 'ул. Текучева, 162<br> г. Ростов-на-Дону',
 );
