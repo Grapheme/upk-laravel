@@ -86,8 +86,9 @@ require app_path().'/filters.php';
 | Переадресовываем uspensky-pk.com на немецкую версию
 |--------------------------------------------------------------------------
 */
-if (stripos($_SERVER['HTTP_HOST'], ".com") && !Session::get('locale'))
+if (stripos($_SERVER['HTTP_HOST'], ".com") && Session::get('locale') == '') {	Session::put('locale', 'de');
     Redirect("/de");
+}
 
 /*
 |--------------------------------------------------------------------------
