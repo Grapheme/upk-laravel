@@ -19,7 +19,7 @@ return array(
 
 	'FOOTER_COPYRIGHT' => 'LLC Uspenskiy Processing Complex',
 	'FOOTER_ADDRESS' => 'Russia, Rostov-on-Don, Tekucheva st., 162',
-	'FOOTER_MAKEIN' => 'Made by <a href="http://grapheme.ru" target="_blank" class="grphm-copy">GRAPHEME</a>',
+	'FOOTER_MAKEIN' => 'Made by <a href="http://grphm.com" target="_blank" class="grphm-copy">GRPHM</a>',
 	
 	'FORM_SIGNIN_SECURE_2_HEADER' => 'AUTHORIZATION',
 	'FORM_INPUT_PLACEHOLDER_LOGIN' => 'Login',

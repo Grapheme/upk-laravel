@@ -32,7 +32,7 @@ $(window).resize(function(){
 $(window).load(function(){
 	setTimeout(function(){
 		text_center();
-	}, 100);
+	}, 500);
 	$('.fotorama-slide, .slideshow-over, .slideshow-after').addClass('loaded');
 });
 
