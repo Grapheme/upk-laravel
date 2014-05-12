@@ -67,7 +67,7 @@ class shortcode {
 			                        ->leftJoin('i18n_news_meta', 'i18n_news_meta.news_id', '=', 'i18n_news.id')
 			                        ->where('i18n_news_meta.language', Config::get('app.locale'))
 			                        ->where('i18n_news_meta.title', '!=', '')
-			                        ->select('*', 'i18n_news.published_at AS created_at');
+			                        ->select('*', 'i18n_news.id AS original_id', 'i18n_news.published_at AS created_at');
 
             #/*
             ## Добавляем сортировку из модели
@@ -87,12 +87,23 @@ class shortcode {
 
             ## Получаем новости с учетом пагинации
 			$news = $selected_news->paginate(static::$config['limit']);
-			
+
 			foreach ($news as $n => $new) {
+				/*
 				preg_match("~<img [^>]*?src=['\"]([^'\"]+?)['\"]~is", $new->content, $matches);
 				#print_r($matches);
 				$new->image = @$matches[1];
 				$news[$n] = $new;
+				*/
+				#print_r($new); #die;
+				$gall = Rel_mod_gallery::where('module', 'news')->where('unit_id', $new->original_id)->first();
+				#foreach ($gall->photos as $photo) {
+				#	print_r($photo->path());
+				#}
+				#print_r($gall->photos); die;
+				$new->gall = @$gall;
+				$new->image = is_object(@$gall->photos[0]) ? @$gall->photos[0]->path() : "";
+				$news[$n]->$new;
 			}
 			
 			if($news->count()):

@@ -33,15 +33,20 @@ class HomeController extends BaseController {
             return App::abort(404);
 
         if(!empty($i18n_news->template) && View::exists('templates.'.$i18n_news->template)):
+
+			$gall = Rel_mod_gallery::where('module', 'news')->where('unit_id', $i18n_news->id)->first();
+
             return View::make('templates.'.$i18n_news->template,
                 array(
+                	'new' => $i18n_news,
                     'news'=>$i18n_news_meta,
                     'page_title'=>$i18n_news_meta->seo_title,
                     'page_description'=>$i18n_news_meta->seo_description,
                     'page_keywords'=>$i18n_news_meta->seo_keywords,
                     'page_author'=>'',
                     'page_h1'=>$i18n_news_meta->seo_h1,
-                    'menu'=> Page::getMenu('news')
+                    'menu'=> Page::getMenu('news'),
+                    'gall' => $gall
                 )
             );
 		else:

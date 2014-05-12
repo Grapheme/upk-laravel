@@ -3,9 +3,9 @@
 	@foreach($news as $new)
         <li class="news-item">
             <div class="news-cont">
-                <div class="news-photo" style="background-image: url({{ $new->image }});"></div>
-                <p class="news-date">{{ myDateTime::getNewsDate($new->created_at) }}</p>
-                <h3 data-date="{{ myDateTime::getNewsDate($new->created_at) }}">
+                <div class="news-photo" style="background-image: url({{ @$new->image }});"></div>
+                <p class="news-date">{{ date("d/m/Y", strtotime($new->published_at)) }}</p>
+                <h3>
                     <a href="{{ URL::route('news_full', array('url' => $new->slug)) }}">{{$new->title}}</a>
                 </h3>
                 <div class="news-desc">
