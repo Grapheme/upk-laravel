@@ -2,7 +2,7 @@
 @section('content')
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<div class="pull-right margin-bottom-25 margin-top-10 ">
+			<div class="margin-bottom-25 margin-top-10 ">
 			@if(Allow::valid_action_permission('pages','create'))
 				<a class="btn btn-primary" href="{{slink::createAuthLink('i18n_pages/create')}}">Добавить страницу</a>
 			@endif
@@ -15,7 +15,7 @@
 	@if($pages->count())
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<table class="table table-striped table-bordered">
+			<table class="table table-striped table-bordered min-table">
 				<thead>
 					<tr>
 						<th class="text-center">Название страницы</th>
