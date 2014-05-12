@@ -93,7 +93,13 @@
         </div>
    	</div>
 
+	<div style="float:none; clear:both;"></div>
 
+    <section class="col-12">
+		@include('modules.galleries.abstract')
+		@include('modules.galleries.uploaded', array('gall' => $gall))
+	</section>
+	
     <section class="col-6">
         <footer>
         	<a class="btn btn-default no-margin regular-10 uppercase pull-left btn-spinner" href="{{URL::previous()}}">

@@ -69,7 +69,10 @@ class I18nNewsController extends BaseController {
         }
         #print_r($news_meta);
 
-		return View::make('modules.i18n_news.edit',array('news'=>$news, 'news_meta'=>@$news_meta, 'templates'=>Template::all(),'languages'=>Language::all(), 'locales' => $this->locales));
+		$gall = Rel_mod_gallery::where('module', 'news')->where('unit_id', $id)->first();
+		#print_r($gall->photos);
+
+		return View::make('modules.i18n_news.edit',array('news'=>$news, 'news_meta'=>@$news_meta, 'templates'=>Template::all(),'languages'=>Language::all(), 'locales' => $this->locales, 'gall' => $gall));
 	}
 
 	public function postUpdate($id){
@@ -79,6 +82,10 @@ class I18nNewsController extends BaseController {
 		if(Request::ajax()):
 			$validator = Validator::make(Input::all(), I18nNews::$rules);
 			if($validator->passes()):
+
+			    #$json_request['responseText'] = "<pre>" . print_r($_POST, 1) . "</pre>";
+			    #return Response::json($json_request,200);
+
 				$news = $this->news->find($id);
 				self::saveNewsModel($news);
 				$json_request['responseText'] = 'Новость сохранена';
@@ -198,6 +205,20 @@ class I18nNewsController extends BaseController {
             $news_meta->save();
             $news_meta->touch();
 		}
+
+		## Работа с загруженными изображениями
+		$images = @Input::get('uploaded_images');
+		$gallery_id = @Input::get('gallery_id');
+		if (@count($images)) {
+
+			#$gallery_id = GalleriesController::moveImagesToGallery($images, $gallery_id);
+			#GalleriesController::relModuleUnitGallery('news', $news->id, $gallery_id);
+
+			GalleriesController::imagesToUnit($images, 'news', $news->id, $gallery_id);	
+		}
+
 		return $news->id;
 	}
 }
+
+

@@ -90,6 +90,11 @@
         </div>
    	</div>
 
+	<div style="float:none; clear:both;"></div>
+
+    <section class="col-12">
+		@include('modules.galleries.abstract')
+	</section>
 
     <section class="col-6">
         <footer>

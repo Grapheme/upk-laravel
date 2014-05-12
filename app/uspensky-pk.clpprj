@@ -1,0 +1,1641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\home\git\uspensky-pk\app\uspensky-pk.clpprj">
+	<settings><PM_URL><![CDATA[http://localhost/git/uspensky-pk/app/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/git/uspensky-pk/app/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+	</lastopfiles>
+	<errors version="4.5">
+	</errors>
+	<codestructure version="4.6.1">
+		<phptree>
+			<treenode node="AdminCabinetController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\AdminCabinetController.php;f0;2;1;14;;;;vpos;;vBaseController;;c;;r;;d52,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\AdminCabinetController.php;f8;4;2;7;;;;vpos;;v;;r;;d30,4;;b1,0;;m">
+				</treenode>
+				<treenode node="mainPage;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\AdminCabinetController.php;f8;9;2;12;;;;vpos;;v;;r;;d27,9;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Allow;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\allow.php;f0;2;1;107;;;;vpos;;v;;r;;d12,2;;b0,0;;m">
+				<treenode node="enabled_module;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\allow.php;f15;60;2;69;;;;vpos;;v;;r;;d52,60;;b1,5;;mmodule_name;;p">
+					<treenode node="module_name;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\allow.php;f39;60;51;60;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="mFilter;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\allow.php;f16;94;2;105;;;;vpos;;v;;r;;d45,94;;b3,5;;mpermission;;p">
+					<treenode node="permission;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\allow.php;f33;94;44;94;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="mFilters;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\allow.php;f16;85;2;92;;;;vpos;;v;;r;;d47,85;;b3,5;;mpermissions;;p">
+					<treenode node="permissions;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\allow.php;f34;85;46;85;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="modulesFilters;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\allow.php;f15;76;2;83;;;;vpos;;v;;r;;d40,76;;b1,5;;m">
+				</treenode>
+				<treenode node="valid_access;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\allow.php;f15;36;2;55;;;;vpos;;v;;r;;d50,36;;b1,5;;mmodule_name;;p">
+					<treenode node="module_name;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\allow.php;f37;36;49;36;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="valid_action_permission;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\allow.php;f15;8;2;30;;;;vpos;;v;;r;;d79,8;;b1,5;;mmodule_name;;pperimission_name;;p">
+					<treenode node="module_name;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\allow.php;f48;8;60;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="perimission_name;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\allow.php;f61;8;78;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="Article;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Article.php;f0;2;1;15;;;;vpos;;vBaseModel;;c;;r;;d32,2;;b0,0;;m">
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Article.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="order_by;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Article.php;f15;8;24;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Article.php;f15;10;21;10;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Article.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="ArticlesController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f0;2;32;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="ArticlesTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\ArticlesTableSeeder.php;f0;2;1;8;;;;vpos;;vSeeder;;c;;r;;d41,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\ArticlesTableSeeder.php;f8;4;2;6;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="AuthAccount;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\AuthAccount.php;f0;2;1;43;;;;vpos;;v;;r;;d18,2;;b0,0;;m">
+				<treenode node="getGroupID;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\AuthAccount.php;f15;17;2;24;;;;vpos;;v;;r;;d36,17;;b1,5;;m">
+				</treenode>
+				<treenode node="getStartPage;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\AuthAccount.php;f15;4;2;15;;;;vpos;;v;;r;;d49,4;;b1,5;;murl;;p">
+					<treenode node="url;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\AuthAccount.php;f37;4;41;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="isAdminLoggined;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\AuthAccount.php;f15;26;2;33;;;;vpos;;v;;r;;d41,26;;b1,5;;m">
+				</treenode>
+				<treenode node="isUserLoggined;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\AuthAccount.php;f15;35;2;42;;;;vpos;;v;;r;;d40,35;;b1,5;;m">
+				</treenode>
+			</treenode>
+			<treenode node="BaseController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f0;2;1;65;;;;vpos;;vController;;c;;r;;d40,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f8;6;2;8;;;;vpos;;v;;r;;d30,6;;b1,0;;m">
+				</treenode>
+				<treenode node="moduleActionPermission;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f15;17;2;26;;;;vpos;;v;;r;;d75,17;;b1,5;;mmodule_name;;pmodule_action;;p">
+					<treenode node="module_action;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f60;17;74;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="module_name;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f47;17;59;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="setupLayout;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f11;10;2;15;;;;vpos;;v;;r;;d33,10;;b2,0;;m">
+				</treenode>
+				<treenode node="stringToArray;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f15;49;2;64;;;;vpos;;v;;r;;d46,49;;b1,5;;mstring;;p">
+					<treenode node="string;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f38;49;45;49;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="stringTranslite;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f15;28;2;42;;;;vpos;;v;;r;;d48,28;;b1,5;;mstring;;p">
+					<treenode node="string;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f40;28;47;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="breadcrumb;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\BaseController.php;f5;4;16;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="BaseModel;PHP:Class Name;C:\home\git\uspensky-pk\app\models\BaseModel.php;f0;2;1;19;;;;vpos;;vEloquent;;c;;r;;d33,2;;b0,0;;m">
+				<treenode node="validate;PHP:Function Name;C:\home\git\uspensky-pk\app\models\BaseModel.php;f15;6;2;17;;;;vpos;;v;;r;;d73,6;;b1,5;;mdata;;prules;;pmessages;;p">
+					<treenode node="data;PHP:Var Name;C:\home\git\uspensky-pk\app\models\BaseModel.php;f33;6;38;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="messages;PHP:Var Name;C:\home\git\uspensky-pk\app\models\BaseModel.php;f53;6;62;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\BaseModel.php;f39;6;45;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="errors;PHP:Var Name;C:\home\git\uspensky-pk\app\models\BaseModel.php;f15;4;22;4;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Catalog;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Catalog.php;f0;2;1;20;;;;vpos;;vBaseModel;;c;;r;;d32,2;;b0,0;;m">
+				<treenode node="products;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Catalog.php;f8;15;2;19;;;;vpos;;v;;r;;d27,15;;b1,0;;m">
+				</treenode>
+				<treenode node="fillable;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Catalog.php;f11;13;20;13;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Catalog.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Catalog.php;f15;8;21;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Catalog.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CatalogsController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f0;2;32;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="CatalogsTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\CatalogsTableSeeder.php;f0;2;1;8;;;;vpos;;vSeeder;;c;;r;;d41,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\CatalogsTableSeeder.php;f8;4;2;6;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CategoriesController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f0;2;34;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="CategoriesGroupTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\CategoriesGroupTableSeeder.php;f0;2;1;8;;;;vpos;;vSeeder;;c;;r;;d48,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\CategoriesGroupTableSeeder.php;f8;4;2;6;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Category;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Category.php;f0;2;1;24;;;;vpos;;vBaseModel;;c;;r;;d33,2;;b0,0;;m">
+				<treenode node="categoryGroup;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Category.php;f8;19;2;23;;;;vpos;;v;;r;;d32,19;;b1,0;;m">
+				</treenode>
+				<treenode node="fillable;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Category.php;f11;16;20;16;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Category.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Category.php;f15;8;21;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Category.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CategoryGroup;PHP:Class Name;C:\home\git\uspensky-pk\app\models\CategoryGroup.php;f0;2;1;26;;;;vpos;;vBaseModel;;c;;r;;d38,2;;b0,0;;m">
+				<treenode node="categories;PHP:Function Name;C:\home\git\uspensky-pk\app\models\CategoryGroup.php;f8;15;2;19;;;;vpos;;v;;r;;d29,15;;b1,0;;m">
+				</treenode>
+				<treenode node="products;PHP:Function Name;C:\home\git\uspensky-pk\app\models\CategoryGroup.php;f8;21;2;25;;;;vpos;;v;;r;;d27,21;;b1,0;;m">
+				</treenode>
+				<treenode node="fillable;PHP:Var Name;C:\home\git\uspensky-pk\app\models\CategoryGroup.php;f11;13;20;13;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\CategoryGroup.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\CategoryGroup.php;f15;8;21;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\CategoryGroup.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateArticlesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_14_101731_create_articles_table.php;f0;5;1;30;;;;vpos;;vMigration;;c;;r;;d44,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_14_101731_create_articles_table.php;f8;26;2;28;;;;vpos;;v;;r;;d23,26;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_14_101731_create_articles_table.php;f8;7;2;24;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateCatalogsTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_18_103249_create_catalogs_table.php;f0;5;1;26;;;;vpos;;vMigration;;c;;r;;d44,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_18_103249_create_catalogs_table.php;f8;21;2;24;;;;vpos;;v;;r;;d23,21;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_18_103249_create_catalogs_table.php;f8;7;2;19;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateCategoriesGroupTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_21_133950_create_categories_group_table.php;f0;5;1;24;;;;vpos;;vMigration;;c;;r;;d51,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_21_133950_create_categories_group_table.php;f8;19;2;22;;;;vpos;;v;;r;;d23,19;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_21_133950_create_categories_group_table.php;f8;7;2;17;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateCategoriesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_22_070606_create_categories_table.php;f0;5;1;36;;;;vpos;;vMigration;;c;;r;;d46,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_22_070606_create_categories_table.php;f8;31;2;34;;;;vpos;;v;;r;;d23,31;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_22_070606_create_categories_table.php;f8;7;2;29;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateCategoryProductTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_25_101239_create_category_product_table.php;f0;5;1;21;;;;vpos;;vMigration;;c;;r;;d51,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_25_101239_create_category_product_table.php;f8;17;2;19;;;;vpos;;v;;r;;d23,17;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_25_101239_create_category_product_table.php;f8;7;2;15;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateGalleriesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_10_125947_create_galleries_table.php;f0;5;1;32;;;;vpos;;vMigration;;c;;r;;d45,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_10_125947_create_galleries_table.php;f8;27;2;30;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Reverse the migrations.&#xA;&#xA;Return:&#xA;   Reverse the migrations;;d1,28;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_10_125947_create_galleries_table.php;f8;12;2;20;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Run the migrations.;;d1,13;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateGroupsTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104821_create_groups_table.php;f0;5;1;24;;;;vpos;;vMigration;;c;;r;;d42,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104821_create_groups_table.php;f8;19;2;22;;;;vpos;;v;;r;;d23,19;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104821_create_groups_table.php;f8;7;2;17;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateI18nNewsTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_05_05_133757_create_i18n_news_table.php;f0;5;1;43;;;;vpos;;vMigration;;c;;r;;d44,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_05_05_133757_create_i18n_news_table.php;f8;38;2;41;;;;vpos;;v;;r;;d23,38;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_05_05_133757_create_i18n_news_table.php;f8;7;2;36;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateI18nPagesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_29_133757_create_i18n_pages_table.php;f0;5;1;43;;;;vpos;;vMigration;;c;;r;;d45,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_29_133757_create_i18n_pages_table.php;f8;38;2;41;;;;vpos;;v;;r;;d23,38;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_29_133757_create_i18n_pages_table.php;f8;7;2;36;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateImagesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_23_103825_create_images_table.php;f0;5;1;33;;;;vpos;;vMigration;;c;;r;;d42,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_23_103825_create_images_table.php;f8;29;2;31;;;;vpos;;v;;r;;d23,29;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_23_103825_create_images_table.php;f8;8;2;27;;;;vpos;;v;;r;;d21,8;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateLanguagesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_08_123907_create_languages_table.php;f0;5;1;33;;;;vpos;;vMigration;;c;;r;;d45,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_08_123907_create_languages_table.php;f8;28;2;31;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Reverse the migrations.&#xA;&#xA;Return:&#xA;   Reverse the migrations;;d1,29;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_08_123907_create_languages_table.php;f8;12;2;21;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Run the migrations.;;d1,13;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateManufacturersTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_25_112828_create_manufacturers_table.php;f0;5;1;31;;;;vpos;;vMigration;;c;;r;;d49,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_25_112828_create_manufacturers_table.php;f8;27;2;29;;;;vpos;;v;;r;;d23,27;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_25_112828_create_manufacturers_table.php;f8;7;2;26;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateModulesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_03_03_201446_create_modules_table.php;f0;5;1;21;;;;vpos;;vMigration;;c;;r;;d43,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_03_03_201446_create_modules_table.php;f8;17;2;19;;;;vpos;;v;;r;;d23,17;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_03_03_201446_create_modules_table.php;f8;7;2;15;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateNewsTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_18_133757_create_news_table.php;f0;5;1;30;;;;vpos;;vMigration;;c;;r;;d40,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_18_133757_create_news_table.php;f8;26;2;28;;;;vpos;;v;;r;;d23,26;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_18_133757_create_news_table.php;f8;7;2;24;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreatePagesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_105008_create_pages_table.php;f0;5;1;32;;;;vpos;;vMigration;;c;;r;;d41,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_105008_create_pages_table.php;f8;27;2;30;;;;vpos;;v;;r;;d23,27;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_105008_create_pages_table.php;f8;7;2;26;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreatePermissionsTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_10_085237_create_permissions_table.php;f0;5;1;22;;;;vpos;;vMigration;;c;;r;;d47,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_10_085237_create_permissions_table.php;f8;17;2;20;;;;vpos;;v;;r;;d23,17;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_10_085237_create_permissions_table.php;f8;7;2;15;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreatePhotosTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_10_130103_create_photos_table.php;f0;5;1;32;;;;vpos;;vMigration;;c;;r;;d42,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_10_130103_create_photos_table.php;f8;27;2;30;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Reverse the migrations.&#xA;&#xA;Return:&#xA;   Reverse the migrations;;d1,28;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_10_130103_create_photos_table.php;f8;12;2;20;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Run the migrations.;;d1,13;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateProductsAttributesGroupTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_28_115029_create_products_attributes_group_table.php;f0;5;1;19;;;;vpos;;vMigration;;c;;r;;d59,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_28_115029_create_products_attributes_group_table.php;f8;15;2;17;;;;vpos;;v;;r;;d23,15;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_28_115029_create_products_attributes_group_table.php;f8;7;2;13;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateProductsAttributesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_28_115149_create_products_attributes_table.php;f0;5;1;26;;;;vpos;;vMigration;;c;;r;;d54,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_28_115149_create_products_attributes_table.php;f8;22;2;24;;;;vpos;;v;;r;;d23,22;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_28_115149_create_products_attributes_table.php;f8;7;2;20;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateProductsTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_22_143526_create_products_table.php;f0;5;1;44;;;;vpos;;vMigration;;c;;r;;d44,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_22_143526_create_products_table.php;f8;40;2;42;;;;vpos;;v;;r;;d23,40;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_22_143526_create_products_table.php;f8;7;2;38;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateRolesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104934_create_roles_table.php;f0;5;1;21;;;;vpos;;vMigration;;c;;r;;d41,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104934_create_roles_table.php;f8;16;2;19;;;;vpos;;v;;r;;d23,16;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104934_create_roles_table.php;f8;7;2;14;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateSessionTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_08_142125_create_session_table.php;f0;4;1;31;;;;vpos;;vMigration;;c;;r;;d43,4;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_08_142125_create_session_table.php;f8;26;2;29;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Reverse the migrations.&#xA;&#xA;Return:&#xA;   Reverse the migrations;;d1,27;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_08_142125_create_session_table.php;f8;11;2;19;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Run the migrations.;;d1,12;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateSettingsTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_17_105422_create_settings_table.php;f0;5;1;32;;;;vpos;;vMigration;;c;;r;;d44,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_17_105422_create_settings_table.php;f8;27;2;30;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Reverse the migrations.&#xA;&#xA;Return:&#xA;   Reverse the migrations;;d1,28;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_17_105422_create_settings_table.php;f8;12;2;20;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Run the migrations.;;d1,13;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateTemplatesTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_20_094843_create_templates_table.php;f0;5;1;21;;;;vpos;;vMigration;;c;;r;;d45,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_20_094843_create_templates_table.php;f8;17;2;19;;;;vpos;;v;;r;;d23,17;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_02_20_094843_create_templates_table.php;f8;7;2;15;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="CreateUsersTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104802_create_users_table.php;f0;5;1;30;;;;vpos;;vMigration;;c;;r;;d41,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104802_create_users_table.php;f8;26;2;28;;;;vpos;;v;;r;;d23,26;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104802_create_users_table.php;f8;7;2;24;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="DatabaseSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\DatabaseSeeder.php;f0;2;1;17;;;;vpos;;vSeeder;;c;;r;;d36,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\DatabaseSeeder.php;f8;4;2;15;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="DownloadsController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\DownloadsController.php;f0;2;1;145;;;;vpos;;vBaseController;;c;;r;;d49,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\DownloadsController.php;f8;4;2;7;;;;vpos;;v;;r;;d30,4;;b1,0;;m">
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\DownloadsController.php;f8;9;2;39;;;;vpos;;v;;r;;d27,9;;b1,0;;m">
+				</treenode>
+				<treenode node="postUpload;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\DownloadsController.php;f8;41;2;56;;;;vpos;;v;;r;;d29,41;;b1,0;;m">
+				</treenode>
+				<treenode node="postUploadCatalogProductImages;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\DownloadsController.php;f8;101;2;143;;;;vpos;;v;;r;;d67,101;;b1,0;;mproduct_id;;p">
+					<treenode node="product_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\DownloadsController.php;f48;101;59;101;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="redactorUploadedImages;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\DownloadsController.php;f8;58;2;81;;;;vpos;;v;;r;;d41,58;;b1,0;;m">
+				</treenode>
+				<treenode node="redactorUploadImage;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\DownloadsController.php;f8;83;2;99;;;;vpos;;v;;r;;d38,83;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="ExampleTest;PHP:Class Name;C:\home\git\uspensky-pk\app\tests\ExampleTest.php;f0;2;1;16;;;;vpos;;vTestCase;;c;;r;;d35,2;;b0,0;;m">
+				<treenode node="testBasicExample;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\ExampleTest.php;f8;9;2;14;;;;vpos;;vvoid;;r&#xA;Description&#xA;     A basic functional test example.;;d1,10;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="GalleriesController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\GalleriesController.php;f0;2;1;103;;;;vpos;;vBaseController;;c;;r;;d49,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GalleriesController.php;f8;4;2;7;;;;vpos;;v;;r;;d30,4;;b1,0;;m">
+				</treenode>
+				<treenode node="getEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GalleriesController.php;f8;15;2;20;;;;vpos;;v;;r;;d29,15;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\GalleriesController.php;f25;15;28;15;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GalleriesController.php;f8;9;2;13;;;;vpos;;v;;r;;d27,9;;b1,0;;m">
+				</treenode>
+				<treenode node="postCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GalleriesController.php;f8;76;2;88;;;;vpos;;v;;r;;d29,76;;b1,0;;m">
+				</treenode>
+				<treenode node="postDelete;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GalleriesController.php;f8;90;2;101;;;;vpos;;v;;r;;d29,90;;b1,0;;m">
+				</treenode>
+				<treenode node="postPhotodelete;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GalleriesController.php;f8;55;2;74;;;;vpos;;v;;r;;d35,55;;b1,0;;m">
+				</treenode>
+				<treenode node="postUpload;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GalleriesController.php;f8;22;2;53;;;;vpos;;v;;r;;d29,22;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Gallery;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Gallery.php;f0;2;1;18;;;;vpos;;vEloquent;;c;;r;;d31,2;;b0,0;;m">
+				<treenode node="getRules;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Gallery.php;f15;14;2;17;;;;vpos;;v;;r;;d1,15;;b1,5;;m">
+				</treenode>
+				<treenode node="photos;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Gallery.php;f8;9;2;12;;;;vpos;;v;;r;;d1,10;;b1,0;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Gallery.php;f11;3;19;3;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Gallery.php;f15;5;21;5;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+			</treenode>
+			<treenode node="GlobalController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\GlobalController.php;f0;2;30;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="Group;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Group.php;f0;2;1;17;;;;vpos;;vEloquent;;c;;r;;d29,2;;b0,0;;m">
+				<treenode node="roles;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Group.php;f8;12;2;15;;;;vpos;;v;;r;;d24,12;;b1,0;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Group.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Group.php;f15;6;21;6;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+			</treenode>
+			<treenode node="GroupsController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f0;2;1;93;;;;vpos;;vBaseController;;c;;r;;d46,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f8;6;2;10;;;;vpos;;v;;r;;d42,6;;b1,0;;mgroup;;p">
+					<treenode node="group;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f35;6;41;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f8;19;2;27;;;;vpos;;v;;r;;d29,19;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f25;19;28;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f8;12;2;17;;;;vpos;;v;;r;;d27,12;;b1,0;;m">
+				</treenode>
+				<treenode node="postAttach;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f8;29;2;36;;;;vpos;;v;;r;;d29,29;;b1,0;;m">
+				</treenode>
+				<treenode node="postCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f8;47;2;59;;;;vpos;;v;;r;;d29,47;;b1,0;;m">
+				</treenode>
+				<treenode node="postDetach;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f8;38;2;45;;;;vpos;;v;;r;;d29,38;;b1,0;;m">
+				</treenode>
+				<treenode node="postUpdate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f8;61;2;91;;;;vpos;;v;;r;;d38,61;;b1,0;;mgroup_id;;p">
+					<treenode node="group_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f28;61;37;61;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="group;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php;f11;4;17;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="GroupsTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\GroupsTableSeeder.php;f0;2;1;23;;;;vpos;;vSeeder;;c;;r;;d38,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\GroupsTableSeeder.php;f8;4;2;22;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="GroupsTest;PHP:Class Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f0;5;1;122;;;;vpos;;vTestCase;;c;;r;;d34,5;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;7;2;11;;;;vpos;;v;;r;;d1,8;;b1,0;;m">
+				</treenode>
+				<treenode node="setUp;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;13;2;19;;;;vpos;;v;;r;;d1,14;;b1,0;;m">
+				</treenode>
+				<treenode node="tearDown;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;21;2;24;;;;vpos;;v;;r;;d1,22;;b1,0;;m">
+				</treenode>
+				<treenode node="testCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;34;2;39;;;;vpos;;v;;r;;d1,35;;b1,0;;m">
+				</treenode>
+				<treenode node="testDestroy;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;109;2;114;;;;vpos;;v;;r;;d1,110;;b1,0;;m">
+				</treenode>
+				<treenode node="testEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;73;2;84;;;;vpos;;v;;r;;d1,74;;b1,0;;m">
+				</treenode>
+				<treenode node="testIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;26;2;32;;;;vpos;;v;;r;;d1,27;;b1,0;;m">
+				</treenode>
+				<treenode node="testShow;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;61;2;71;;;;vpos;;v;;r;;d1,62;;b1,0;;m">
+				</treenode>
+				<treenode node="testStore;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;41;2;48;;;;vpos;;v;;r;;d1,42;;b1,0;;m">
+				</treenode>
+				<treenode node="testStoreFails;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;50;2;59;;;;vpos;;v;;r;;d1,51;;b1,0;;m">
+				</treenode>
+				<treenode node="testUpdate;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;86;2;96;;;;vpos;;v;;r;;d1,87;;b1,0;;m">
+				</treenode>
+				<treenode node="testUpdateFails;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f8;98;2;107;;;;vpos;;v;;r;;d1,99;;b1,0;;m">
+				</treenode>
+				<treenode node="validate;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f11;116;2;121;;;;vpos;;v;;r;;d1,117;;b2,0;;mbool;;p">
+					<treenode node="bool;PHP:Var Name;C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php;f29;116;34;116;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="HomeController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f0;2;1;135;;;;vpos;;vBaseController;;c;;r;;d44,2;;b0,0;;m">
+				<treenode node="showArticle;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f8;77;2;91;;;;vpos;;v;;r;;d34,77;;b1,0;;murl;;p">
+					<treenode node="url;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f29;77;33;77;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="showI18nNews;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f11;19;2;49;;;;vpos;;v;;r;;d38,19;;b1,0;;murl;;p">
+					<treenode node="url;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f33;19;37;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="showI18nPage;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f8;9;2;12;;;;vpos;;v;;r;;d40,9;;b1,0;;murl;;p">
+					<treenode node="url;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f30;9;34;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="showNews;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f8;56;2;70;;;;vpos;;v;;r;;d31,56;;b1,0;;murl;;p">
+					<treenode node="url;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f26;56;30;56;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="showPage;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f11;4;2;7;;;;vpos;;v;;r;;d39,4;;b1,0;;murl;;p">
+					<treenode node="url;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f29;4;33;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="showProduct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f8;98;2;133;;;;vpos;;v;;r;;d42,98;;b1,0;;mproduct_url;;p">
+					<treenode node="product_url;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\HomeController.php;f29;98;41;98;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="I18nNews;PHP:Class Name;C:\home\git\uspensky-pk\app\models\I18nNews.php;f0;2;1;15;;;;vpos;;vBaseModel;;c;;r;;d33,2;;b0,0;;m">
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nNews.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="order_by;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nNews.php;f15;8;24;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nNews.php;f15;10;21;10;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nNews.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="I18nNewsController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f0;2;1;202;;;;vpos;;vBaseController;;c;;r;;d48,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f8;6;2;12;;;;vpos;;v;;r;;d69,6;;b1,0;;mnews;;pnews_meta;;p">
+					<treenode node="news;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f38;6;43;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="news_meta;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f58;6;68;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="deleteDestroy;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f8;96;2;118;;;;vpos;;v;;r;;d35,96;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f31;96;34;96;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f8;22;2;26;;;;vpos;;v;;r;;d28,22;;b1,0;;m">
+				</treenode>
+				<treenode node="getEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f8;54;2;72;;;;vpos;;v;;r;;d29,54;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f25;54;28;54;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f8;14;2;20;;;;vpos;;v;;r;;d27,14;;b1,0;;m">
+				</treenode>
+				<treenode node="postStore;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f8;28;2;52;;;;vpos;;v;;r;;d28,28;;b1,0;;m">
+				</treenode>
+				<treenode node="postUpdate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f8;74;2;94;;;;vpos;;v;;r;;d32,74;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f28;74;31;74;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="saveNewsModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f9;120;2;201;;;;vpos;;v;;r;;d45,120;;b3,0;;mnews;;p">
+					<treenode node="news;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f32;120;37;120;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="news;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php;f11;4;16;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="I18nNewsMeta;PHP:Class Name;C:\home\git\uspensky-pk\app\models\I18nNewsMeta.php;f0;2;1;15;;;;vpos;;vBaseModel;;c;;r;;d37,2;;b0,0;;m">
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nNewsMeta.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="order_by;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nNewsMeta.php;f15;8;24;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nNewsMeta.php;f15;10;21;10;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nNewsMeta.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="I18nPage;PHP:Class Name;C:\home\git\uspensky-pk\app\models\I18nPage.php;f0;2;1;31;;;;vpos;;vEloquent;;c;;r;;d32,2;;b0,0;;m">
+				<treenode node="getMenu;PHP:Function Name;C:\home\git\uspensky-pk\app\models\I18nPage.php;f15;13;2;29;;;;vpos;;v;;r;;d78,13;;b1,5;;mtemplate;;pmenu_template;;p">
+					<treenode node="menu_template;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nPage.php;f54;13;68;13;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="template;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nPage.php;f32;13;41;13;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nPage.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nPage.php;f15;8;21;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nPage.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="I18nPageMeta;PHP:Class Name;C:\home\git\uspensky-pk\app\models\I18nPageMeta.php;f0;2;1;15;;;;vpos;;vBaseModel;;c;;r;;d37,2;;b0,0;;m">
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nPageMeta.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="order_by;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nPageMeta.php;f15;8;24;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nPageMeta.php;f15;10;21;10;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\I18nPageMeta.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="I18nPagesController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f0;2;1;235;;;;vpos;;vBaseController;;c;;r;;d49,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f8;6;2;12;;;;vpos;;v;;r;;d69,6;;b1,0;;mpage;;ppage_meta;;p">
+					<treenode node="page;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f38;6;43;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="page_meta;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f58;6;68;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="deleteDestroy;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f8;97;2;119;;;;vpos;;v;;r;;d35,97;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f31;97;34;97;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f8;22;2;26;;;;vpos;;v;;r;;d28,22;;b1,0;;m">
+				</treenode>
+				<treenode node="getEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f8;54;2;72;;;;vpos;;v;;r;;d29,54;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f25;54;28;54;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f8;14;2;20;;;;vpos;;v;;r;;d27,14;;b1,0;;m">
+				</treenode>
+				<treenode node="getMenu;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f8;121;2;127;;;;vpos;;v;;r;;d26,121;;b1,0;;m">
+				</treenode>
+				<treenode node="postSort;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f8;129;2;138;;;;vpos;;v;;r;;d27,129;;b1,0;;m">
+				</treenode>
+				<treenode node="postStore;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f8;28;2;52;;;;vpos;;v;;r;;d28,28;;b1,0;;m">
+				</treenode>
+				<treenode node="postUpdate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f8;74;2;95;;;;vpos;;v;;r;;d32,74;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f28;74;31;74;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="savePageModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f9;140;2;233;;;;vpos;;v;;r;;d45,140;;b3,0;;mpage;;p">
+					<treenode node="page;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f32;140;37;140;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="page;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php;f11;4;16;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Image;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Image.php;f0;2;1;28;;;;vpos;;vBaseModel;;c;;r;;d30,2;;b0,0;;m">
+				<treenode node="module;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Image.php;f8;22;2;26;;;;vpos;;v;;r;;d25,22;;b1,0;;m">
+				</treenode>
+				<treenode node="product;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Image.php;f8;16;2;20;;;;vpos;;v;;r;;d26,16;;b1,0;;m">
+				</treenode>
+				<treenode node="fillable;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Image.php;f11;14;20;14;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Image.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Image.php;f15;8;21;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Image.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="ImageController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f0;2;29;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="LangController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\LangController.php;f0;2;1;50;;;;vpos;;vBaseController;;c;;r;;d44,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\LangController.php;f8;4;2;7;;;;vpos;;v;;r;;d30,4;;b1,0;;m">
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\LangController.php;f8;9;2;13;;;;vpos;;v;;r;;d27,9;;b1,0;;m">
+				</treenode>
+				<treenode node="postCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\LangController.php;f8;15;2;31;;;;vpos;;v;;r;;d29,15;;b1,0;;m">
+				</treenode>
+				<treenode node="postDelete;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\LangController.php;f8;33;2;49;;;;vpos;;v;;r;;d29,33;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Language;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Language.php;f0;2;1;28;;;;vpos;;vEloquent;;c;;r;;d32,2;;b0,0;;m">
+				<treenode node="getRules;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Language.php;f15;13;2;16;;;;vpos;;v;;r;;d34,13;;b1,5;;m">
+				</treenode>
+				<treenode node="retArray;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Language.php;f15;18;2;27;;;;vpos;;v;;r;;d34,18;;b1,5;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Language.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Language.php;f15;8;21;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Language.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Manufacturer;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Manufacturer.php;f0;2;1;16;;;;vpos;;vBaseModel;;c;;r;;d37,2;;b0,0;;m">
+				<treenode node="fillable;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Manufacturer.php;f11;14;20;14;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Manufacturer.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Manufacturer.php;f15;8;21;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Manufacturer.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="ManufacturersController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f0;2;37;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="ManufacturersTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\ManufacturersTableSeeder.php;f0;2;1;8;;;;vpos;;vSeeder;;c;;r;;d46,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\ManufacturersTableSeeder.php;f8;4;2;6;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="ModulePermission;PHP:Class Name;C:\home\git\uspensky-pk\app\models\ModulePermission.php;f0;2;1;8;;;;vpos;;vEloquent;;c;;r;;d40,2;;b0,0;;m">
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\ModulePermission.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\ModulePermission.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Modules;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Modules.php;f0;2;1;6;;;;vpos;;vEloquent;;c;;r;;d31,2;;b0,0;;m">
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Modules.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="ModulesTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\ModulesTableSeeder.php;f0;2;1;78;;;;vpos;;vSeeder;;c;;r;;d39,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\ModulesTableSeeder.php;f8;4;2;76;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="myDateTime;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f0;1;1;63;;;;vpos;;v;;r;;d17,1;;b0,0;;m">
+				<treenode node="getDayAndMonth;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f15;56;2;62;;;;vpos;;v;;r;;d50,56;;b1,5;;mdate_time;;p">
+					<treenode node="date_time;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f39;56;49;56;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getFutureDays;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f15;39;2;46;;;;vpos;;v;;r;;d61,39;;b1,5;;mdays;;pdate;;p">
+					<treenode node="date;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f48;39;53;39;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="days;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f38;39;43;39;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getNewsDate;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f15;48;2;54;;;;vpos;;v;;r;;d47,48;;b1,5;;mdate_time;;p">
+					<treenode node="date_time;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f36;48;46;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="months;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f15;10;2;22;;;;vpos;;v;;r;;d53,10;;b1,5;;mfield;;pmonths;;p">
+					<treenode node="field;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f31;10;37;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="months;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f38;10;45;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="monthsTime;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f15;24;2;37;;;;vpos;;v;;r;;d57,24;;b1,5;;mfield;;pmonths;;p">
+					<treenode node="field;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f35;24;41;24;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="months;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f42;24;49;24;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="SwapDotDateWithTime;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f15;3;2;8;;;;vpos;;v;;r;;d56,3;;b1,5;;mdate_time;;p">
+					<treenode node="date_time;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\myDateTime.php;f44;3;54;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="News;PHP:Class Name;C:\home\git\uspensky-pk\app\models\News.php;f0;2;1;15;;;;vpos;;vBaseModel;;c;;r;;d29,2;;b0,0;;m">
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\News.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="order_by;PHP:Var Name;C:\home\git\uspensky-pk\app\models\News.php;f15;8;24;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\News.php;f15;10;21;10;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\News.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="NewsController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f0;2;1;135;;;;vpos;;vBaseController;;c;;r;;d44,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f8;6;2;10;;;;vpos;;v;;r;;d40,6;;b1,0;;mnews;;p">
+					<treenode node="news;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f34;6;39;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="deleteDestroy;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f8;75;2;88;;;;vpos;;v;;r;;d35,75;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f31;75;34;75;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f8;18;2;22;;;;vpos;;v;;r;;d28,18;;b1,0;;m">
+				</treenode>
+				<treenode node="getEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f8;44;2;52;;;;vpos;;v;;r;;d29,44;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f25;44;28;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f8;12;2;16;;;;vpos;;v;;r;;d27,12;;b1,0;;m">
+				</treenode>
+				<treenode node="postStore;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f8;24;2;42;;;;vpos;;v;;r;;d28,24;;b1,0;;m">
+				</treenode>
+				<treenode node="postUpdate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f8;54;2;73;;;;vpos;;v;;r;;d32,54;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f28;54;31;54;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="savePageModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f9;90;2;134;;;;vpos;;v;;r;;d45,90;;b3,0;;mnews;;p">
+					<treenode node="news;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f32;90;37;90;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="news;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php;f11;4;16;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Page;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Page.php;f0;2;1;29;;;;vpos;;vEloquent;;c;;r;;d28,2;;b0,0;;m">
+				<treenode node="getMenu;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Page.php;f15;11;2;27;;;;vpos;;v;;r;;d78,11;;b1,5;;mtemplate;;pmenu_template;;p">
+					<treenode node="menu_template;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Page.php;f54;11;68;11;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="template;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Page.php;f32;11;41;11;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Page.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Page.php;f15;6;21;6;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+			</treenode>
+			<treenode node="PagesController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f0;2;1;162;;;;vpos;;vBaseController;;c;;r;;d45,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f8;6;2;10;;;;vpos;;v;;r;;d40,6;;b1,0;;mpage;;p">
+					<treenode node="page;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f34;6;39;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="deleteDestroy;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f8;78;2;91;;;;vpos;;v;;r;;d35,78;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f31;78;34;78;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f8;18;2;22;;;;vpos;;v;;r;;d28,18;;b1,0;;m">
+				</treenode>
+				<treenode node="getEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f8;45;2;53;;;;vpos;;v;;r;;d29,45;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f25;45;28;45;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f8;12;2;16;;;;vpos;;v;;r;;d27,12;;b1,0;;m">
+				</treenode>
+				<treenode node="getMenu;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f8;93;2;99;;;;vpos;;v;;r;;d26,93;;b1,0;;m">
+				</treenode>
+				<treenode node="postSort;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f8;101;2;110;;;;vpos;;v;;r;;d27,101;;b1,0;;m">
+				</treenode>
+				<treenode node="postStore;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f8;24;2;43;;;;vpos;;v;;r;;d28,24;;b1,0;;m">
+				</treenode>
+				<treenode node="postUpdate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f8;55;2;76;;;;vpos;;v;;r;;d32,55;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f28;55;31;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="savePageModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f9;112;2;160;;;;vpos;;v;;r;;d45,112;;b3,0;;mpage;;p">
+					<treenode node="page;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f32;112;37;112;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="page;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php;f11;4;16;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="PagesTest;PHP:Class Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f0;5;1;122;;;;vpos;;vTestCase;;c;;r;;d33,5;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;7;2;11;;;;vpos;;v;;r;;d1,8;;b1,0;;m">
+				</treenode>
+				<treenode node="setUp;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;13;2;19;;;;vpos;;v;;r;;d1,14;;b1,0;;m">
+				</treenode>
+				<treenode node="tearDown;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;21;2;24;;;;vpos;;v;;r;;d1,22;;b1,0;;m">
+				</treenode>
+				<treenode node="testCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;34;2;39;;;;vpos;;v;;r;;d1,35;;b1,0;;m">
+				</treenode>
+				<treenode node="testDestroy;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;109;2;114;;;;vpos;;v;;r;;d1,110;;b1,0;;m">
+				</treenode>
+				<treenode node="testEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;73;2;84;;;;vpos;;v;;r;;d1,74;;b1,0;;m">
+				</treenode>
+				<treenode node="testIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;26;2;32;;;;vpos;;v;;r;;d1,27;;b1,0;;m">
+				</treenode>
+				<treenode node="testShow;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;61;2;71;;;;vpos;;v;;r;;d1,62;;b1,0;;m">
+				</treenode>
+				<treenode node="testStore;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;41;2;48;;;;vpos;;v;;r;;d1,42;;b1,0;;m">
+				</treenode>
+				<treenode node="testStoreFails;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;50;2;59;;;;vpos;;v;;r;;d1,51;;b1,0;;m">
+				</treenode>
+				<treenode node="testUpdate;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;86;2;96;;;;vpos;;v;;r;;d1,87;;b1,0;;m">
+				</treenode>
+				<treenode node="testUpdateFails;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f8;98;2;107;;;;vpos;;v;;r;;d1,99;;b1,0;;m">
+				</treenode>
+				<treenode node="validate;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f11;116;2;121;;;;vpos;;v;;r;;d1,117;;b2,0;;mbool;;p">
+					<treenode node="bool;PHP:Var Name;C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php;f29;116;34;116;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="PaginationClass;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\PaginationClass.php;f0;2;1;18;;;;vpos;;vPresenter;;c;;r;;d40,2;;b0,0;;m">
+				<treenode node="getActivePageWrapper;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\PaginationClass.php;f8;14;2;16;;;;vpos;;v;;r;;d44,14;;b1,0;;mtext;;p">
+					<treenode node="text;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\PaginationClass.php;f38;14;43;14;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getDisabledTextWrapper;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\PaginationClass.php;f8;10;2;12;;;;vpos;;v;;r;;d46,10;;b1,0;;mtext;;p">
+					<treenode node="text;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\PaginationClass.php;f40;10;45;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getPageLinkWrapper;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\PaginationClass.php;f8;5;2;8;;;;vpos;;v;;r;;d48,5;;b1,0;;murl;;ppage;;p">
+					<treenode node="page;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\PaginationClass.php;f42;5;47;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="url;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\PaginationClass.php;f36;5;40;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="Permission;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Permission.php;f0;2;1;8;;;;vpos;;vEloquent;;c;;r;;d34,2;;b0,0;;m">
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Permission.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Permission.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="PermissionsTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\PermissionsTableSeeder.php;f0;2;1;38;;;;vpos;;vSeeder;;c;;r;;d43,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\PermissionsTableSeeder.php;f8;4;2;37;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Photo;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Photo.php;f0;2;1;8;;;;vpos;;vEloquent;;c;;r;;d29,2;;b0,0;;m">
+				<treenode node="path;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Photo.php;f8;5;2;7;;;;vpos;;v;;r;;d24,5;;b1,0;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Photo.php;f11;3;19;3;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="PivotGroupRoleTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104954_pivot_group_role_table.php;f0;5;1;35;;;;vpos;;vMigration;;c;;r;;d44,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104954_pivot_group_role_table.php;f8;30;2;33;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Reverse the migrations.&#xA;&#xA;Return:&#xA;   Reverse the migrations;;d1,31;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104954_pivot_group_role_table.php;f8;12;2;21;;;;vpos;;vvoid;;r&#xA;Description&#xA;     Run the migrations.;;d1,13;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="PivotGroupUserTable;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104830_pivot_group_user_table.php;f0;5;1;21;;;;vpos;;vMigration;;c;;r;;d44,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104830_pivot_group_user_table.php;f8;17;2;19;;;;vpos;;v;;r;;d23,17;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104830_pivot_group_user_table.php;f8;7;2;15;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="PivotUserModulePermission;PHP:Class Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_10_090423_pivot_user_module_permission.php;f0;5;1;24;;;;vpos;;vMigration;;c;;r;;d50,5;;b0,0;;m">
+				<treenode node="down;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_10_090423_pivot_user_module_permission.php;f8;20;2;22;;;;vpos;;v;;r;;d23,20;;b1,0;;m">
+				</treenode>
+				<treenode node="up;PHP:Function Name;C:\home\git\uspensky-pk\app\database\migrations\2014_04_10_090423_pivot_user_module_permission.php;f8;7;2;18;;;;vpos;;v;;r;;d21,7;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Product;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Product.php;f0;2;1;62;;;;vpos;;vBaseModel;;c;;r;;d32,2;;b0,0;;m">
+				<treenode node="catalog;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Product.php;f8;38;2;41;;;;vpos;;v;;r;;d26,38;;b1,0;;m">
+				</treenode>
+				<treenode node="categories;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Product.php;f8;58;2;61;;;;vpos;;v;;r;;d29,58;;b1,0;;m">
+				</treenode>
+				<treenode node="categoryGroup;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Product.php;f8;43;2;46;;;;vpos;;v;;r;;d32,43;;b1,0;;m">
+				</treenode>
+				<treenode node="images;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Product.php;f8;53;2;56;;;;vpos;;v;;r;;d25,53;;b1,0;;m">
+				</treenode>
+				<treenode node="user;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Product.php;f8;48;2;51;;;;vpos;;v;;r;;d23,48;;b1,0;;m">
+				</treenode>
+				<treenode node="fillable;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Product.php;f11;35;20;35;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Product.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="order_by;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Product.php;f15;8;24;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Product.php;f15;10;21;10;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="rules_messages;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Product.php;f15;21;30;21;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Product.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Products_attributes;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Products_attributes.php;f0;2;33;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="Products_attributes_groups;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Products_attributes_groups.php;f0;2;40;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="ProductsAttributesTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\ProductsAttributesTableSeeder.php;f0;2;1;80;;;;vpos;;vSeeder;;c;;r;;d50,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\ProductsAttributesTableSeeder.php;f8;4;2;78;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="ProductsController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f0;2;32;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="ProductsTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\ProductsTableSeeder.php;f0;2;1;8;;;;vpos;;vSeeder;;c;;r;;d41,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\ProductsTableSeeder.php;f8;4;2;6;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Role;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Role.php;f0;2;1;8;;;;vpos;;vEloquent;;c;;r;;d28,2;;b0,0;;m">
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Role.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Role.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="RolesTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\RolesTableSeeder.php;f0;2;1;54;;;;vpos;;vSeeder;;c;;r;;d37,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\RolesTableSeeder.php;f8;4;2;52;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="settings;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Settings.php;f0;2;1;17;;;;vpos;;vEloquent;;c;;r;;d32,2;;b0,0;;m">
+				<treenode node="retArray;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Settings.php;f15;7;2;16;;;;vpos;;v;;r;;d34,7;;b1,5;;m">
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Settings.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="SettingsController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\SettingsController.php;f0;2;1;42;;;;vpos;;vBaseController;;c;;r;;d48,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\SettingsController.php;f8;5;2;9;;;;vpos;;v;;r;;d40,5;;b1,0;;mpage;;p">
+					<treenode node="page;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\SettingsController.php;f34;5;39;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\SettingsController.php;f8;11;2;16;;;;vpos;;v;;r;;d27,11;;b1,0;;m">
+				</treenode>
+				<treenode node="postAdminlanguagechange;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\SettingsController.php;f8;18;2;24;;;;vpos;;v;;r;;d42,18;;b1,0;;m">
+				</treenode>
+				<treenode node="postModule;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\SettingsController.php;f8;26;2;41;;;;vpos;;v;;r;;d29,26;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="shortcode;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f0;2;1;254;;;;vpos;;v;;r;;d16,2;;b0,0;;m">
+				<treenode node="articles;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f15;101;2;131;;;;vpos;;v;;r;;d63,101;;b1,5;;moptions;;pdata;;p">
+					<treenode node="data;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f50;101;55;101;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="options;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f33;101;41;101;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="catalog;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f15;133;2;173;;;;vpos;;v;;r;;d62,133;;b1,5;;moptions;;pdata;;p">
+					<treenode node="data;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f49;133;54;133;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="options;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f32;133;40;133;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="gallery;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f15;175;2;195;;;;vpos;;v;;r;;d62,175;;b1,5;;moptions;;pdata;;p">
+					<treenode node="data;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f49;175;54;175;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="options;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f32;175;40;175;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="i18n_news;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f15;55;2;99;;;;vpos;;v;;r;;d64,55;;b1,5;;moptions;;pdata;;p">
+					<treenode node="data;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f51;55;56;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="options;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f34;55;42;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="map;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f15;197;2;233;;;;vpos;;v;;r;;d37,197;;b1,5;;moptions;;p">
+					<treenode node="options;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f28;197;36;197;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="news;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f15;23;2;53;;;;vpos;;v;;r;;d59,23;;b1,5;;moptions;;pdata;;p">
+					<treenode node="data;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f46;23;51;23;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="options;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f29;23;37;23;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="setUserConfig;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f16;235;2;253;;;;vpos;;v;;r;;d48,235;;b3,5;;moptions;;p">
+					<treenode node="options;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f39;235;47;235;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="view;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f15;6;2;21;;;;vpos;;v;;r;;d52,6;;b1,5;;moptions;;pdata;;p">
+					<treenode node="data;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f39;6;44;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="options;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f29;6;37;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="config;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\shortcode.php;f15;4;22;4;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+			</treenode>
+			<treenode node="sI18nPage;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\sI18nPage.php;f0;2;1;99;;;;vpos;;v;;r;;d16,2;;b0,0;;m">
+				<treenode node="content_render;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\sI18nPage.php;f15;55;2;76;;;;vpos;;v;;r;;d72,55;;b1,5;;mpage_content;;ppage_data;;p">
+					<treenode node="page_content;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\sI18nPage.php;f39;55;52;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="page_data;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\sI18nPage.php;f54;55;64;55;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="shortcode;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\sI18nPage.php;f16;78;2;97;;;;vpos;;v;;r;;d56,78;;b3,5;;mclear;;pdata;;p">
+					<treenode node="clear;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\sI18nPage.php;f35;78;41;78;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="data;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\sI18nPage.php;f43;78;48;78;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="show;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\sI18nPage.php;f15;4;2;53;;;;vpos;;v;;r;;d34,4;;b1,5;;murl;;p">
+					<treenode node="url;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\sI18nPage.php;f29;4;33;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="slang;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\slang.php;f0;2;1;21;;;;vpos;;v;;r;;d12,2;;b0,0;;m">
+				<treenode node="get;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\slang.php;f15;4;2;20;;;;vpos;;v;;r;;d42,4;;b1,5;;marray;;p">
+					<treenode node="array;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\slang.php;f28;4;34;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="slink;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\slink.php;f0;17;1;105;;;;vpos;;v;;r;;d12,17;;b0,0;;m">
+				<treenode node="createAuthLink;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\slink.php;f15;69;2;87;;;;vpos;;v;;r;;d52,69;;b1,5;;mlink;;p">
+					<treenode node="link;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\slink.php;f39;69;44;69;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="createLink;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\slink.php;f15;19;2;39;;;;vpos;;v;;r;;d48,19;;b1,5;;mlink;;p">
+					<treenode node="link;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\slink.php;f35;19;40;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="createLink2;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\slink.php;f15;41;2;67;;;;vpos;;v;;r;;d49,41;;b1,5;;mlink;;p">
+					<treenode node="link;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\slink.php;f36;41;41;41;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="path;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\slink.php;f15;89;2;96;;;;vpos;;v;;r;;d35,89;;b1,5;;mlink;;p">
+					<treenode node="link;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\slink.php;f29;89;34;89;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="segment;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\slink.php;f15;98;2;104;;;;vpos;;v;;r;;d35,98;;b1,5;;mn;;p">
+					<treenode node="n;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\slink.php;f32;98;34;98;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="sPage;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\spage.php;f0;2;1;65;;;;vpos;;v;;r;;d12,2;;b0,0;;m">
+				<treenode node="content_render;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\spage.php;f15;21;2;42;;;;vpos;;v;;r;;d71,21;;b1,5;;mpage_content;;ppage_data;;p">
+					<treenode node="page_content;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\spage.php;f39;21;52;21;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="page_data;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\spage.php;f53;21;63;21;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="shortcode;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\spage.php;f16;44;2;63;;;;vpos;;v;;r;;d55,44;;b3,5;;mclear;;pdata;;p">
+					<treenode node="clear;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\spage.php;f35;44;41;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="data;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\spage.php;f42;44;47;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="show;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\spage.php;f15;4;2;19;;;;vpos;;v;;r;;d34,4;;b1,5;;murl;;p">
+					<treenode node="url;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\spage.php;f29;4;33;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="ssl;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\ssl.php;f0;2;1;18;;;;vpos;;v;;r;;d10,2;;b0,0;;m">
+				<treenode node="is;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\ssl.php;f15;4;2;17;;;;vpos;;v;;r;;d29,4;;b1,5;;m">
+				</treenode>
+			</treenode>
+			<treenode node="SystemModules;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\SystemModules.php;f0;2;1;67;;;;vpos;;v;;r;;d20,2;;b0,0;;m">
+				<treenode node="getModules;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\SystemModules.php;f15;38;2;66;;;;vpos;;v;;r;;d62,38;;b1,5;;mname;;pindex;;p">
+					<treenode node="index;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\SystemModules.php;f48;38;54;38;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="name;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\SystemModules.php;f35;38;40;38;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getSidebarModules;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\SystemModules.php;f15;4;2;30;;;;vpos;;v;;r;;d43,4;;b1,5;;m">
+				</treenode>
+			</treenode>
+			<treenode node="TablesSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\TablesSeeder.php;f0;2;1;69;;;;vpos;;vSeeder;;c;;r;;d33,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\TablesSeeder.php;f8;4;2;68;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Template;PHP:Class Name;C:\home\git\uspensky-pk\app\models\Template.php;f0;2;1;13;;;;vpos;;vEloquent;;c;;r;;d32,2;;b0,0;;m">
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Template.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Template.php;f15;8;21;8;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Template.php;f11;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="TemplatesSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\TemplatesSeeder.php;f0;2;1;43;;;;vpos;;vSeeder;;c;;r;;d36,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\TemplatesSeeder.php;f8;4;2;41;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="temps;PHP:Class Name;C:\home\git\uspensky-pk\app\lib\temps.php;f0;2;1;22;;;;vpos;;v;;r;;d12,2;;b0,0;;m">
+				<treenode node="all;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\temps.php;f15;4;2;12;;;;vpos;;v;;r;;d1,5;;b1,5;;m">
+				</treenode>
+				<treenode node="open;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\temps.php;f15;14;2;21;;;;vpos;;v;;r;;d1,15;;b1,5;;mname;;p">
+					<treenode node="name;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\temps.php;f29;14;34;14;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="TempsController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f0;2;1;124;;;;vpos;;vBaseController;;c;;r;;d45,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f8;6;2;10;;;;vpos;;v;;r;;d48,6;;b1,0;;mtemplate;;p">
+					<treenode node="template;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f38;6;47;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="deleteDestroy;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f8;85;2;102;;;;vpos;;v;;r;;d35,85;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f31;85;34;85;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f8;18;2;21;;;;vpos;;v;;r;;d28,18;;b1,0;;m">
+				</treenode>
+				<treenode node="getEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f8;48;2;61;;;;vpos;;v;;r;;d29,48;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f25;48;28;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f8;12;2;16;;;;vpos;;v;;r;;d27,12;;b1,0;;m">
+				</treenode>
+				<treenode node="postStore;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f8;23;2;46;;;;vpos;;v;;r;;d28,23;;b1,0;;m">
+				</treenode>
+				<treenode node="postUpdate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f8;63;2;83;;;;vpos;;v;;r;;d32,63;;b1,0;;mid;;p">
+					<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f28;63;31;63;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="savePageModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f9;104;2;122;;;;vpos;;v;;r;;d49,104;;b3,0;;mtemplate;;p">
+					<treenode node="template;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f32;104;41;104;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="template;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php;f11;4;20;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="TestCase;PHP:Class Name;C:\home\git\uspensky-pk\app\tests\TestCase.php;f0;2;33;2;;;;vpos;;vIlluminate;;c;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="User;PHP:Class Name;C:\home\git\uspensky-pk\app\models\User.php;f0;5;1;51;;;;vpos;;vEloquent;;cUserInterface;;cRemindableInterface;;c;;r;;d74,5;;b0,0;;m">
+				<treenode node="getAuthIdentifier;PHP:Function Name;C:\home\git\uspensky-pk\app\models\User.php;f8;20;2;22;;;;vpos;;v;;r;;d36,20;;b1,0;;m">
+				</treenode>
+				<treenode node="getAuthPassword;PHP:Function Name;C:\home\git\uspensky-pk\app\models\User.php;f8;24;2;26;;;;vpos;;v;;r;;d34,24;;b1,0;;m">
+				</treenode>
+				<treenode node="getRememberToken;PHP:Function Name;C:\home\git\uspensky-pk\app\models\User.php;f8;36;2;39;;;;vpos;;v;;r;;d35,36;;b1,0;;m">
+				</treenode>
+				<treenode node="getRememberTokenName;PHP:Function Name;C:\home\git\uspensky-pk\app\models\User.php;f8;46;2;49;;;;vpos;;v;;r;;d39,46;;b1,0;;m">
+				</treenode>
+				<treenode node="getReminderEmail;PHP:Function Name;C:\home\git\uspensky-pk\app\models\User.php;f8;28;2;30;;;;vpos;;v;;r;;d35,28;;b1,0;;m">
+				</treenode>
+				<treenode node="groups;PHP:Function Name;C:\home\git\uspensky-pk\app\models\User.php;f8;32;2;34;;;;vpos;;v;;r;;d25,32;;b1,0;;m">
+				</treenode>
+				<treenode node="setRememberToken;PHP:Function Name;C:\home\git\uspensky-pk\app\models\User.php;f8;41;2;44;;;;vpos;;v;;r;;d41,41;;b1,0;;mvalue;;p">
+					<treenode node="value;PHP:Var Name;C:\home\git\uspensky-pk\app\models\User.php;f34;41;40;41;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="guarded;PHP:Var Name;C:\home\git\uspensky-pk\app\models\User.php;f11;9;19;9;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="hidden;PHP:Var Name;C:\home\git\uspensky-pk\app\models\User.php;f11;11;18;11;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="rules;PHP:Var Name;C:\home\git\uspensky-pk\app\models\User.php;f15;13;21;13;;;;vpos;;v;;r;;d-1,-1;;b1,5;;m">
+				</treenode>
+				<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\User.php;f11;7;17;7;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="UserCabinetController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\UserCabinetController.php;f0;2;1;20;;;;vpos;;vBaseController;;c;;r;;d51,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\UserCabinetController.php;f8;4;2;7;;;;vpos;;v;;r;;d30,4;;b1,0;;m">
+				</treenode>
+				<treenode node="getSecurePageIntranet;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\UserCabinetController.php;f8;14;2;19;;;;vpos;;v;;r;;d40,14;;b1,0;;m">
+				</treenode>
+				<treenode node="mainPage;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\UserCabinetController.php;f8;9;2;12;;;;vpos;;v;;r;;d27,9;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="UsersController;PHP:Class Name;C:\home\git\uspensky-pk\app\controllers\modules\UsersController.php;f0;2;1;48;;;;vpos;;vBaseController;;c;;r;;d45,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\UsersController.php;f8;6;2;10;;;;vpos;;v;;r;;d40,6;;b1,0;;muser;;p">
+					<treenode node="user;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\UsersController.php;f34;6;39;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\UsersController.php;f8;12;2;21;;;;vpos;;v;;r;;d27,12;;b1,0;;m">
+				</treenode>
+				<treenode node="postAttach;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\UsersController.php;f8;41;2;47;;;;vpos;;v;;r;;d29,41;;b1,0;;m">
+				</treenode>
+				<treenode node="postCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\UsersController.php;f8;23;2;39;;;;vpos;;v;;r;;d29,23;;b1,0;;m">
+				</treenode>
+				<treenode node="user;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\UsersController.php;f11;4;16;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="UserTableSeeder;PHP:Class Name;C:\home\git\uspensky-pk\app\database\seeds\UserTableSeeder.php;f0;2;1;31;;;;vpos;;vSeeder;;c;;r;;d36,2;;b0,0;;m">
+				<treenode node="run;PHP:Function Name;C:\home\git\uspensky-pk\app\database\seeds\UserTableSeeder.php;f8;4;2;29;;;;vpos;;v;;r;;d22,4;;b1,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="__construct;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f8;6;2;10;;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f8;6;2;10;;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;6;2;10;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f8;6;2;10;;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f8;6;2;10;;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f8;7;2;23;;;;vpos;;v;;r;;d46,6;;b1,0;;mproduct;;p">
+				<treenode node="articles;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f37;6;46;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="catalog;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f37;6;45;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="categories_group;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f43;6;60;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="manufacturer;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f42;6;55;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="product;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f37;6;45;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="_url;PHP:Function Name;C:\home\git\uspensky-pk\app\lib\slink.php;f0;11;1;15;;;;vpos;;v;;r;;d29,11;;b0,0;;mlink;;p">
+				<treenode node="link;PHP:Var Name;C:\home\git\uspensky-pk\app\lib\slink.php;f14;11;19;11;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="activation;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\GlobalController.php;f8;77;2;92;;;;vpos;;v;;r;;d29,77;;b1,0;;m">
+			</treenode>
+			<treenode node="createApplication;PHP:Function Name;C:\home\git\uspensky-pk\app\tests\TestCase.php;f8;9;2;16;;;;vpos;;v;;r&#xA;Description&#xA;     Creates the application.;;d1,10;;b1,0;;m">
+			</treenode>
+			<treenode node="deleteDestroy;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f8;124;2;148;;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f8;76;2;93;;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;76;2;97;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f8;78;2;95;;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f8;88;2;101;;;;vpos;;v;;r;;d43,124;;b1,0;;mproduct_id;;p">
+				<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f31;76;34;76;;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f31;76;34;76;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f31;78;34;78;;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f31;88;34;88;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="product_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f31;124;42;124;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="deleteImage;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f8;76;2;101;;;;vpos;;v;;r;;d33,76;;b1,0;;mid;;p">
+				<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f29;76;32;76;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="deleteImages;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f15;103;2;124;;;;vpos;;v;;r;;d59,103;;b1,5;;mmodule_name;;pitem_id;;p">
+				<treenode node="item_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f50;103;58;103;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="module_name;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f37;103;49;103;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="getCategoryCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;157;2;162;;;;vpos;;v;;r;;d81,157;;b1,0;;mcategory_group_id;;pparent_category_id;;p">
+				<treenode node="category_group_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f35;157;53;157;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="parent_category_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f54;157;73;157;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="getCategoryEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;189;2;198;;;;vpos;;v;;r;;d92,189;;b1,0;;mcategory_group_id;;pcategory_id;;pparent_category_id;;p">
+				<treenode node="category_group_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f33;189;51;189;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="category_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f52;189;64;189;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="parent_category_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f65;189;84;189;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="getCategoryList;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;146;2;155;;;;vpos;;v;;r;;d79,146;;b1,0;;mcategory_group_id;;pparent_category_id;;p">
+				<treenode node="category_group_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f33;146;51;146;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="parent_category_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f52;146;71;146;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="getCreate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f8;18;2;41;;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f8;18;2;22;;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;18;2;22;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f8;18;2;22;;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f8;18;2;22;;;;vpos;;v;;r;;d28,18;;b1,0;;m">
+			</treenode>
+			<treenode node="getEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f8;63;2;101;;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f8;44;2;52;;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;44;2;52;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f8;44;2;55;;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f8;44;2;52;;;;vpos;;v;;r;;d37,63;;b1,0;;mproduct_id;;p">
+				<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f25;44;28;44;;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f25;44;28;44;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f25;44;28;44;;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f25;44;28;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="product_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f25;63;36;63;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="getIndex;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f8;12;2;16;;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f8;12;2;16;;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;12;2;16;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f8;12;2;16;;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f8;12;2;16;;;;vpos;;v;;r;;d27,12;;b1,0;;m">
+			</treenode>
+			<treenode node="getRegisterAccount;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\GlobalController.php;f9;94;2;113;;;;vpos;;v;;r;;d50,94;;b3,0;;mpost;;p">
+				<treenode node="post;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\GlobalController.php;f37;94;42;94;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="getSubCategoryEdit;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;200;2;209;;;;vpos;;v;;r;;d88,200;;b1,0;;mcategory_group_id;;pparent_category_id;;pcategory_id;;p">
+				<treenode node="category_group_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f36;200;54;200;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="category_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f75;200;87;200;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="parent_category_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f55;200;74;200;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="getSugestSearchCategory;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;126;2;140;;;;vpos;;v;;r;;d60,126;;b1,0;;mcategory_group_id;;p">
+				<treenode node="category_group_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f41;126;59;126;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="loginPage;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\GlobalController.php;f8;4;2;7;;;;vpos;;v;;r;;d28,4;;b1,0;;m">
+			</treenode>
+			<treenode node="logout;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\GlobalController.php;f8;71;2;75;;;;vpos;;v;;r;;d25,71;;b1,0;;m">
+			</treenode>
+			<treenode node="postCategoryDestroy;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;236;2;263;;;;vpos;;v;;r;;d69,236;;b1,0;;mcategory_group_id;;pcategory_id;;p">
+				<treenode node="category_group_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f37;236;55;236;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="category_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f56;236;68;236;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="postCategoryStore;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;164;2;187;;;;vpos;;v;;r;;d54,164;;b1,0;;mcategory_group_id;;p">
+				<treenode node="category_group_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f35;164;53;164;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="postCategoryUpdate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;211;2;234;;;;vpos;;v;;r;;d68,211;;b1,0;;mcategory_group_id;;pcategory_id;;p">
+				<treenode node="category_group_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f36;211;54;211;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="category_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f55;211;67;211;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="postRequestToAccess;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\GlobalController.php;f8;119;2;141;;;;vpos;;v;;r;;d38,119;;b1,0;;m">
+			</treenode>
+			<treenode node="postStore;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f8;43;2;61;;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f8;24;2;42;;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;24;2;42;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f8;24;2;42;;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f8;24;2;42;;;;vpos;;v;;r;;d28,43;;b1,0;;m">
+			</treenode>
+			<treenode node="postUpdate;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f8;103;2;122;;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f8;54;2;74;;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f8;54;2;74;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f8;57;2;76;;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f8;54;2;86;;;;vpos;;v;;r;;d32,103;;b1,0;;mid;;p">
+				<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f28;103;31;103;;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f28;54;31;54;;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f28;54;31;54;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f28;57;31;57;;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f28;54;31;54;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="productAttrGroup;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Products_attributes.php;f8;8;2;11;;;;vpos;;v;;r;;d35,8;;b1,0;;m">
+			</treenode>
+			<treenode node="productAttributes;PHP:Function Name;C:\home\git\uspensky-pk\app\models\Products_attributes_groups.php;f8;8;2;11;;;;vpos;;v;;r;;d36,8;;b1,0;;m">
+			</treenode>
+			<treenode node="Redirect;PHP:Function Name;C:\home\git\uspensky-pk\app\filters.php;f0;137;1;141;;;;vpos;;v;;r;;d62,137;;b0,0;;murl;;pcode;;p">
+				<treenode node="code;PHP:Var Name;C:\home\git\uspensky-pk\app\filters.php;f29;137;34;137;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="url;PHP:Var Name;C:\home\git\uspensky-pk\app\filters.php;f18;137;22;137;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="saveCatalogModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f9;97;2;141;;;;vpos;;v;;r;;d51,97;;b3,0;;mcatalog;;p">
+				<treenode node="catalog;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f35;97;43;97;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="saveCategoryGroupModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f9;99;2;120;;;;vpos;;v;;r;;d64,99;;b3,0;;mcategory_group;;p">
+				<treenode node="category_group;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f41;99;56;99;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="saveCategoryModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f9;265;2;313;;;;vpos;;v;;r;;d53,265;;b3,0;;mcategory;;p">
+				<treenode node="category;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f36;265;45;265;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="saveManufacturerModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f9;95;2;151;;;;vpos;;v;;r;;d61,95;;b3,0;;mmanufacturer;;p">
+				<treenode node="manufacturer;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f40;95;53;95;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="savePageModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f9;103;2;147;;;;vpos;;v;;r;;d48,103;;b3,0;;marticle;;p">
+				<treenode node="article;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f32;103;40;103;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="saveProductModel;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f9;150;2;246;;;;vpos;;v;;r;;d51,150;;b3,0;;mproduct;;p">
+				<treenode node="product;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f35;150;43;150;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="showImage;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f8;25;2;74;;;;vpos;;v;;r;;d44,25;;b1,0;;mimage_group;;pid;;p">
+				<treenode node="id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f40;25;43;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="image_group;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f27;25;39;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="signin;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\GlobalController.php;f8;9;2;32;;;;vpos;;v;;r;;d25,9;;b1,0;;m">
+			</treenode>
+			<treenode node="signup;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\GlobalController.php;f8;34;2;69;;;;vpos;;v;;r;;d25,34;;b1,0;;m">
+			</treenode>
+			<treenode node="validAccessToCategory;PHP:Function Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f9;315;2;327;;;;vpos;;v;;r;;d86,315;;b3,0;;mcategory_group_id;;pparent_category_id;;p">
+				<treenode node="category_group_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f40;315;58;315;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="parent_category_id;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f59;315;78;315;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="_SERVER;PHP:Var Name;C:\home\git\uspensky-pk\app\start\global.php;f12;88;20;88;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="acceptedTypes;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f5;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="articles;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php;f11;4;20;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+			</treenode>
+			<treenode node="attribute;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php;f29;84;39;84;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php;f29;84;39;84;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="catalog;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php;f29;120;37;120;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php;f29;120;37;120;;C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="catalogList;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php;f16;120;28;120;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php;f16;120;28;120;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="categories_group;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php;f11;4;28;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+			</treenode>
+			<treenode node="category_group;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php;f35;133;50;133;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php;f35;133;50;133;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="categoryGroupList;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php;f16;133;34;133;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php;f16;133;34;133;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="checked;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\settings\index.blade.php;f13;13;21;13;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="code;PHP:Var Name;C:\home\git\uspensky-pk\app\start\global.php;f42;49;47;49;;C:\home\git\uspensky-pk\app\filters.php;f42;10;47;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="defaultImages;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\ImageController.php;f5;5;19;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="exception;PHP:Var Name;C:\home\git\uspensky-pk\app\start\global.php;f30;49;40;49;;C:\home\git\uspensky-pk\app\routes.php;f23;154;33;154;;C:\home\git\uspensky-pk\app\filters.php;f30;10;40;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="langs;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\pages\forms\edit.blade.php;f14;17;20;17;;C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\edit.blade - копия.php;f14;17;20;17;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php;f16;98;22;98;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php;f16;98;22;98;;C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\forms\edit.blade.php;f14;25;20;25;;C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\forms\create.blade.php;f14;25;20;25;;C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\edit.blade.php;f14;25;20;25;;C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\create.blade.php;f14;25;20;25;;C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\group-edit.blade.php;f14;17;20;17;;C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\group-create.blade.php;f14;17;20;17;;C:\home\git\uspensky-pk\app\views\modules\~i18n_pages\forms\edit.blade.php;f14;17;20;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="language;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\pages\forms\edit.blade.php;f21;17;30;17;;C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\edit.blade - копия.php;f21;17;30;17;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php;f23;98;32;98;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php;f23;98;32;98;;C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\forms\edit.blade.php;f21;25;30;25;;C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\forms\create.blade.php;f21;25;30;25;;C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\edit.blade.php;f21;25;30;25;;C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\create.blade.php;f21;25;30;25;;C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\group-edit.blade.php;f21;17;30;17;;C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\group-create.blade.php;f21;17;30;17;;C:\home\git\uspensky-pk\app\views\modules\~i18n_pages\forms\edit.blade.php;f21;17;30;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="locale;PHP:Var Name;C:\home\git\uspensky-pk\app\routes.php;f38;134;45;134;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="manufacturer;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php;f11;4;24;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+			</treenode>
+			<treenode node="news;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\i18n_news\forms\edit.blade.php;f93;32;98;32;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="paginator;PHP:Var Name;C:\home\git\uspensky-pk\app\views\pagination.blade.php;f56;1;66;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="prefix;PHP:Var Name;C:\home\git\uspensky-pk\app\routes.php;f0;27;7;27;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="presenter;PHP:Var Name;C:\home\git\uspensky-pk\app\views\pagination.blade.php;f1;1;11;1;;;;vposIlluminate;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="product;PHP:Var Name;C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php;f11;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+			</treenode>
+			<treenode node="productAttr;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php;f14;80;26;80;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php;f14;80;26;80;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="redir;PHP:Var Name;C:\home\git\uspensky-pk\app\filters.php;f5;132;11;132;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="request;PHP:Var Name;C:\home\git\uspensky-pk\app\filters.php;f21;2;29;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="response;PHP:Var Name;C:\home\git\uspensky-pk\app\filters.php;f30;6;39;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="table;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Products_attributes_groups.php;f11;6;17;6;;C:\home\git\uspensky-pk\app\models\Products_attributes.php;f11;4;17;4;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+			</treenode>
+			<treenode node="template;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\pages\forms\edit.blade.php;f21;28;30;28;;C:\home\git\uspensky-pk\app\views\modules\news\forms\edit.blade.php;f21;35;30;35;;C:\home\git\uspensky-pk\app\views\modules\news\forms\create.blade.php;f21;35;30;35;;C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\edit.blade.php;f37;35;46;35;;C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\edit.blade - копия.php;f21;28;30;28;;C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\create.blade.php;f37;26;46;26;;C:\home\git\uspensky-pk\app\views\modules\i18n_news\forms\edit.blade.php;f37;23;46;23;;C:\home\git\uspensky-pk\app\views\modules\i18n_news\forms\create.blade.php;f37;20;46;20;;C:\home\git\uspensky-pk\app\views\modules\i18n_news\forms\~edit.blade.php;f21;35;30;35;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php;f23;109;32;109;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php;f23;109;32;109;;C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\forms\edit.blade.php;f21;36;30;36;;C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\forms\create.blade.php;f21;36;30;36;;C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\edit.blade.php;f21;36;30;36;;C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\create.blade.php;f21;36;30;36;;C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\group-edit.blade.php;f21;28;30;28;;C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\group-create.blade.php;f21;28;30;28;;C:\home\git\uspensky-pk\app\views\modules\articles\forms\edit.blade.php;f21;35;30;35;;C:\home\git\uspensky-pk\app\views\modules\articles\forms\create.blade.php;f21;35;30;35;;C:\home\git\uspensky-pk\app\views\modules\~i18n_pages\forms\edit.blade.php;f21;28;30;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="temps;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\pages\forms\edit.blade.php;f14;28;20;28;;C:\home\git\uspensky-pk\app\views\modules\news\forms\edit.blade.php;f14;35;20;35;;C:\home\git\uspensky-pk\app\views\modules\news\forms\create.blade.php;f14;35;20;35;;C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\edit.blade.php;f30;35;36;35;;C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\edit.blade - копия.php;f14;28;20;28;;C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\create.blade.php;f30;26;36;26;;C:\home\git\uspensky-pk\app\views\modules\i18n_news\forms\edit.blade.php;f30;23;36;23;;C:\home\git\uspensky-pk\app\views\modules\i18n_news\forms\create.blade.php;f30;20;36;20;;C:\home\git\uspensky-pk\app\views\modules\i18n_news\forms\~edit.blade.php;f14;35;20;35;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php;f16;109;22;109;;C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php;f16;109;22;109;;C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\forms\edit.blade.php;f14;36;20;36;;C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\forms\create.blade.php;f14;36;20;36;;C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\edit.blade.php;f14;36;20;36;;C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\create.blade.php;f14;36;20;36;;C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\group-edit.blade.php;f14;28;20;28;;C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\group-create.blade.php;f14;28;20;28;;C:\home\git\uspensky-pk\app\views\modules\articles\forms\edit.blade.php;f14;35;20;35;;C:\home\git\uspensky-pk\app\views\modules\articles\forms\create.blade.php;f14;35;20;35;;C:\home\git\uspensky-pk\app\views\modules\~i18n_pages\forms\edit.blade.php;f14;28;20;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="timestamps;PHP:Var Name;C:\home\git\uspensky-pk\app\models\Products_attributes_groups.php;f8;4;19;4;;C:\home\git\uspensky-pk\app\models\Products_attributes.php;f8;6;19;6;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
+			</treenode>
+			<treenode node="types;PHP:Var Name;C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\edit.blade.php;f15;69;21;69;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+		</phptree>
+		<jstree>
+		</jstree>
+		<scsstree>
+		</scsstree>
+		<lesstree>
+		</lesstree>
+	</codestructure><cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+	</todoblock>
+	<filescache>
+		<file name="C:\home\git\uspensky-pk\app\views\user-cabinet\dashboard.blade.php" crc="-1927906136"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\news\menu.blade.php" crc="1299246122"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\default\sidebar.blade.php" crc="19777216"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\default\scripts.blade.php" crc="-422346844"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\default\menu.blade.php" crc="1659349509"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\default\header.blade.php" crc="-1836557805"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\default\head.blade.php" crc="30926680"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\default\footer.blade.php" crc="-336938792"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\dashboard\sidebar.blade.php" crc="-1508515248"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\dashboard\scripts.blade.php" crc="1862637333"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\dashboard\header.blade.php" crc="-1211284490"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\dashboard\head.blade.php" crc="-256376314"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\dashboard\footer.blade.php" crc="1703722150"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\admin\sidebar.blade.php" crc="335093416"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\admin\scripts.blade.php" crc="1862637333"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\admin\header.blade.php" crc="1091620594"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\admin\head.blade.php" crc="-10555351"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\admin\footer.blade.php" crc="1703722150"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\request-for-access-to-documents.blade.php" crc="-1037754957"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\product.blade.php" crc="-2030552066"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\news.blade.php" crc="-1436495021"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\news-on-main-page.blade.php" crc="-1039489453"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\news-list.blade.php" crc="-929643286"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\news-list.blade - копия.php" crc="1196547163"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\news-calendar.blade.php" crc="-317436291"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\manufacturer.blade.php" crc="1604745361"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\investors.blade.php" crc="-1000364978"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\index-page.blade.php" crc="-403660889"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\default.blade.php" crc="1407636257"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\dashboard.blade.php" crc="478188278"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\contacts.blade.php" crc="1781784335"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\category.blade.php" crc="1604745361"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\catalog.blade.php" crc="1773116373"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\articles.blade.php" crc="-1331513287"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\articles-list.blade.php" crc="1695749049"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\admin.blade.php" crc="-1173908515"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\users\index.blade.php" crc="825120939"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\templates\forms\edit.blade.php" crc="1352303742"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\templates\forms\create.blade.php" crc="602826233"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\templates\index.blade.php" crc="857000049"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\templates\edit.blade.php" crc="-1636956708"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\templates\create.blade.php" crc="2126632838"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\settings\index.blade.php" crc="-497605913"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\seo\pages.blade.php" crc="-2041032177"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\seo\news.blade.php" crc="-1527418075"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\seo\i18n_pages.blade.php" crc="-591512724"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\seo\i18n_news.blade.php" crc="-264194924"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\seo\catalog-product.blade.php" crc="1809811048"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\seo\catalog-manufacturer.blade.php" crc="1278032524"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\seo\catalog-category.blade.php" crc="2039001032"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\seo\articles.blade.php" crc="1982309678"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\pages\forms\edit.blade.php" crc="1464283680"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\pages\forms\create.blade.php" crc="-1179699878"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\pages\menu.blade.php" crc="116344277"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\pages\index.blade.php" crc="-1767859805"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\pages\edit.blade.php" crc="-1745547174"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\pages\create.blade.php" crc="-1338005116"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\news\forms\edit.blade.php" crc="-187541018"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\news\forms\create.blade.php" crc="-1506576096"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\news\index.blade.php" crc="-1289501297"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\news\edit.blade.php" crc="1460800579"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\news\create.blade.php" crc="69412994"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\languages\index.blade.php" crc="-2122481999"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\edit.blade.php" crc="1469355107"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\edit.blade - копия.php" crc="1464283680"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_pages\forms\create.blade.php" crc="-1395365362"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_pages\menu.blade.php" crc="116344277"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_pages\index.blade.php" crc="-213610678"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_pages\edit.blade.php" crc="204553983"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_pages\create.blade.php" crc="-1080461533"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_news\forms\edit.blade.php" crc="-2076952041"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_news\forms\create.blade.php" crc="-716107408"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_news\forms\~edit.blade.php" crc="-187541018"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_news\index.blade.php" crc="1535362655"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_news\edit.blade.php" crc="670377347"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\i18n_news\create.blade.php" crc="1208486709"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\groups\forms\edit.blade.php" crc="-1758989923"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\groups\forms\create.blade.php" crc="1544655740"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\groups\index.blade.php" crc="2046491895"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\groups\edit.blade.php" crc="-840764680"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\groups\create.blade.php" crc="-1371024865"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\galleries\index.blade.php" crc="1506949093"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\galleries\edit.blade.php" crc="-1570417217"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\downloads\index.blade.php" crc="1273173619"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\edit.blade.php" crc="-702046195"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\products\forms\create.blade.php" crc="1827308277"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\products\index.blade.php" crc="-256809052"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\products\edit.blade.php" crc="174584658"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\products\create.blade.php" crc="1580099160"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\forms\edit.blade.php" crc="1453610332"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\forms\create.blade.php" crc="197316553"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\index.blade.php" crc="1671913839"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\edit.blade.php" crc="1266708764"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\manufacturers\create.blade.php" crc="1069477278"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\edit.blade.php" crc="-1037884357"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\forms\create.blade.php" crc="-1512235437"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\group-edit.blade.php" crc="-1188320276"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\group-create.blade.php" crc="-1691377541"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\category-edit.blade.php" crc="-313604823"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\forms\category-create.blade.php" crc="-1239251993"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\group-index.blade.php" crc="441260924"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\group-edit.blade.php" crc="362645339"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\group-create.blade.php" crc="132297132"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\category-index.blade.php" crc="-1842634320"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\category-edit.blade.php" crc="-916060564"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\categories\category-create.blade.php" crc="224034517"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\index.blade.php" crc="-1807730164"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\edit.blade.php" crc="-593728194"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\catalogs\create.blade.php" crc="-745959884"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\articles\forms\edit.blade.php" crc="-1437661837"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\articles\forms\create.blade.php" crc="1307649691"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\articles\index.blade.php" crc="-1258082896"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\articles\edit.blade.php" crc="-1856947681"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\articles\create.blade.php" crc="-1156945425"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\~i18n_pages\forms\edit.blade.php" crc="1464283680"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\~i18n_pages\forms\create.blade.php" crc="-1179699878"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\~i18n_pages\menu.blade.php" crc="116344277"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\~i18n_pages\index.blade.php" crc="-1767859805"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\~i18n_pages\edit.blade.php" crc="-1745547174"/>
+		<file name="C:\home\git\uspensky-pk\app\views\modules\~i18n_pages\create.blade.php" crc="-1338005116"/>
+		<file name="C:\home\git\uspensky-pk\app\views\guests\forms\sign-up.blade.php" crc="1046028252"/>
+		<file name="C:\home\git\uspensky-pk\app\views\guests\forms\sign-in.blade.php" crc="577927571"/>
+		<file name="C:\home\git\uspensky-pk\app\views\guests\wellcome.blade.php" crc="694573263"/>
+		<file name="C:\home\git\uspensky-pk\app\views\guests\login.blade.php" crc="-1359423745"/>
+		<file name="C:\home\git\uspensky-pk\app\views\emails\auth\signup.blade.php" crc="308489529"/>
+		<file name="C:\home\git\uspensky-pk\app\views\emails\auth\reminder.blade.php" crc="152395838"/>
+		<file name="C:\home\git\uspensky-pk\app\views\emails\request-to-access.blade.php" crc="-1886714868"/>
+		<file name="C:\home\git\uspensky-pk\app\views\admin\dashboard.blade.php" crc="284082183"/>
+		<file name="C:\home\git\uspensky-pk\app\views\pagination.blade.php" crc="-1498767997"/>
+		<file name="C:\home\git\uspensky-pk\app\views\error404.blade.php" crc="-312362337"/>
+		<file name="C:\home\git\uspensky-pk\app\tests\controllers\PagesTest.php" crc="1000146319"/>
+		<file name="C:\home\git\uspensky-pk\app\tests\controllers\GroupsTest.php" crc="-1601987465"/>
+		<file name="C:\home\git\uspensky-pk\app\tests\TestCase.php" crc="714805900"/>
+		<file name="C:\home\git\uspensky-pk\app\tests\ExampleTest.php" crc="1788270007"/>
+		<file name="C:\home\git\uspensky-pk\app\start\local.php" crc="2144619058"/>
+		<file name="C:\home\git\uspensky-pk\app\start\global.php" crc="-537274460"/>
+		<file name="C:\home\git\uspensky-pk\app\start\artisan.php" crc="1854263715"/>
+		<file name="C:\home\git\uspensky-pk\app\models\User.php" crc="2141533296"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Template.php" crc="-1509526800"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Settings.php" crc="-1116022409"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Role.php" crc="1006049459"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Products_attributes_groups.php" crc="1436062820"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Products_attributes.php" crc="-60784876"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Product.php" crc="184178805"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Photo.php" crc="-1711057757"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Permission.php" crc="-1074761218"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Page.php" crc="-1117917636"/>
+		<file name="C:\home\git\uspensky-pk\app\models\News.php" crc="1049479991"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Modules.php" crc="624572655"/>
+		<file name="C:\home\git\uspensky-pk\app\models\ModulePermission.php" crc="-1277663394"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Manufacturer.php" crc="-655595846"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Language.php" crc="415463022"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Image.php" crc="1610846653"/>
+		<file name="C:\home\git\uspensky-pk\app\models\I18nPageMeta.php" crc="725416619"/>
+		<file name="C:\home\git\uspensky-pk\app\models\I18nPage.php" crc="980520065"/>
+		<file name="C:\home\git\uspensky-pk\app\models\I18nNewsMeta.php" crc="1408571355"/>
+		<file name="C:\home\git\uspensky-pk\app\models\I18nNews.php" crc="-718515272"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Group.php" crc="1400910530"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Gallery.php" crc="51768845"/>
+		<file name="C:\home\git\uspensky-pk\app\models\CategoryGroup.php" crc="601600266"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Category.php" crc="800206613"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Catalog.php" crc="-1263228663"/>
+		<file name="C:\home\git\uspensky-pk\app\models\BaseModel.php" crc="363366540"/>
+		<file name="C:\home\git\uspensky-pk\app\models\Article.php" crc="-1013842134"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\temps.php" crc="-1933278516"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\SystemModules.php" crc="-803483015"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\ssl.php" crc="-1833305260"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\spage.php" crc="-1968588426"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\slink.php" crc="181849742"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\slang.php" crc="745831740"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\sI18nPage.php" crc="415771028"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\shortcode.php" crc="-1055975"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\PaginationClass.php" crc="-373251237"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\myDateTime.php" crc="-914470113"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\AuthAccount.php" crc="-1252586746"/>
+		<file name="C:\home\git\uspensky-pk\app\lib\allow.php" crc="-1689241030"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\ru\validation.php" crc="-89404469"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\ru\reminders.php" crc="-676060010"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\ru\pagination.php" crc="-529837604"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\ru\modules.php" crc="-1956412448"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\ru\interface.php" crc="-1144252537"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\ru\admin.php" crc="1432334658"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\en\validation.php" crc="1436981737"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\en\reminders.php" crc="-676060010"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\en\pagination.php" crc="-529837604"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\en\modules.php" crc="-748510355"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\en\interface.php" crc="174015022"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\en\admin.php" crc="-1892140313"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\de\validation.php" crc="1436981737"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\de\reminders.php" crc="-676060010"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\de\pagination.php" crc="-529837604"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\de\modules.php" crc="-748510355"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\de\interface.php" crc="-595894564"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\de\admin.php" crc="-1892140313"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\UserTableSeeder.php" crc="-1574641456"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\TemplatesSeeder.php" crc="556961516"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\TablesSeeder.php" crc="261689526"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\RolesTableSeeder.php" crc="-1538402820"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\ProductsTableSeeder.php" crc="-91620716"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\ProductsAttributesTableSeeder.php" crc="483859049"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\PermissionsTableSeeder.php" crc="1787438179"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\ModulesTableSeeder.php" crc="-1371548882"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\ManufacturersTableSeeder.php" crc="-911736063"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\GroupsTableSeeder.php" crc="-1305821086"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\DatabaseSeeder.php" crc="1642739669"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\CategoriesGroupTableSeeder.php" crc="144104560"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\CatalogsTableSeeder.php" crc="2137026594"/>
+		<file name="C:\home\git\uspensky-pk\app\database\seeds\ArticlesTableSeeder.php" crc="-90324302"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_05_05_133757_create_i18n_news_table.php" crc="-630036830"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_29_133757_create_i18n_pages_table.php" crc="1661916151"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_28_115149_create_products_attributes_table.php" crc="1019548005"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_28_115029_create_products_attributes_group_table.php" crc="741413772"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_25_112828_create_manufacturers_table.php" crc="1699621417"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_25_101239_create_category_product_table.php" crc="188158081"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_23_103825_create_images_table.php" crc="222218219"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_22_143526_create_products_table.php" crc="855592737"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_22_070606_create_categories_table.php" crc="-298524121"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_21_133950_create_categories_group_table.php" crc="-1488422993"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_18_103249_create_catalogs_table.php" crc="1284794084"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_14_101731_create_articles_table.php" crc="1076054186"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_10_090423_pivot_user_module_permission.php" crc="-815290422"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_10_085237_create_permissions_table.php" crc="-1966311031"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_04_08_142125_create_session_table.php" crc="705698342"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_03_03_201446_create_modules_table.php" crc="506944486"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_02_20_094843_create_templates_table.php" crc="886288926"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_02_18_133757_create_news_table.php" crc="-947281254"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_02_17_105422_create_settings_table.php" crc="1759337282"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_02_10_130103_create_photos_table.php" crc="1018555933"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_02_10_125947_create_galleries_table.php" crc="283386980"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_02_08_123907_create_languages_table.php" crc="401797216"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_105008_create_pages_table.php" crc="292546886"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104954_pivot_group_role_table.php" crc="-455574911"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104934_create_roles_table.php" crc="-528594470"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104830_pivot_group_user_table.php" crc="-1907487347"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104821_create_groups_table.php" crc="-540436924"/>
+		<file name="C:\home\git\uspensky-pk\app\database\migrations\2014_01_19_104802_create_users_table.php" crc="-1855363288"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\UsersController.php" crc="721841449"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\TempsController.php" crc="-1952407303"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\SettingsController.php" crc="-410942734"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\ProductsController.php" crc="-2109584221"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\PagesController.php" crc="-1009765843"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\NewsController.php" crc="1806395631"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\ManufacturersController.php" crc="-170201146"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\LangController.php" crc="-769879379"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\I18nPagesController.php" crc="393290373"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\I18nNewsController.php" crc="-186382302"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\GroupsController.php" crc="-105465350"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\GalleriesController.php" crc="1946646919"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\DownloadsController.php" crc="1854506934"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\CategoriesController.php" crc="924194299"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\CatalogsController.php" crc="-679919077"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\modules\ArticlesController.php" crc="1155329430"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\UserCabinetController.php" crc="1210378467"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\ImageController.php" crc="-943642205"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\HomeController.php" crc="1434921286"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\GlobalController.php" crc="1526633233"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\BaseController.php" crc="-319990536"/>
+		<file name="C:\home\git\uspensky-pk\app\controllers\AdminCabinetController.php" crc="2046747120"/>
+		<file name="C:\home\git\uspensky-pk\app\config\testing\session.php" crc="1866249605"/>
+		<file name="C:\home\git\uspensky-pk\app\config\testing\cache.php" crc="128564237"/>
+		<file name="C:\home\git\uspensky-pk\app\config\workbench.php" crc="1612217438"/>
+		<file name="C:\home\git\uspensky-pk\app\config\view.php" crc="897989345"/>
+		<file name="C:\home\git\uspensky-pk\app\config\session.php" crc="817474428"/>
+		<file name="C:\home\git\uspensky-pk\app\config\remote.php" crc="1758269065"/>
+		<file name="C:\home\git\uspensky-pk\app\config\queue.php" crc="1174383184"/>
+		<file name="C:\home\git\uspensky-pk\app\config\mail.php" crc="2142109894"/>
+		<file name="C:\home\git\uspensky-pk\app\config\database.php" crc="123837482"/>
+		<file name="C:\home\git\uspensky-pk\app\config\compile.php" crc="1051961790"/>
+		<file name="C:\home\git\uspensky-pk\app\config\cache.php" crc="-1262231858"/>
+		<file name="C:\home\git\uspensky-pk\app\config\auth.php" crc="-1490787784"/>
+		<file name="C:\home\git\uspensky-pk\app\config\app.php" crc="-1332251534"/>
+		<file name="C:\home\git\uspensky-pk\app\config\app-default.php" crc="849238010"/>
+		<file name="C:\home\git\uspensky-pk\app\routes.php" crc="-665749019"/>
+		<file name="C:\home\git\uspensky-pk\app\filters.php" crc="-251357375"/>
+	</filescache>
+</project>

@@ -138,14 +138,19 @@ foreach(Config::get('app.locales') as $locale) {
     Route::group(array('prefix' => $locale, 'before' => 'i18n_url'), function(){
         Route::get('/{url}','HomeController@showI18nPage'); ## I18n Pages
         Route::get('/', 'HomeController@showI18nPage'); ## I18n Main Page
-        Route::get('/news/{news_url}','HomeController@showI18nNews'); ## I18n News
+        Route::get('/news/{url}', array('as' => 'news_full', 'uses' => 'HomeController@showI18nNews')); ## I18n News
     });
     ## Генерим те же самые роуты, но уже без префикса, и назначаем before-фильтр i18n_url
     ## Это позволяет нам делать редирект на урл с префиксом только для этих роутов, не затрагивая, например, /admin и /login
     Route::group(array('before' => 'i18n_url'), function(){
         Route::get('/{url}','HomeController@showI18nPage'); ## I18n Pages
         Route::get('/', 'HomeController@showI18nPage'); ## I18n Main Page
-        Route::get('/news/{news_url}','HomeController@showI18nNews'); ## I18n News
+        
+        Route::get('/news/{url}', array('as' => 'news_full',
+        	function($url) {
+        		return HomeController::showI18nNews($url);
+        	}
+        )); ## I18n News
     });
 }
 

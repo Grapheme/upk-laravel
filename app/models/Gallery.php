@@ -1,6 +1,6 @@
 <?php
 
-class Gallery extends Eloquent {
+class gallery extends Eloquent {
 	protected $guarded = array();
 
 	public static $rules = array(

@@ -87,6 +87,14 @@ class shortcode {
 
             ## Получаем новости с учетом пагинации
 			$news = $selected_news->paginate(static::$config['limit']);
+			
+			foreach ($news as $n => $new) {
+				preg_match("~<img [^>]*?src=['\"]([^'\"]+?)['\"]~is", $new->content, $matches);
+				#print_r($matches);
+				$new->image = @$matches[1];
+				$news[$n] = $new;
+			}
+			
 			if($news->count()):
 				if(View::exists('templates.'.static::$config['path'])):
 					return View::make('templates.'.static::$config['path'],compact('news'));
