@@ -1,68 +1,45 @@
 @extends('templates.'.AuthAccount::getStartPage())
-@section('content')
-@if(Allow::valid_action_permission('galleries','create'))
-<div class="row">
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<div class="pull-right margin-bottom-25 margin-top-10 ">
-			<a class="btn btn-primary" href="{{slink::createAuthLink('galleries/create')}}">Добавить галерею</a>
-		</div>
-	</div>
-</div>
-@endif
-@if($galleries->count())
-<div class="row">
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-		<table class="table table-striped table-bordered">
-			<thead>
-				<tr>
-					<th class="col-lg-10 text-center">Название гелереи</th>
-					<th class="col-lg-1 text-center"></th>
-				</tr>
-			</thead>
-			<tbody>
-			@foreach($galleries as $gallery)
-				<tr>
-					<td>{{ $gallery->name }}</td>
-					<td>
-						@if(Allow::valid_action_permission('galleries','edit'))
-							<a class="btn btn-labeled btn-success pull-left margin-right-10" href="{{slink::createAuthLink('galleries/edit/'.$gallery->id)}}">
-								<span class="btn-label"><i class="fa fa-edit"></i></span> Ред.
-							</a>
-						@endif
-						@if(Allow::valid_action_permission('galleries','delete'))
-							<form method="POST" action="{{slink::createAuthLink('galleries/destroy/'.$gallery->id)}}">
-								<button type="button" class="btn btn-labeled btn-danger remove-gallery">
-									<span class="btn-label"><i class="fa fa-trash-o"></i></span> Удал.
-								</button>
-							</form>
-						@endif
-					</td>
-				</tr>
-			@endforeach
-			</tbody>
-		</table>
-	</div>
-</div>
-@else
-<div class="row">
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<div class="ajax-notifications custom">
-			<div class="alert alert-transparent">
-				<h4>Список пуст</h4>
-				В данном разделе находятся галереи
-				<p><br><i class="regular-color-light fa fa-th-list fa-3x"></i></p>
-			</div>
-		</div>
-	</div>
-</div>
-@endif
-@stop
+
 @section('scripts')
-<script>
+
+	<script>
 	$(function(){
+		$('.form-ajax-submit').on('submit', function(event){
+
+			event.preventDefault();
+
+			var $_form = $(this);
+			var $data = {};
+
+			$_form.find('input').not('input[type=submit]').each(function(){
+				$data[$(this).attr('name')] = $(this).val();
+			});
+
+			$.ajax({
+				url: $_form.attr('action'),
+				data: $data,
+				type: 'post',
+            }).done(function(href){
+            	window.location.href = href;
+            }).fail(function(data){
+            	var $errors = data.responseJSON;
+
+                $.bigBox({
+                    title : "Error!",
+                    content : $errors,
+                    color : "#C46A69",
+                    timeout: 15000,
+                    icon : "fa fa-warning shake animated",
+                });
+            });
+
+		});
+
 		$('.gallery-delete-btn').click(function(){
+
 			var $that = $(this).parent().parent();
 			var $id = $(this).attr('data-id');
+
 			$.ajax({
 				url: '{{URL::to('admin/galleries/delete')}}',
 				data: { id: $id },
@@ -70,8 +47,71 @@
             }).done(function(){
             	$that.fadeOut('fast');
             });
+
 			return false;
 		});
 	});
-</script>
+	</script>
+
+@stop
+
+@section('content')
+
+<div style="margin-bottom: 25px;">
+	<a class="btn btn-primary" data-toggle="modal" data-target="#gallery">Add new gallery</a>
+</div>
+
+@if (is_object($galls) && $galls->count())
+<table class="table table-bordered table-striped">
+<thead>
+	<tr>
+		<th>Name</th>
+		<th style="width: 100px;"></th>
+		<th style="width: 100px;"></th>
+	</tr>
+</thead>
+<tbody>
+
+	@foreach($galls as $gall)
+	<tr>
+		<td>{{$gall->name}}</td>
+		<td><a href="{{slink::to('admin/galleries/edit/'.$gall->id)}}" class="btn btn-primary">Edit</a></td>
+		<td><a class="gallery-delete-btn btn btn-danger" href="#" data-id="{{$gall->id}}">Delete</a></td>
+	</tr>
+
+	@endforeach
+
+</tbody>
+</table>
+@else
+	There are no galleries
+@endif
+
+<div class="modal fade in" id="gallery" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					×
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Add new gallery</h4>
+			</div>
+			<div class="modal-body">
+
+				<div class="row">
+					<div class="col-md-12">
+						<form id="add-lang" class="form-ajax-submit" action="{{slink::to('admin/galleries/create')}}">
+							<div class="form-group">
+								<label>Name:</label>
+								<input class="form-control" name="name" type="text">
+								<input class="form-control" name="settings" type="hidden" value="">
+							</div>
+							<input type="submit" class="btn btn-primary" data-id="add-lang" value="add">
+						</form>
+					</div>
+				</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>
+
 @stop

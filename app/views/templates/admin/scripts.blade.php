@@ -16,3 +16,6 @@
 	{{HTML::script('js/vendor/smartclick.js');}}
 	{{HTML::script('js/system/app.js');}}
 	{{HTML::script('js/system/messages.js');}}
+
+	{{HTML::script('js/vendor/dropzone.min.js');}}
+	{{HTML::script('js/system/dropzone-functions.js');}}

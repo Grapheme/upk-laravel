@@ -70,7 +70,7 @@
                             <section>
                                 <label class="label">Содержание</label>
                                 <label class="textarea">
-                                    {{ Form::textarea('content['.$locale.']','',array('class'=>'redactor redactor_150')) }}
+                                    {{ Form::textarea('content['.$locale.']','',array('class'=>'redactor redactor_450')) }}
                                 </label>
                             </section>
                         </fieldset>
@@ -90,6 +90,11 @@
         </div>
    	</div>
 
+	<div style="float:none; clear:both;"></div>
+
+    <section class="col-12">
+		@include('modules.galleries.abstract')
+	</section>
 
     <section class="col-6">
         <footer>

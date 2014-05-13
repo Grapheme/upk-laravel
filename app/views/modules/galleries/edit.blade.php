@@ -1,9 +1,9 @@
-@extends('templates.admin.index')
+@extends('templates.'.AuthAccount::getStartPage())
 
-@section('plugins')
+@section('scripts')
 	
-	<script src="{{slink::path('admin_template/js/plugin/superbox/superbox.min.js')}}"></script>
-	<script src="{{slink::path('admin_template/js/plugin/dropzone/dropzone.min.js')}}"></script>
+	<!--<script src="{{slink::path('js/vendor/superbox.min.js')}}"></script>-->
+	<script src="{{slink::path('js/vendor/dropzone.min.js')}}"></script>
 	<script>
 	$(document).ready(function() {
 
@@ -13,7 +13,7 @@
 			dictResponseError: 'Error uploading file!'
 		});
 
-		$('.superbox').SuperBox();
+		//$('.superbox').SuperBox();
 
 		myDropzone.on("totaluploadprogress", function(data) {
 			console.log(data);

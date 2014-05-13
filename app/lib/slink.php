@@ -103,4 +103,8 @@ class slink {
 		endif;
 		return Request::segment($n);
 	}
+	
+	public static function to($link) {
+		return self::createLink($link);
+	}
 }

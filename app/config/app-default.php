@@ -15,6 +15,7 @@ return array(
 	
 	'upload_dir' => '/uploads',
 	'galleries_photo_dir' => '/uploads/galleries',
+	'galleries_thumb_dir' => '/uploads/galleries/thumbs',
 	
 	'secure_page_link' => 'intranet'
 );

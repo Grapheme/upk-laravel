@@ -67,3 +67,47 @@ $(function(){
 	$(".btn-spinner").mouseover(function(){$(this).find('i').eq(0).removeClass('hidden');});
 	$(".btn-spinner").mouseout(function(){$(this).find('i').eq(0).addClass('hidden');})
 });
+
+
+// http://www.mrclay.org/2010/11/14/using-jquery-before-its-loaded/
+//defer$();
+/*
+    $(document).ready(function() {
+        if (defer)
+            defer();
+    });
+*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*
+    $(document).ready(function() {
+    	
+        var myDropzone = new Dropzone("#mydropzone", {
+            addRemoveLinks : false,
+            maxFilesize: 0.5,
+            dictResponseError: 'Error uploading file!'
+        });
+
+        //myDropzone.on("totaluploadprogress", function(data) {
+        //    console.log(data);
+        //});
+
+        $('.photo-delete').click(function(){
+            var $photoDiv = $(this).parent();
+            $.ajax({
+                url: "{{slink::createLink('admin/galleries/photodelete')}}",
+                data: { id: $(this).attr('data-photo-id') },
+                type: 'post',
+            }).done(function(){
+                $photoDiv.fadeOut('fast');
+            }).fail(function(data){
+                console.log(data);
+            });           
+            return false;
+        });
+    });
+*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
