@@ -16,12 +16,21 @@
 			);
 
 	        myDropzone.on("totaluploadprogress", function(data) {
-	            console.log(data);
+	            //console.log(data);
 	        });
 
 			myDropzone.on("success", function(file, response) {
 				//alert(response.image_id);
 				$(dz_selector).append("<input type='hidden' name='uploaded_images[]' value='" + response.image_id + "' />");
+			});
+
+			myDropzone.on("sending", function(file, xhr, formData) {
+				//formData.append("filesize", file.size); // Will send the filesize along with the file as POST data.
+				//console.log(file);
+				//console.log(xhr);
+				//console.log(formData);
+				var gallery_id = $('.egg-dropzone').data('gallery_id');
+				formData.append("gallery_id", gallery_id);
 			});
 
 			myDropzone.on("removedfile", function(file) {

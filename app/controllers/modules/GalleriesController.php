@@ -117,9 +117,11 @@ class GalleriesController extends BaseController {
 	        exit;
 		}
 
+		$gallery_id = Input::get('gallery_id') ? (int)Input::get('gallery_id') : 0;
+
 		$photo = Photo::create(array(
 			'name' => $fileName,
-			'gallery_id' => '0',
+			'gallery_id' => $gallery_id,
 		));
 
 		$result = array('result' => 'success', 'image_id' => $photo->id);
@@ -205,11 +207,15 @@ class GalleriesController extends BaseController {
 		if ( !@$module || !$unit_id || !$gallery_id )
 			return false;
 
-		$rel = Rel_mod_gallery::create(array(
-			'module' => $module,
-			'unit_id' => $unit_id,
-			'gallery_id' => $gallery_id,
-		));
+		$rel = Rel_mod_gallery::where('module', $module)->where('unit_id', $unit_id)->where('gallery_id', $gallery_id)->first();
+
+		if (!$rel->id) {
+			$rel = Rel_mod_gallery::create(array(
+				'module' => $module,
+				'unit_id' => $unit_id,
+				'gallery_id' => $gallery_id,
+			));
+		}
 
 		$gallery = gallery::find($gallery_id);
 		$gallery->name = $module . " - " . $unit_id;
