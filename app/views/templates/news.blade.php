@@ -12,7 +12,7 @@
                 <h1>
                     {{$news->title}}
                 </h1>
-                <div class="fotorama" data-nav="false" data-width="100%" data-height="300px" data-fit="contain">
+                <div class="fotorama" data-nav="false" data-width="100%" data-fit="contain">
                 @if (is_object($gall))
 				@foreach($gall->photos as $photo)
                     <img src="{{ $photo->path() }}">
