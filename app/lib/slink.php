@@ -41,7 +41,7 @@ class slink {
 
 	public static function createLink2($link = NULL){
 
-  		if(!is_null($link) && $link != "/"):
+  		if(!is_null($link) && $link != "/" && mb_substr($link, 0, 1) != '/'):
 			$link = '/'.$link;
 		endif;
 
