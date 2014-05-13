@@ -9,7 +9,7 @@ class gallery extends Eloquent {
 
 	public function photos()
 	{
-		return $this->hasMany('photo');
+		return $this->hasMany('Photo');
 	}
 
 	public static function getRules()
