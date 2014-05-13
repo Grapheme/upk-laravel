@@ -55,7 +55,7 @@ class GalleriesController extends BaseController {
 			#$file = array('filelink'=>url('uploads/'.$fileName));
 			#echo stripslashes(json_encode($file));
 
-			$photo = photo::create(array(
+			$photo = Photo::create(array(
 				'name' => $fileName,
 				'gallery_id' => $id,
 			));
@@ -117,7 +117,7 @@ class GalleriesController extends BaseController {
 	        exit;
 		}
 
-		$photo = photo::create(array(
+		$photo = Photo::create(array(
 			'name' => $fileName,
 			'gallery_id' => '0',
 		));
@@ -131,7 +131,7 @@ class GalleriesController extends BaseController {
 	public function postPhotodelete() {
 		$id = Input::get('id');
 
-		$model = photo::find($id);
+		$model = Photo::find($id);
 
 		$db_delete = $model->delete();
 
@@ -187,7 +187,7 @@ class GalleriesController extends BaseController {
 		}
 		
 		foreach ($images as $i => $img_id) {
-			$img = photo::find($img_id);
+			$img = Photo::find($img_id);
 			if (@$img) {
 				$img->gallery_id = $gallery_id;
 				#print_r($img);
