@@ -8,6 +8,6 @@ class Rel_mod_gallery extends Eloquent {
     public $timestamps = false;
 
 	public function photos() {
-		return $this->hasMany('Photo', 'gallery_id');
+		return $this->hasMany('Photo', 'gallery_id', 'gallery_id');
 	}
 }
