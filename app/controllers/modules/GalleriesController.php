@@ -209,7 +209,7 @@ class GalleriesController extends BaseController {
 
 		$rel = Rel_mod_gallery::where('module', $module)->where('unit_id', $unit_id)->where('gallery_id', $gallery_id)->first();
 
-		if (!$rel->id) {
+		if (!is_object($rel) || !@$rel->id) {
 			$rel = Rel_mod_gallery::create(array(
 				'module' => $module,
 				'unit_id' => $unit_id,
