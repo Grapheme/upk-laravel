@@ -108,7 +108,7 @@ class GalleriesController extends BaseController {
 		if(!File::exists($thumbsPath))
 			File::makeDirectory($thumbsPath,0777,TRUE);
 
-		$thumb_upload_success = ImageManipulation::make(Input::file('file')->getRealPath())->resize(100,100,TRUE)->save($thumbsPath.'/'.$fileName);
+		$thumb_upload_success = ImageManipulation::make(Input::file('file')->getRealPath())->resize(100,NULL,TRUE)->save($thumbsPath.'/'.$fileName);
 		$image_upload_success = ImageManipulation::make(Input::file('file')->getRealPath())->resize(800,800,TRUE)->save($uploadPath.'/'.$fileName);
 
 		if (!$thumb_upload_success || !$image_upload_success) {
