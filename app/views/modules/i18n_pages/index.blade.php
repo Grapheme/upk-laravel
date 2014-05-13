@@ -7,7 +7,7 @@
 				<a class="btn btn-primary" href="{{slink::createAuthLink('i18n_pages/create')}}">Добавить страницу</a>
 			@endif
 			@if(Allow::valid_action_permission('pages','sort') && $pages->count() > 2)
-				<a class="btn btn-default" href="{{slink::createAuthLink('i18n_pages/menu')}}">Сортировать меню</a>
+				<!-- <a class="btn btn-default" href="{{slink::createAuthLink('i18n_pages/menu')}}">Сортировать меню</a> -->
 			@endif
 			</div>
 		</div>
@@ -49,14 +49,14 @@
 						@endif
 						<td class="wigth-250">
 						@if(Allow::valid_action_permission('pages','edit'))
-							<a class="btn btn-labeled btn-success pull-left margin-right-10" href="{{slink::createAuthLink('i18n_pages/edit/'.$page->id)}}">
-								<span class="btn-label"><i class="fa fa-edit"></i></span> Ред.
+							<a class="btn btn-default pull-left margin-right-10" href="{{slink::createAuthLink('i18n_pages/edit/'.$page->id)}}">
+								Редактировать
 							</a>
 						@endif
 						@if(Allow::valid_action_permission('pages','delete'))
 							<form method="POST" action="{{slink::createAuthLink('i18n_pages/destroy/'.$page->id)}}">
-								<button type="button" class="btn btn-labeled btn-danger remove-page">
-									<span class="btn-label"><i class="fa fa-trash-o"></i></span> Удал.
+								<button type="button" class="btn btn-default remove-page">
+									Удалить
 								</button>
 							</form>
 						@endif

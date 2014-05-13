@@ -7,7 +7,7 @@
 				<a class="btn btn-primary" href="{{slink::createAuthLink('i18n_news/create')}}">Добавить новость</a>
 			@endif
 			@if(Allow::valid_action_permission('news','sort') && $news->count() > 2)
-				<a class="btn btn-default" href="{{slink::createAuthLink('i18n_news/sort')}}">Сортировать</a>
+				<!-- <a class="btn btn-default" href="{{slink::createAuthLink('i18n_news/sort')}}">Сортировать</a> -->
 			@endif
 			</div>
 		</div>
@@ -45,14 +45,14 @@
 						@endif
 						<td class="wigth-250">
 						@if(Allow::valid_action_permission('news','edit'))
-							<a class="btn btn-labeled btn-success pull-left margin-right-10" href="{{slink::createAuthLink('i18n_news/edit/'.$new->id)}}">
-								<span class="btn-label"><i class="fa fa-edit"></i></span> Ред.
+							<a class="btn btn-default pull-left margin-right-10" href="{{slink::createAuthLink('i18n_news/edit/'.$new->id)}}">
+								Редактировать
 							</a>
 						@endif
 						@if(Allow::valid_action_permission('news','delete'))
 							<form method="POST" action="{{slink::createAuthLink('i18n_news/destroy/'.$new->id)}}">
-								<button type="button" class="btn btn-labeled btn-danger remove-news">
-									<span class="btn-label"><i class="fa fa-trash-o"></i></span> Удал.
+								<button type="button" class="btn btn-default remove-news">
+									Удалить
 								</button>
 							</form>
 						@endif
