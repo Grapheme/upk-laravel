@@ -70,7 +70,7 @@ class I18nNewsController extends BaseController {
         #print_r($news_meta);
 
 		$gall = Rel_mod_gallery::where('module', 'news')->where('unit_id', $id)->first();
-		#print_r($gall->photos);
+		print_r($gall);
 
 		return View::make('modules.i18n_news.edit',array('news'=>$news, 'news_meta'=>@$news_meta, 'templates'=>Template::all(),'languages'=>Language::all(), 'locales' => $this->locales, 'gall' => $gall));
 	}

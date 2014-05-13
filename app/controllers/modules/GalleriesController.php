@@ -164,10 +164,12 @@ class GalleriesController extends BaseController {
 	public function postDelete(){
 		
 		$id = Input::get('id');
-		$model = gallery::find($id);
+		$gallery = gallery::find($id);
 
-		if($model->delete())
-		{
+		@Rel_mod_gallery::where('gallery_id', $gallery->id)->delete();
+		$deleted = $gallery->delete();
+
+		if($deleted) {
 			return Response::json('success', 200);
 		} else {
 			return Response::json('error', 400);
