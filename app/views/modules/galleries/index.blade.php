@@ -57,15 +57,15 @@
 
 @section('content')
 
-<div style="margin-bottom: 25px;">
-	<a class="btn btn-primary" data-toggle="modal" data-target="#gallery">Add new gallery</a>
+<div style="margin: 10px 0 25px;">
+	<a class="btn btn-primary" data-toggle="modal" data-target="#gallery">Добавить галлерею</a>
 </div>
 
 @if (is_object($galls) && $galls->count())
-<table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped min-table">
 <thead>
 	<tr>
-		<th>Name</th>
+		<th>Название</th>
 		<th style="width: 100px;"></th>
 		<th style="width: 100px;"></th>
 	</tr>
@@ -75,8 +75,8 @@
 	@foreach($galls as $gall)
 	<tr>
 		<td>{{$gall->name}}</td>
-		<td><a href="{{slink::to('admin/galleries/edit/'.$gall->id)}}" class="btn btn-primary">Edit</a></td>
-		<td><a class="gallery-delete-btn btn btn-danger" href="#" data-id="{{$gall->id}}">Delete</a></td>
+		<td><a href="{{slink::to('admin/galleries/edit/'.$gall->id)}}" class="btn btn-default">Редактировать</a></td>
+		<td><a class="gallery-delete-btn btn btn-default" href="#" data-id="{{$gall->id}}">Удалить</a></td>
 	</tr>
 
 	@endforeach

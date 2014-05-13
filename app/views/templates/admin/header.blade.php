@@ -1,13 +1,10 @@
 <header id="header">
 	<div id="logo-group">
-		<span id="logo"><a href="{{ url(AuthAccount::getStartPage()) }}">Панель управления</a></span>
+		<a class="logo" href="{{ url(AuthAccount::getStartPage()) }}">Панель управления</a>
 	</div>
 	<div class="pull-right">
-		<div id="hide-menu" class="btn-header pull-right">
-			<span> <a href="javascript:void(0);" title=""><i class="fa fa-reorder"></i></a> </span>
-		</div>
 		<div id="logout" class="btn-header transparent pull-right">
-			<span> <a href="{{url('logout')}}" title="Завершение сеанса"><i class="fa fa-sign-out"></i></a> </span>
+			<a class="logout-text" href="{{url('logout')}}" title="Завершение сеанса">Завершить сеанс</a>
 		</div>
 	</div>
 </header>
