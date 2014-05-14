@@ -1,5 +1,5 @@
 function positionitems() {
-  $items = $('.index-block').add('.slide-title').first().add('.wrapper-abs');
+  $items = $('.index-block').add('.wrapper-abs');
 
   var time = 200;
 
