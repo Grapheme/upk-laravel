@@ -1424,7 +1424,7 @@ address .mails a:before {
   padding-top: 25px;
 }
 .sitemap-page .typical-list {
-  list-style: inherit;
+  list-style-type: disc;
   padding: 0 0 0 6.71429rem;
 }
 .sitemap-page .typical-list li {
