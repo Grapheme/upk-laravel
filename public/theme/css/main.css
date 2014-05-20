@@ -1423,6 +1423,19 @@ address .mails a:before {
 .intranet-desc {
   padding-top: 25px;
 }
+.sitemap-page .typical-list {
+  padding: 0 0 0 6.71429rem;
+}
+.sitemap-page .typical-list li {
+  color: #333;
+}
+.sitemap-page .typical-list li a {
+  color: #00B266;
+  text-transform: uppercase;
+}
+.sitemap-page .typical-list li a:hover {
+  text-decoration: none;
+}
 .sitemap {
   list-style: dot;
   padding-left: 110px;
