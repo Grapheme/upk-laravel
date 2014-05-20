@@ -516,10 +516,11 @@ h2 {
   opacity: 0;
   position: absolute;
   left: 39.28571429rem;
-  width: 50.71428571rem;
+  width: 53rem;
   top: 9.64285714rem;
+  line-height: 1.5;
   color: #fff;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 800;
   text-transform: uppercase;
   z-index: 10;
