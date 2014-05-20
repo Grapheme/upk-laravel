@@ -1424,11 +1424,11 @@ address .mails a:before {
   padding-top: 25px;
 }
 .sitemap-page .typical-list {
-  list-style-type: disc;
   padding: 0 0 0 6.71429rem;
 }
 .sitemap-page .typical-list li {
-  color: #333;
+  color: #333;  
+  list-style-type: disc;
 }
 .sitemap-page .typical-list li:before {
   background: none;
