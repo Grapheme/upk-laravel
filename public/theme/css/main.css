@@ -1431,8 +1431,9 @@ address .mails a:before {
   list-style-type: disc;
 }
 .sitemap-page .typical-list li:before {
-  content: none;
+  content: "";
   background: none;
+  margin: 0;
 }
 .sitemap-page .typical-list li a {
   -webkit-transition: .4s all ease;
