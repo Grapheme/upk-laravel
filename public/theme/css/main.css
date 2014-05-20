@@ -977,7 +977,7 @@ body {
 }
 .page-wrap {
   min-height: 100%;  
-  margin-bottom: -4rem;
+  margin-bottom: -6rem;
 }
 .page-wrap:after {
   content: "";
