@@ -12,7 +12,7 @@ return array(
 	'MENU_ABOUT' => 'Über uns',
 	'MENU_NEWS' => 'Presse',
 	'MENU_SERVICES' => 'Dienste',
-	'MENU_INVESTORS' => 'Investors',
+	'MENU_INVESTORS' => 'Investoren',
 	'MENU_CONTACTS' => 'Kontakt',
 	
 	'FOOTER_COPYRIGHT' => 'Uspensker Verarbeitungs Komplex Gmbh',
