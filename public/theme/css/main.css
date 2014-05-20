@@ -1435,11 +1435,16 @@ address .mails a:before {
   background: none;
 }
 .sitemap-page .typical-list li a {
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
   color: #00B266;
   text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 .sitemap-page .typical-list li a:hover {
-  text-decoration: none;
+  border-color: transparent;
 }
 .sitemap {
   list-style: dot;
