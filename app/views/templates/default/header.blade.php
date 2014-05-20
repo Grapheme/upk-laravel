@@ -1,3 +1,4 @@
+<div class="page-wrap"><!-- Begin of page-wrap -->
 <header class="header">
 @if(Request::is('/'))
 	<div class="logo logo-{{Config::get('app.locale')}}"></div>

@@ -1,3 +1,4 @@
+</div><!-- End of page-wrap -->
 <footer class="footer">
 	<div class="footer-logo"></div>
 	<div class="footer-copy">
