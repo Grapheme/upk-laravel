@@ -762,7 +762,7 @@ h2 {
 .footer {
   position: relative;
   height: 3.21428571rem;
-  width: 90rem;
+  min-width: 90rem;
   line-height: 2.5rem;
   padding: 0 0 1.78571429rem;
 }
@@ -978,7 +978,7 @@ body {
 }
 .page-wrap {
   min-height: 100%;  
-  margin-bottom: -6rem;
+  margin-bottom: -5rem;
 }
 .page-wrap:after {
   content: "";
