@@ -1020,7 +1020,7 @@ body {
 .investors .more-desc .more-desc-part a:hover {
   border-color: transparent;
 }
-.investors .more-desc:after {
+/*.investors .more-desc:after {
   content: "";
   position: absolute;
   top: 3%;
@@ -1028,7 +1028,7 @@ body {
   width: 185px;
   height: 91px;
   background: url(../img/investors.jpg) no-repeat;
-}
+}*/
 .about {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
