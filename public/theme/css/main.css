@@ -1002,7 +1002,7 @@ body {
 }
 .investors .more-desc {
   position: relative;
-  width: 60%;
+  /*width: 60%;*/
   margin: 0 0 5rem;
   font-size: 0.85714286em;
 }
