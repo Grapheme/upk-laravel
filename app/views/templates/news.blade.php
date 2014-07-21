@@ -12,13 +12,13 @@
                 <h1>
                     {{$news->title}}
                 </h1>
-                <div class="fotorama" data-nav="false" data-width="100%" data-fit="contain">
                 @if (is_object($gall))
+                <div class="fotorama" data-nav="false" data-width="100%" data-fit="contain">
 				@foreach($gall->photos as $photo)
                     <img src="{{ $photo->path() }}">
                 @endforeach
-                @endif
                 </div>
+                @endif
                 <div class="news-desc">
                      {{ sPage::content_render($news->content) }}
                 </div>

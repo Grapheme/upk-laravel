@@ -1684,9 +1684,9 @@
 		<file name="C:\home\git\uspensky-pk\app\views\templates\default\sidebar.blade.php" crc="19777216"/>
 		<file name="C:\home\git\uspensky-pk\app\views\templates\default\scripts.blade.php" crc="-422346844"/>
 		<file name="C:\home\git\uspensky-pk\app\views\templates\default\menu.blade.php" crc="1659349509"/>
-		<file name="C:\home\git\uspensky-pk\app\views\templates\default\header.blade.php" crc="-1836557805"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\default\header.blade.php" crc="-506336291"/>
 		<file name="C:\home\git\uspensky-pk\app\views\templates\default\head.blade.php" crc="30926680"/>
-		<file name="C:\home\git\uspensky-pk\app\views\templates\default\footer.blade.php" crc="-336938792"/>
+		<file name="C:\home\git\uspensky-pk\app\views\templates\default\footer.blade.php" crc="617081830"/>
 		<file name="C:\home\git\uspensky-pk\app\views\templates\dashboard\sidebar.blade.php" crc="-1508515248"/>
 		<file name="C:\home\git\uspensky-pk\app\views\templates\dashboard\scripts.blade.php" crc="1862637333"/>
 		<file name="C:\home\git\uspensky-pk\app\views\templates\dashboard\header.blade.php" crc="-1211284490"/>
@@ -1876,7 +1876,7 @@
 		<file name="C:\home\git\uspensky-pk\app\lang\de\reminders.php" crc="-676060010"/>
 		<file name="C:\home\git\uspensky-pk\app\lang\de\pagination.php" crc="-529837604"/>
 		<file name="C:\home\git\uspensky-pk\app\lang\de\modules.php" crc="-748510355"/>
-		<file name="C:\home\git\uspensky-pk\app\lang\de\interface.php" crc="-595894564"/>
+		<file name="C:\home\git\uspensky-pk\app\lang\de\interface.php" crc="1914640143"/>
 		<file name="C:\home\git\uspensky-pk\app\lang\de\admin.php" crc="-1892140313"/>
 		<file name="C:\home\git\uspensky-pk\app\database\seeds\UserTableSeeder.php" crc="-1574641456"/>
 		<file name="C:\home\git\uspensky-pk\app\database\seeds\TemplatesSeeder.php" crc="556961516"/>
