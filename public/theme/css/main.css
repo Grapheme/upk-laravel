@@ -1132,7 +1132,7 @@ body {
   overflow: hidden;
 }
 .news .press-about-us .articles.active {
-  max-height: 200px;
+  max-height: 400px;
 }
 .news .press-about-us .art-item {
   position: relative;
