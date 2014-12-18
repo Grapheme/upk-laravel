@@ -1109,7 +1109,7 @@ body {
   width: 90rem;
   padding: 0 245px;
 }
-.press-about-us {
+.news .press-about-us {
   position: absolute;
   top: 0;
   right: 0;
@@ -1117,14 +1117,14 @@ body {
   padding: .5rem 0 1rem;
   background: url(../img/triangle.jpg) repeat-x 0 bottom #00ae61;
 }
-.press-about-us .press-btn {
+.news .press-about-us .press-btn {
   padding: .5rem 0 .5em;
   text-align: center;
   font-size: 1.42857143em;
   color: #fff;
   cursor: pointer;
 }
-.press-about-us .articles {
+.news .press-about-us .articles {
   -webkit-transition: all ease 0.25s;
   -moz-transition: all ease 0.25s;
   transition: all ease 0.25s;
@@ -1132,20 +1132,24 @@ body {
   overflow: hidden;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .news .press-about-us .articles.active {
   max-height: 400px;
 =======
 .press-about-us .articles.active {
+=======
+.news .press-about-us .articles.active {
+>>>>>>> 4204a5e8ef613e270709d9e7c5875c0728cef477
   max-height: 300px;
 >>>>>>> 9a9efe5bb5308232f82b4d2cf804897a6979f759
 }
-.press-about-us .art-item {
+.news .press-about-us .art-item {
   position: relative;
   font-size: 0.85714286em;
   margin: 1.25rem 0;
   padding: 0 .5rem 0 2.5rem;
 }
-.press-about-us .art-item:before {
+.news .press-about-us .art-item:before {
   content: "";
   position: absolute;
   left: .7rem;
@@ -1155,13 +1159,13 @@ body {
   margin: 0 .5rem 0 0;
   background: url(../img/logo_white.png) 0 0 / 100% 100% no-repeat;
 }
-.press-about-us .art-item:after {
+.news .press-about-us .art-item:after {
   content: attr(data-date);
   display: block;
   color: #fff;
   margin-top: 5px;
 }
-.press-about-us .art-item a {
+.news .press-about-us .art-item a {
   -webkit-transition: all ease 0.25s;
   -moz-transition: all ease 0.25s;
   transition: all ease 0.25s;
@@ -1169,7 +1173,7 @@ body {
   color: #fff;
   border-bottom: 1px solid;
 }
-.press-about-us .art-item a:hover {
+.news .press-about-us .art-item a:hover {
   border-bottom: 1px solid transparent;
 }
 .news .news-list {
