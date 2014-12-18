@@ -1109,7 +1109,7 @@ body {
   width: 90rem;
   padding: 0 245px;
 }
-.news .press-about-us {
+.press-about-us {
   position: absolute;
   top: 0;
   right: 0;
@@ -1117,30 +1117,30 @@ body {
   padding: .5rem 0 1rem;
   background: url(../img/triangle.jpg) repeat-x 0 bottom #00ae61;
 }
-.news .press-about-us .press-btn {
+.press-about-us .press-btn {
   padding: .5rem 0 .5em;
   text-align: center;
   font-size: 1.42857143em;
   color: #fff;
   cursor: pointer;
 }
-.news .press-about-us .articles {
+.press-about-us .articles {
   -webkit-transition: all ease 0.25s;
   -moz-transition: all ease 0.25s;
   transition: all ease 0.25s;
   max-height: 0;
   overflow: hidden;
 }
-.news .press-about-us .articles.active {
+.press-about-us .articles.active {
   max-height: 300px;
 }
-.news .press-about-us .art-item {
+.press-about-us .art-item {
   position: relative;
   font-size: 0.85714286em;
   margin: 1.25rem 0;
   padding: 0 .5rem 0 2.5rem;
 }
-.news .press-about-us .art-item:before {
+.press-about-us .art-item:before {
   content: "";
   position: absolute;
   left: .7rem;
@@ -1150,13 +1150,13 @@ body {
   margin: 0 .5rem 0 0;
   background: url(../img/logo_white.png) 0 0 / 100% 100% no-repeat;
 }
-.news .press-about-us .art-item:after {
+.press-about-us .art-item:after {
   content: attr(data-date);
   display: block;
   color: #fff;
   margin-top: 5px;
 }
-.news .press-about-us .art-item a {
+.press-about-us .art-item a {
   -webkit-transition: all ease 0.25s;
   -moz-transition: all ease 0.25s;
   transition: all ease 0.25s;
@@ -1164,7 +1164,7 @@ body {
   color: #fff;
   border-bottom: 1px solid;
 }
-.news .press-about-us .art-item a:hover {
+.press-about-us .art-item a:hover {
   border-bottom: 1px solid transparent;
 }
 .news .news-list {
