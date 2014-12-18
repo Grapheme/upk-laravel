@@ -1150,6 +1150,9 @@ body {
   margin: 0 .5rem 0 0;
   background: url(../img/logo_white.png) 0 0 / 100% 100% no-repeat;
 }
+.documents-block .press-about-us .art-item:before {
+  background: url(../img/pdf-icon.svg) 0 0 / 100% 100% no-repeat;
+}
 .press-about-us .art-item:after {
   content: attr(data-date);
   display: block;
