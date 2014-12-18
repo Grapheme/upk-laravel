@@ -1138,7 +1138,7 @@ body {
   position: relative;
   font-size: 0.85714286em;
   margin: 1.25rem 0;
-  padding: 0 .5rem 0 2.5rem;
+  padding: 0 .5rem 0 3rem;
 }
 .press-about-us .art-item:before {
   content: "";
@@ -1151,7 +1151,8 @@ body {
   background: url(../img/logo_white.png) 0 0 / 100% 100% no-repeat;
 }
 .documents-block .press-about-us .art-item:before {
-  background: url(../img/pdf-icon.svg) 0 0 / 100% 100% no-repeat;
+  background: url(../img/pdf-icon.svg) 0 0 / 100% 100% no-repeat !important;
+  height: 1.3rem !important;
 }
 .press-about-us .art-item:after {
   content: attr(data-date);
