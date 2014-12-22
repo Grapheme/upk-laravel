@@ -136,6 +136,18 @@ h2 {
   min-width: 90rem;
   height: 8.57142857rem;
 }
+.header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 82%;
+  height: 160px;
+  background: url(theme/img/elka.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 .header .logo {
   width: 20%;
   height: 100%;
