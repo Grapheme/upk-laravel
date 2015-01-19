@@ -136,6 +136,18 @@ h2 {
   min-width: 90rem;
   height: 8.57142857rem;
 }
+/*.header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 82%;
+  height: 160px;
+  background: url(../img/elka.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  z-index: -1;
+}*/
 .header .logo {
   width: 20%;
   height: 100%;
@@ -515,9 +527,9 @@ h2 {
   transition: opacity ease 1s;
   opacity: 0;
   position: absolute;
-  left: 39.28571429rem;
+  left: 39.64285rem;
   width: 53rem;
-  top: 9.64285714rem;
+  top: 21.0714285rem;
   line-height: 1.5;
   color: #fff;
   font-size: 2.5em;
@@ -1109,7 +1121,7 @@ body {
   width: 90rem;
   padding: 0 245px;
 }
-.news .press-about-us {
+.press-about-us {
   position: absolute;
   top: 0;
   right: 0;
@@ -1117,30 +1129,30 @@ body {
   padding: .5rem 0 1rem;
   background: url(../img/triangle.jpg) repeat-x 0 bottom #00ae61;
 }
-.news .press-about-us .press-btn {
+.press-about-us .press-btn {
   padding: .5rem 0 .5em;
   text-align: center;
   font-size: 1.42857143em;
   color: #fff;
   cursor: pointer;
 }
-.news .press-about-us .articles {
+.press-about-us .articles {
   -webkit-transition: all ease 0.25s;
   -moz-transition: all ease 0.25s;
   transition: all ease 0.25s;
   max-height: 0;
   overflow: hidden;
 }
-.news .press-about-us .articles.active {
-  max-height: 200px;
+.press-about-us .articles.active {
+  max-height: 1000px;
 }
-.news .press-about-us .art-item {
+.press-about-us .art-item {
   position: relative;
   font-size: 0.85714286em;
   margin: 1.25rem 0;
-  padding: 0 .5rem 0 2.5rem;
+  padding: 0 .5rem 0 3rem;
 }
-.news .press-about-us .art-item:before {
+.press-about-us .art-item:before {
   content: "";
   position: absolute;
   left: .7rem;
@@ -1150,13 +1162,17 @@ body {
   margin: 0 .5rem 0 0;
   background: url(../img/logo_white.png) 0 0 / 100% 100% no-repeat;
 }
-.news .press-about-us .art-item:after {
+.documents-block .art-item:before {
+  background: url(../img/pdf-icon.svg) 0 0 / 100% 100% no-repeat !important;
+  height: 1.3rem !important;
+}
+.press-about-us .art-item:after {
   content: attr(data-date);
   display: block;
   color: #fff;
   margin-top: 5px;
 }
-.news .press-about-us .art-item a {
+.press-about-us .art-item a {
   -webkit-transition: all ease 0.25s;
   -moz-transition: all ease 0.25s;
   transition: all ease 0.25s;
@@ -1164,7 +1180,7 @@ body {
   color: #fff;
   border-bottom: 1px solid;
 }
-.news .press-about-us .art-item a:hover {
+.press-about-us .art-item a:hover {
   border-bottom: 1px solid transparent;
 }
 .news .news-list {

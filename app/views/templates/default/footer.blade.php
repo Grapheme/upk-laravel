@@ -5,7 +5,7 @@
 		{{ trans('interface.FOOTER_COPYRIGHT') }}
 		<div class="bot-cont">
 			{{ trans('interface.FOOTER_ADDRESS') }}
-            <a href="tel:+78632806656">+7 (863) 280-66-56</a>
+            <a href="tel:+78632345608">+7 (863) 234-56-08</a>
         </div>
 	</div>
 	<ul class="sub-nav">
