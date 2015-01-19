@@ -136,7 +136,7 @@ h2 {
   min-width: 90rem;
   height: 8.57142857rem;
 }
-.header:before {
+/*.header:before {
   content: "";
   position: absolute;
   left: 0;
@@ -147,7 +147,7 @@ h2 {
   background-size: 100% auto;
   background-repeat: no-repeat;
   z-index: -1;
-}
+}*/
 .header .logo {
   width: 20%;
   height: 100%;
